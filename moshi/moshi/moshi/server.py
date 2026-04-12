@@ -78,25 +78,17 @@ class ServerState:
         opus_writer: sphn.OpusStreamWriter
     ):
         assert tokens.shape[1] == self.lm_gen.lm_model.dep_q + 1
-
-        t0 = time.time()
         main_pcm = self.mimi.decode(tokens[:, 1:])
-        tts_ms = 1000 * (time.time() - t0)
         main_pcm = main_pcm.cpu()
-        pcm_samples = main_pcm[0, 0].shape[-1]
-        pcm_duration_ms = pcm_samples / self.mimi.sample_rate * 1000
-        log("info", f"[TTS ] decode done in {tts_ms:.1f}ms | {pcm_duration_ms:.0f}ms of audio ({pcm_samples} samples)")
-
         opus_bytes = opus_writer.append_pcm(main_pcm[0, 0].numpy())
         if len(opus_bytes) > 0:
-            log("info", f"[SEND] audio at {time.strftime('%H:%M:%S')} | {len(opus_bytes)} opus bytes")
             await ws.send_bytes(b"\x01" + opus_bytes)
         text_token = tokens[0, 0, 0].item()
         if text_token not in (0, 3):
             _text = self.text_tokenizer.id_to_piece(text_token)  # type: ignore
             _text = _text.replace("▁", " ")
             msg = b"\x02" + bytes(_text, encoding="utf8")
-            log("info", f"[SEND] text at {time.strftime('%H:%M:%S')} | '{_text}'")
+            log("info", f"text token '{_text}'")
             await ws.send_bytes(msg)
 
     async def recv_loop(
@@ -138,17 +130,9 @@ class ServerState:
                         be = time.time()
                         chunk = all_pcm_data[: self.frame_size]
                         all_pcm_data = all_pcm_data[self.frame_size:]
-                        chunk_duration_ms = len(chunk) / self.mimi.sample_rate * 1000
-                        log("info", f"[RECV] audio chunk at {time.strftime('%H:%M:%S')} | {chunk_duration_ms:.0f}ms of audio ({len(chunk)} samples)")
                         chunk = torch.from_numpy(chunk)
                         chunk = chunk.to(device=self.device)[None, None]
-
-                        t0 = time.time()
                         codes = self.mimi.encode(chunk)
-                        stt_ms = 1000 * (time.time() - t0)
-                        codes_list = codes[0, :, 0].tolist()
-                        log("info", f"[STT ] encode done in {stt_ms:.1f}ms | codes shape {list(codes.shape)} | codes {[int(c) for c in codes_list]}")
-
                         if skip_frames:
                             # The first input audio frame is ignored, as from the point of
                             # view of the model it is in the past. We still `mimi.encode` for simplicity,
@@ -157,15 +141,11 @@ class ServerState:
                             self.mimi.reset_streaming()
                             skip_frames -= 1
                         for c in range(codes.shape[-1]):
-                            t1 = time.time()
                             tokens = self.lm_gen.step(codes[:, :, c: c + 1])
-                            llm_ms = 1000 * (time.time() - t1)
                             if tokens is None:
-                                log("info", f"[LLM ] step in {llm_ms:.1f}ms | no tokens yet")
                                 continue
-                            log("info", f"[LLM ] step in {llm_ms:.1f}ms | tokens shape {list(tokens.shape)}")
                             await self.decode_and_send(tokens, ws, opus_writer)
-                        log("info", f"[TOTAL] frame handled in {1000 * (time.time() - be):.1f}ms")
+                        log("info", f"frame handled in {1000 * (time.time() - be):.1f}ms")
                 else:
                     log("warning", f"unknown message kind {kind}")
         finally:
