@@ -1,0 +1,1628 @@
+[Info] accepted connection
+[Info] [RECV] audio chunk at 07:11:05 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | no tokens yet
+[Info] [TOTAL] frame handled in 18.3ms
+[Info] [RECV] audio chunk at 07:11:05 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:05 | 302 opus bytes
+[Info] [TOTAL] frame handled in 76.9ms
+[Info] [RECV] audio chunk at 07:11:05 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:05 | 200 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:05 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:05 | 266 opus bytes
+[Info] [TOTAL] frame handled in 42.7ms
+[Info] [RECV] audio chunk at 07:11:05 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:05 | 265 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 259 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 324 opus bytes
+[Info] [SEND] text at 07:11:06 | ' Hello'
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 328 opus bytes
+[Info] [SEND] text at 07:11:06 | ','
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 356 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 310 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 291 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 309 opus bytes
+[Info] [SEND] text at 07:11:06 | ' how'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 286 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 243 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 262 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 244 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:06 | 238 opus bytes
+[Info] [SEND] text at 07:11:06 | ' can'
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:06 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 303 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 315 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 329 opus bytes
+[Info] [SEND] text at 07:11:07 | ' I'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 341 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 298 opus bytes
+[Info] [SEND] text at 07:11:07 | ' help'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 346 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 319 opus bytes
+[Info] [SEND] text at 07:11:07 | ' you'
+[Info] [TOTAL] frame handled in 42.7ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 325 opus bytes
+[Info] [SEND] text at 07:11:07 | '?'
+[Info] [TOTAL] frame handled in 42.6ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 309 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 342 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 354 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 272 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:07 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:07 | 258 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 243 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 238 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.5ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.0ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 239 opus bytes
+[Info] [TOTAL] frame handled in 42.6ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 242 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 232 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 226 opus bytes
+[Info] [TOTAL] frame handled in 42.1ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 223 opus bytes
+[Info] [TOTAL] frame handled in 42.1ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 236 opus bytes
+[Info] [TOTAL] frame handled in 42.1ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 238 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 250 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 250 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:08 | 235 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:08 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 245 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 251 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 233 opus bytes
+[Info] [TOTAL] frame handled in 42.1ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 253 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 243 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 245 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 254 opus bytes
+[Info] [TOTAL] frame handled in 42.1ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 247 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 253 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 249 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 234 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 247 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:09 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:09 | 238 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 248 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 237 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 248 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 236 opus bytes
+[Info] [TOTAL] frame handled in 42.1ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 240 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 234 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 247 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 236 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 223 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 230 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 233 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:10 | 241 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:10 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 243 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 246 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 250 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 303 opus bytes
+[Info] [SEND] text at 07:11:11 | ' Sure'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 331 opus bytes
+[Info] [SEND] text at 07:11:11 | ','
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 322 opus bytes
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 316 opus bytes
+[Info] [SEND] text at 07:11:11 | ' N'
+[Info] [TOTAL] frame handled in 42.6ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 300 opus bytes
+[Info] [SEND] text at 07:11:11 | 'ida'
+[Info] [TOTAL] frame handled in 42.6ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 308 opus bytes
+[Info] [SEND] text at 07:11:11 | 'a'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 254 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 271 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 281 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:11 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:11 | 258 opus bytes
+[Info] [TOTAL] frame handled in 42.2ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 237 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 344 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 323 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 329 opus bytes
+[Info] [SEND] text at 07:11:12 | ' is'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 322 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 333 opus bytes
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 361 opus bytes
+[Info] [SEND] text at 07:11:12 | ' a'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 347 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 338 opus bytes
+[Info] [SEND] text at 07:11:12 | ' town'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 299 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 323 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:12 | 296 opus bytes
+[Info] [SEND] text at 07:11:12 | ' in'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:12 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 317 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 315 opus bytes
+[Info] [SEND] text at 07:11:13 | ' the'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 320 opus bytes
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 338 opus bytes
+[Info] [SEND] text at 07:11:13 | ' '
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 318 opus bytes
+[Info] [SEND] text at 07:11:13 | '<0xC5>'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 316 opus bytes
+[Info] [SEND] text at 07:11:13 | '<0x81>'
+[Info] [TOTAL] frame handled in 42.6ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 308 opus bytes
+[Info] [SEND] text at 07:11:13 | 'ó'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 310 opus bytes
+[Info] [SEND] text at 07:11:13 | 'd'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 333 opus bytes
+[Info] [SEND] text at 07:11:13 | '<0xC5>'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 327 opus bytes
+[Info] [SEND] text at 07:11:13 | '<0xBA>'
+[Info] [TOTAL] frame handled in 42.6ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 3.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.1ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 314 opus bytes
+[Info] [SEND] text at 07:11:13 | ' Voivodeship'
+[Info] [TOTAL] frame handled in 43.1ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 266 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:13 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:13 | 238 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 237 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 244 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 250 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 286 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 317 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 329 opus bytes
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 304 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 326 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 324 opus bytes
+[Info] [SEND] text at 07:11:14 | ' of'
+[Info] [TOTAL] frame handled in 42.6ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 337 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 328 opus bytes
+[Info] [SEND] text at 07:11:14 | ' Poland'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:14 | 305 opus bytes
+[Info] [SEND] text at 07:11:14 | '.'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:14 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 283 opus bytes
+[Info] [TOTAL] frame handled in 42.3ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.3ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 330 opus bytes
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 298 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 335 opus bytes
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 336 opus bytes
+[Info] [SEND] text at 07:11:15 | ' It'
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.8ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 313 opus bytes
+[Info] [SEND] text at 07:11:15 | '''
+[Info] [TOTAL] frame handled in 42.5ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 5.2ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 1.9ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 1.8ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 270 opus bytes
+[Info] [SEND] text at 07:11:15 | 's'
+[Info] [TOTAL] frame handled in 42.4ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 294 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 289 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 266 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 280 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 345 opus bytes
+[Info] [SEND] text at 07:11:15 | ' known'
+[Info] [TOTAL] frame handled in 44.9ms
+[Info] [RECV] audio chunk at 07:11:15 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:15 | 319 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 318 opus bytes
+[Info] [SEND] text at 07:11:16 | ' for'
+[Info] [TOTAL] frame handled in 44.8ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.5ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 320 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.5ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 323 opus bytes
+[Info] [SEND] text at 07:11:16 | ' its'
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 324 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 311 opus bytes
+[Info] [SEND] text at 07:11:16 | ' industrial'
+[Info] [TOTAL] frame handled in 44.7ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 343 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 282 opus bytes
+[Info] [TOTAL] frame handled in 44.9ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 7.5ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 3.1ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.5ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 329 opus bytes
+[Info] [TOTAL] frame handled in 45.5ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 314 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 305 opus bytes
+[Info] [SEND] text at 07:11:16 | ' past'
+[Info] [TOTAL] frame handled in 44.8ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 325 opus bytes
+[Info] [SEND] text at 07:11:16 | ','
+[Info] [TOTAL] frame handled in 44.7ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:16 | 308 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:16 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 302 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 349 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 275 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 339 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 304 opus bytes
+[Info] [SEND] text at 07:11:17 | ' with'
+[Info] [TOTAL] frame handled in 44.7ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 280 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 271 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.9ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 252 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 311 opus bytes
+[Info] [SEND] text at 07:11:17 | ' a'
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 340 opus bytes
+[Info] [TOTAL] frame handled in 44.7ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 329 opus bytes
+[Info] [SEND] text at 07:11:17 | ' lot'
+[Info] [TOTAL] frame handled in 44.8ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 321 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:17 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:17 | 298 opus bytes
+[Info] [SEND] text at 07:11:17 | ' of'
+[Info] [TOTAL] frame handled in 44.7ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 344 opus bytes
+[Info] [SEND] text at 07:11:18 | ' factories'
+[Info] [TOTAL] frame handled in 44.8ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.5ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 301 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 336 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 314 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 291 opus bytes
+[Info] [SEND] text at 07:11:18 | ' and'
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 319 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 342 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 302 opus bytes
+[Info] [SEND] text at 07:11:18 | ' workshops'
+[Info] [TOTAL] frame handled in 44.8ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 314 opus bytes
+[Info] [SEND] text at 07:11:18 | '.'
+[Info] [TOTAL] frame handled in 44.9ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.9ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 312 opus bytes
+[Info] [TOTAL] frame handled in 44.8ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 336 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:18 | 330 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:18 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 318 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 292 opus bytes
+[Info] [TOTAL] frame handled in 44.6ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 297 opus bytes
+[Info] [TOTAL] frame handled in 44.5ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 285 opus bytes
+[Info] [TOTAL] frame handled in 46.3ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 7.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.7ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.4ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 282 opus bytes
+[Info] [TOTAL] frame handled in 45.3ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 284 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 269 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 244 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 325 opus bytes
+[Info] [SEND] text at 07:11:19 | ' It'
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 347 opus bytes
+[Info] [SEND] text at 07:11:19 | ' also'
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 308 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 324 opus bytes
+[Info] [SEND] text at 07:11:19 | ' the'
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:19 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:19 | 342 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 344 opus bytes
+[Info] [SEND] text at 07:11:20 | ' capital'
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 308 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 315 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 305 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 306 opus bytes
+[Info] [SEND] text at 07:11:20 | ' of'
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 318 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 324 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 347 opus bytes
+[Info] [SEND] text at 07:11:20 | ' N'
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 319 opus bytes
+[Info] [SEND] text at 07:11:20 | 'ida'
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 323 opus bytes
+[Info] [SEND] text at 07:11:20 | ' County'
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 333 opus bytes
+[Info] [SEND] text at 07:11:20 | '.'
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.5ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:20 | 320 opus bytes
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:20 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.9ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.6ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 306 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 298 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 319 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 342 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 291 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 242 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 239 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 254 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 244 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 7.0ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 236 opus bytes
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 231 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 256 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:21 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:21 | 234 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 232 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 234 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 235 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 219 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 231 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 232 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 227 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 235 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 241 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 249 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 232 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:22 | 229 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:22 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 237 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 225 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 245 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 244 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 232 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 248 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 227 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 221 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 237 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.8ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 231 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 233 opus bytes
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 250 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:23 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:23 | 238 opus bytes
+[Info] [TOTAL] frame handled in 44.3ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 226 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 246 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 235 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 243 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 237 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 241 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 238 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 236 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 242 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 241 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 242 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:24 | 230 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:24 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 221 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 241 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 227 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 238 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 236 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 237 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 237 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 236 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.2ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 223 opus bytes
+[Info] [TOTAL] frame handled in 44.0ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 7.0ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 222 opus bytes
+[Info] [TOTAL] frame handled in 44.4ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 234 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 229 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:25 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:25 | 225 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:26 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:26 | 235 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:26 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:26 | 225 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:26 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:26 | 231 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:26 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:26 | 216 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:26 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:26 | 227 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] [RECV] audio chunk at 07:11:26 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:26 | 241 opus bytes
+[Info] [TOTAL] frame handled in 44.1ms
+[Info] [RECV] audio chunk at 07:11:26 | 80ms of audio (1920 samples)
+[Info] [STT ] encode done in 6.7ms | codes shape [1, 8, 1]
+[Info] [LLM ] step in 2.4ms | tokens shape [1, 9, 1]
+[Info] [TTS ] decode done in 2.3ms | 80ms of audio (1920 samples)
+[Info] [SEND] audio at 07:11:26 | 235 opus bytes
+[Info] [TOTAL] frame handled in 44.2ms
+[Info] connection closed
+[Info] done with connection

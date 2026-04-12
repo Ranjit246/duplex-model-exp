@@ -1,0 +1,588 @@
+(venv) root@2dd5225d7044:/workspace# python3 run_audio.py /workspace/PTT-20260412-WA0014.wav -o output.wav
+[07:25:36] [LOAD ] retrieving checkpoint
+/workspace/venv/lib/python3.12/site-packages/moshi/models/loaders.py:204: UserWarning: Repository kyutai/moshika-pytorch-bf16 contains no config.json. Assuming this is a Moshi 7B. Support for such repository might be removed in the future.
+  warnings.warn(
+[07:25:37] [LOAD ] loading mimi
+[07:25:38] [LOAD ] mimi loaded | sample_rate=24000 frame_rate=12.5
+[07:25:38] [LOAD ] loading moshi LM
+[07:25:46] [LOAD ] moshi loaded
+[07:25:46] [INPUT] reading /workspace/PTT-20260412-WA0014.wav
+[07:25:46] [INPUT] loaded 2.65s of audio (63488 samples, 24000Hz)
+[07:25:46] [INPUT] prepended 3.0s silence | total now 5.65s
+[07:25:46] [INPUT] appended 5.0s silence | total now 10.65s
+[07:25:46] [INPUT] split into 133 frames of 1920 samples (80ms each)
+[07:25:46] [START] beginning inference
+[07:25:51] [STT  ] frame   0 | encode 4735.3ms | codes [1049, 1700, 1626, 546, 306, 1443, 1871, 2008]
+[07:25:54] [LLM  ] frame   0 | step 314.2ms | tokens [3, 1049, 1700]...
+[07:25:55] [TTS  ] frame   0 | decode 510.0ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   0 | 8289.8ms
+[07:25:55] [STT  ] frame   1 | encode  34.5ms | codes [127, 243, 783, 546, 481, 555, 666, 1648]
+[07:25:55] [LLM  ] frame   1 | step   2.2ms | tokens [3, 127, 243]...
+[07:25:55] [TTS  ] frame   1 | decode  28.4ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   1 |  98.5ms
+[07:25:55] [STT  ] frame   2 | encode   5.6ms | codes [1880, 243, 1178, 546, 481, 1572, 825, 2008]
+[07:25:55] [LLM  ] frame   2 | step   2.0ms | tokens [3, 1880, 91]...
+[07:25:55] [TTS  ] frame   2 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   2 |  44.3ms
+[07:25:55] [STT  ] frame   3 | encode   5.5ms | codes [1031, 243, 1178, 546, 1736, 1572, 1978, 2008]
+[07:25:55] [LLM  ] frame   3 | step   2.0ms | tokens [3, 972, 91]...
+[07:25:55] [TTS  ] frame   3 | decode   2.0ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   3 |  43.8ms
+[07:25:55] [STT  ] frame   4 | encode   5.5ms | codes [1031, 243, 1178, 546, 1736, 1572, 1978, 1648]
+[07:25:55] [LLM  ] frame   4 | step   2.0ms | tokens [3, 972, 91]...
+[07:25:55] [TTS  ] frame   4 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   4 |  42.8ms
+[07:25:55] [STT  ] frame   5 | encode   5.5ms | codes [1031, 243, 1178, 164, 267, 1572, 825, 1648]
+[07:25:55] [LLM  ] frame   5 | step   2.0ms | tokens [0, 1156, 749]...
+[07:25:55] [TTS  ] frame   5 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   5 |  42.3ms
+[07:25:55] [STT  ] frame   6 | encode   5.5ms | codes [1492, 243, 1178, 546, 1736, 1030, 1978, 1648]
+[07:25:55] [LLM  ] frame   6 | step   2.0ms | tokens [2295, 267, 1802]...
+[07:25:55] [TEXT ] frame   6 | ' Good'
+[07:25:55] [TTS  ] frame   6 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   6 |  42.6ms
+[07:25:55] [STT  ] frame   7 | encode   5.5ms | codes [2029, 243, 1178, 546, 1736, 1030, 1978, 1648]
+[07:25:55] [LLM  ] frame   7 | step   2.0ms | tokens [3, 1853, 1603]...
+[07:25:55] [TTS  ] frame   7 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   7 |  42.4ms
+[07:25:55] [STT  ] frame   8 | encode   5.5ms | codes [2029, 243, 1178, 546, 1736, 1030, 1978, 1648]
+[07:25:55] [LLM  ] frame   8 | step   2.0ms | tokens [0, 942, 451]...
+[07:25:55] [TTS  ] frame   8 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   8 |  42.3ms
+[07:25:55] [STT  ] frame   9 | encode   5.5ms | codes [2029, 243, 1178, 546, 481, 1030, 825, 1648]
+[07:25:55] [LLM  ] frame   9 | step   2.0ms | tokens [667, 966, 681]...
+[07:25:55] [TEXT ] frame   9 | ' day'
+[07:25:55] [TTS  ] frame   9 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame   9 |  42.6ms
+[07:25:55] [STT  ] frame  10 | encode   5.5ms | codes [2029, 243, 1178, 546, 481, 1030, 825, 1648]
+[07:25:55] [LLM  ] frame  10 | step   2.0ms | tokens [261, 1575, 1998]...
+[07:25:55] [TEXT ] frame  10 | ','
+[07:25:55] [TTS  ] frame  10 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  10 |  42.6ms
+[07:25:55] [STT  ] frame  11 | encode   5.5ms | codes [1316, 243, 1178, 546, 481, 1030, 825, 1648]
+[07:25:55] [LLM  ] frame  11 | step   2.0ms | tokens [3, 1828, 1215]...
+[07:25:55] [TTS  ] frame  11 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  11 |  42.4ms
+[07:25:55] [STT  ] frame  12 | encode   5.5ms | codes [1316, 243, 1178, 546, 481, 1030, 825, 1648]
+[07:25:55] [LLM  ] frame  12 | step   2.0ms | tokens [3, 15, 1034]...
+[07:25:55] [TTS  ] frame  12 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  12 |  42.3ms
+[07:25:55] [STT  ] frame  13 | encode   5.5ms | codes [1316, 243, 1178, 546, 481, 1030, 825, 1648]
+[07:25:55] [LLM  ] frame  13 | step   2.0ms | tokens [3, 582, 1663]...
+[07:25:55] [TTS  ] frame  13 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  13 |  42.3ms
+[07:25:55] [STT  ] frame  14 | encode   5.5ms | codes [1316, 243, 1178, 546, 481, 1030, 825, 1648]
+[07:25:55] [LLM  ] frame  14 | step   2.0ms | tokens [3, 844, 91]...
+[07:25:55] [TTS  ] frame  14 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  14 |  42.3ms
+[07:25:55] [STT  ] frame  15 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 666, 1648]
+[07:25:55] [LLM  ] frame  15 | step   2.0ms | tokens [3, 844, 1056]...
+[07:25:55] [TTS  ] frame  15 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  15 |  42.4ms
+[07:25:55] [STT  ] frame  16 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 666, 1648]
+[07:25:55] [LLM  ] frame  16 | step   2.0ms | tokens [3, 940, 1056]...
+[07:25:55] [TTS  ] frame  16 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  16 |  42.4ms
+[07:25:55] [STT  ] frame  17 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 666, 1648]
+[07:25:55] [LLM  ] frame  17 | step   2.0ms | tokens [3, 940, 1050]...
+[07:25:55] [TTS  ] frame  17 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:55] [TOTAL] frame  17 |  42.6ms
+[07:25:55] [STT  ] frame  18 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 666, 1648]
+[07:25:56] [LLM  ] frame  18 | step   2.0ms | tokens [0, 1098, 1519]...
+[07:25:56] [TTS  ] frame  18 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  18 |  42.6ms
+[07:25:56] [STT  ] frame  19 | encode   5.4ms | codes [1316, 243, 1178, 142, 481, 1572, 666, 1648]
+[07:25:56] [LLM  ] frame  19 | step   2.0ms | tokens [452, 420, 755]...
+[07:25:56] [TEXT ] frame  19 | ' how'
+[07:25:56] [TTS  ] frame  19 | decode   2.0ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  19 |  42.7ms
+[07:25:56] [STT  ] frame  20 | encode   5.7ms | codes [1316, 243, 1178, 142, 481, 1572, 666, 1648]
+[07:25:56] [LLM  ] frame  20 | step   2.1ms | tokens [0, 1849, 277]...
+[07:25:56] [TTS  ] frame  20 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  20 |  42.6ms
+[07:25:56] [STT  ] frame  21 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 666, 1648]
+[07:25:56] [LLM  ] frame  21 | step   1.9ms | tokens [275, 296, 1106]...
+[07:25:56] [TEXT ] frame  21 | ' is'
+[07:25:56] [TTS  ] frame  21 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  21 |  42.4ms
+[07:25:56] [STT  ] frame  22 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  22 | step   1.9ms | tokens [0, 988, 690]...
+[07:25:56] [TTS  ] frame  22 | decode   2.0ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  22 |  42.4ms
+[07:25:56] [STT  ] frame  23 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  23 | step   1.9ms | tokens [296, 1300, 669]...
+[07:25:56] [TEXT ] frame  23 | ' it'
+[07:25:56] [TTS  ] frame  23 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  23 |  42.4ms
+[07:25:56] [STT  ] frame  24 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  24 | step   2.0ms | tokens [0, 160, 10]...
+[07:25:56] [TTS  ] frame  24 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  24 |  42.5ms
+[07:25:56] [STT  ] frame  25 | encode   5.4ms | codes [1316, 243, 1178, 142, 481, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  25 | step   2.0ms | tokens [860, 76, 1338]...
+[07:25:56] [TEXT ] frame  25 | ' going'
+[07:25:56] [TTS  ] frame  25 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  25 |  42.6ms
+[07:25:56] [STT  ] frame  26 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  26 | step   2.0ms | tokens [330, 553, 1011]...
+[07:25:56] [TEXT ] frame  26 | '?'
+[07:25:56] [TTS  ] frame  26 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  26 |  42.7ms
+[07:25:56] [STT  ] frame  27 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  27 | step   2.0ms | tokens [3, 1772, 617]...
+[07:25:56] [TTS  ] frame  27 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  27 |  42.5ms
+[07:25:56] [STT  ] frame  28 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  28 | step   1.9ms | tokens [3, 186, 655]...
+[07:25:56] [TTS  ] frame  28 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  28 |  42.3ms
+[07:25:56] [STT  ] frame  29 | encode   5.5ms | codes [1316, 243, 1178, 142, 481, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  29 | step   1.9ms | tokens [3, 1987, 1159]...
+[07:25:56] [TTS  ] frame  29 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  29 |  42.3ms
+[07:25:56] [STT  ] frame  30 | encode   5.4ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  30 | step   2.0ms | tokens [3, 729, 1056]...
+[07:25:56] [TTS  ] frame  30 | decode   2.0ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  30 |  42.3ms
+[07:25:56] [STT  ] frame  31 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  31 | step   1.9ms | tokens [3, 729, 91]...
+[07:25:56] [TTS  ] frame  31 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  31 |  42.4ms
+[07:25:56] [STT  ] frame  32 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  32 | step   2.0ms | tokens [3, 396, 1056]...
+[07:25:56] [TTS  ] frame  32 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  32 |  42.6ms
+[07:25:56] [STT  ] frame  33 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  33 | step   1.9ms | tokens [3, 396, 1056]...
+[07:25:56] [TTS  ] frame  33 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  33 |  42.5ms
+[07:25:56] [STT  ] frame  34 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  34 | step   1.9ms | tokens [3, 1544, 243]...
+[07:25:56] [TTS  ] frame  34 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  34 |  42.6ms
+[07:25:56] [STT  ] frame  35 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  35 | step   2.0ms | tokens [3, 752, 243]...
+[07:25:56] [TTS  ] frame  35 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  35 |  42.5ms
+[07:25:56] [STT  ] frame  36 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  36 | step   2.0ms | tokens [3, 752, 243]...
+[07:25:56] [TTS  ] frame  36 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  36 |  42.3ms
+[07:25:56] [STT  ] frame  37 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  37 | step   1.9ms | tokens [3, 752, 243]...
+[07:25:56] [TTS  ] frame  37 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  37 |  42.3ms
+[07:25:56] [STT  ] frame  38 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 1978, 1648]
+[07:25:56] [LLM  ] frame  38 | step   2.0ms | tokens [3, 752, 243]...
+[07:25:56] [TTS  ] frame  38 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  38 |  42.3ms
+[07:25:56] [STT  ] frame  39 | encode   5.5ms | codes [1316, 1211, 1697, 546, 1736, 1572, 825, 1648]
+[07:25:56] [LLM  ] frame  39 | step   1.9ms | tokens [3, 1926, 243]...
+[07:25:56] [TTS  ] frame  39 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  39 |  42.4ms
+[07:25:56] [STT  ] frame  40 | encode   5.5ms | codes [384, 1211, 1697, 1348, 1335, 1572, 976, 1744]
+[07:25:56] [LLM  ] frame  40 | step   2.0ms | tokens [3, 1926, 243]...
+[07:25:56] [TTS  ] frame  40 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  40 |  42.5ms
+[07:25:56] [STT  ] frame  41 | encode   5.4ms | codes [2029, 1211, 1697, 1348, 1335, 1572, 976, 1648]
+[07:25:56] [LLM  ] frame  41 | step   1.9ms | tokens [3, 1926, 243]...
+[07:25:56] [TTS  ] frame  41 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:56] [TOTAL] frame  41 |  42.5ms
+[07:25:56] [STT  ] frame  42 | encode   5.5ms | codes [537, 1409, 320, 1602, 200, 1652, 837, 977]
+[07:25:57] [LLM  ] frame  42 | step   2.0ms | tokens [3, 1926, 243]...
+[07:25:57] [TTS  ] frame  42 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  42 |  42.5ms
+[07:25:57] [STT  ] frame  43 | encode   5.5ms | codes [537, 549, 178, 1276, 306, 1981, 615, 192]
+[07:25:57] [LLM  ] frame  43 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  43 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  43 |  42.5ms
+[07:25:57] [STT  ] frame  44 | encode   5.4ms | codes [435, 2029, 924, 131, 823, 1147, 183, 1893]
+[07:25:57] [LLM  ] frame  44 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  44 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  44 |  42.3ms
+[07:25:57] [STT  ] frame  45 | encode   5.4ms | codes [322, 1257, 1199, 56, 615, 1286, 1995, 943]
+[07:25:57] [LLM  ] frame  45 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  45 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  45 |  42.3ms
+[07:25:57] [STT  ] frame  46 | encode   5.5ms | codes [1055, 1870, 577, 152, 1776, 785, 1733, 1379]
+[07:25:57] [LLM  ] frame  46 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  46 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  46 |  42.3ms
+[07:25:57] [STT  ] frame  47 | encode   5.4ms | codes [1973, 195, 559, 503, 1296, 1343, 1139, 66]
+[07:25:57] [LLM  ] frame  47 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  47 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  47 |  42.4ms
+[07:25:57] [STT  ] frame  48 | encode   5.5ms | codes [49, 720, 344, 385, 1995, 1625, 1149, 1265]
+[07:25:57] [LLM  ] frame  48 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  48 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  48 |  42.5ms
+[07:25:57] [STT  ] frame  49 | encode   5.5ms | codes [1453, 263, 738, 1828, 1769, 546, 1315, 862]
+[07:25:57] [LLM  ] frame  49 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  49 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  49 |  42.5ms
+[07:25:57] [STT  ] frame  50 | encode   5.4ms | codes [1715, 1136, 993, 670, 221, 792, 316, 515]
+[07:25:57] [LLM  ] frame  50 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  50 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  50 |  42.5ms
+[07:25:57] [STT  ] frame  51 | encode   5.5ms | codes [1733, 1982, 138, 2026, 362, 1546, 262, 428]
+[07:25:57] [LLM  ] frame  51 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  51 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  51 |  42.5ms
+[07:25:57] [STT  ] frame  52 | encode   5.5ms | codes [1507, 313, 359, 1647, 1009, 480, 1455, 455]
+[07:25:57] [LLM  ] frame  52 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  52 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  52 |  42.3ms
+[07:25:57] [STT  ] frame  53 | encode  15.2ms | codes [86, 511, 702, 1666, 1132, 1054, 1908, 510]
+[07:25:57] [LLM  ] frame  53 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  53 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  53 |  52.2ms
+[07:25:57] [STT  ] frame  54 | encode   5.5ms | codes [1675, 892, 1068, 1654, 1284, 316, 1562, 1589]
+[07:25:57] [LLM  ] frame  54 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  54 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  54 |  42.6ms
+[07:25:57] [STT  ] frame  55 | encode   5.4ms | codes [1674, 1158, 1809, 1234, 1701, 1296, 249, 1351]
+[07:25:57] [LLM  ] frame  55 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  55 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  55 |  42.4ms
+[07:25:57] [STT  ] frame  56 | encode   5.5ms | codes [1219, 1694, 1672, 1880, 76, 861, 1502, 258]
+[07:25:57] [LLM  ] frame  56 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  56 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  56 |  42.3ms
+[07:25:57] [STT  ] frame  57 | encode   5.5ms | codes [821, 992, 1563, 1210, 711, 866, 398, 298]
+[07:25:57] [LLM  ] frame  57 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  57 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  57 |  42.3ms
+[07:25:57] [STT  ] frame  58 | encode   5.4ms | codes [1259, 534, 1626, 1225, 16, 580, 428, 1861]
+[07:25:57] [LLM  ] frame  58 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  58 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  58 |  42.3ms
+[07:25:57] [STT  ] frame  59 | encode   5.5ms | codes [1479, 1615, 831, 679, 1274, 799, 708, 2013]
+[07:25:57] [LLM  ] frame  59 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  59 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  59 |  42.4ms
+[07:25:57] [STT  ] frame  60 | encode   5.5ms | codes [926, 1887, 63, 1530, 569, 677, 1698, 1011]
+[07:25:57] [LLM  ] frame  60 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  60 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  60 |  42.6ms
+[07:25:57] [STT  ] frame  61 | encode   5.4ms | codes [1385, 171, 1366, 863, 851, 435, 559, 367]
+[07:25:57] [LLM  ] frame  61 | step   1.9ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  61 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  61 |  42.5ms
+[07:25:57] [STT  ] frame  62 | encode   5.5ms | codes [761, 6, 447, 56, 752, 1028, 758, 1325]
+[07:25:57] [LLM  ] frame  62 | step   2.0ms | tokens [3, 948, 243]...
+[07:25:57] [TTS  ] frame  62 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  62 |  42.5ms
+[07:25:57] [STT  ] frame  63 | encode   5.5ms | codes [1690, 1926, 1417, 1613, 1086, 1734, 867, 1338]
+[07:25:57] [LLM  ] frame  63 | step   1.9ms | tokens [3, 2029, 243]...
+[07:25:57] [TTS  ] frame  63 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  63 |  42.5ms
+[07:25:57] [STT  ] frame  64 | encode   5.5ms | codes [1841, 1767, 537, 804, 389, 1870, 549, 955]
+[07:25:57] [LLM  ] frame  64 | step   1.9ms | tokens [3, 2029, 243]...
+[07:25:57] [TTS  ] frame  64 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:57] [TOTAL] frame  64 |  42.3ms
+[07:25:57] [STT  ] frame  65 | encode   5.4ms | codes [860, 549, 374, 1276, 1168, 1572, 1512, 1422]
+[07:25:58] [LLM  ] frame  65 | step   1.9ms | tokens [0, 1833, 363]...
+[07:25:58] [TTS  ] frame  65 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  65 |  42.3ms
+[07:25:58] [STT  ] frame  66 | encode   5.4ms | codes [1572, 2025, 834, 390, 610, 1335, 422, 1204]
+[07:25:58] [LLM  ] frame  66 | step   1.9ms | tokens [1416, 1890, 1296]...
+[07:25:58] [TEXT ] frame  66 | ' India'
+[07:25:58] [TTS  ] frame  66 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  66 |  42.4ms
+[07:25:58] [STT  ] frame  67 | encode   5.4ms | codes [832, 2025, 783, 426, 340, 1335, 1512, 1744]
+[07:25:58] [LLM  ] frame  67 | step   2.0ms | tokens [275, 1890, 970]...
+[07:25:58] [TEXT ] frame  67 | ' is'
+[07:25:58] [TTS  ] frame  67 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  67 |  42.4ms
+[07:25:58] [STT  ] frame  68 | encode   5.5ms | codes [262, 2025, 265, 1712, 823, 1572, 2041, 1180]
+[07:25:58] [LLM  ] frame  68 | step   1.9ms | tokens [3, 1513, 700]...
+[07:25:58] [TTS  ] frame  68 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  68 |  42.5ms
+[07:25:58] [STT  ] frame  69 | encode   5.5ms | codes [240, 1247, 707, 426, 592, 1516, 712, 195]
+[07:25:58] [LLM  ] frame  69 | step   1.9ms | tokens [0, 1989, 755]...
+[07:25:58] [TTS  ] frame  69 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  69 |  42.6ms
+[07:25:58] [STT  ] frame  70 | encode   5.4ms | codes [222, 490, 265, 1712, 73, 478, 1285, 754]
+[07:25:58] [LLM  ] frame  70 | step   2.0ms | tokens [272, 1676, 1116]...
+[07:25:58] [TEXT ] frame  70 | ' a'
+[07:25:58] [TTS  ] frame  70 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  70 |  42.6ms
+[07:25:58] [STT  ] frame  71 | encode   5.4ms | codes [84, 243, 1697, 546, 481, 1572, 825, 1648]
+[07:25:58] [LLM  ] frame  71 | step   2.0ms | tokens [3, 358, 312]...
+[07:25:58] [TTS  ] frame  71 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  71 |  42.4ms
+[07:25:58] [STT  ] frame  72 | encode   5.4ms | codes [752, 243, 1178, 546, 267, 1572, 1978, 1665]
+[07:25:58] [LLM  ] frame  72 | step   1.9ms | tokens [0, 460, 179]...
+[07:25:58] [TTS  ] frame  72 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  72 |  42.2ms
+[07:25:58] [STT  ] frame  73 | encode   5.5ms | codes [752, 243, 1178, 546, 267, 1030, 1978, 1665]
+[07:25:58] [LLM  ] frame  73 | step   1.9ms | tokens [1038, 1237, 147]...
+[07:25:58] [TEXT ] frame  73 | ' country'
+[07:25:58] [TTS  ] frame  73 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  73 |  42.4ms
+[07:25:58] [STT  ] frame  74 | encode   5.4ms | codes [948, 243, 1178, 546, 267, 1030, 1978, 1665]
+[07:25:58] [LLM  ] frame  74 | step   1.9ms | tokens [3, 510, 403]...
+[07:25:58] [TTS  ] frame  74 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  74 |  42.2ms
+[07:25:58] [STT  ] frame  75 | encode   5.4ms | codes [948, 243, 1178, 546, 267, 1030, 1978, 1665]
+[07:25:58] [LLM  ] frame  75 | step   1.9ms | tokens [0, 1697, 1575]...
+[07:25:58] [TTS  ] frame  75 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  75 |  42.3ms
+[07:25:58] [STT  ] frame  76 | encode   5.5ms | codes [948, 243, 1178, 546, 267, 1030, 1978, 2008]
+[07:25:58] [LLM  ] frame  76 | step   1.9ms | tokens [271, 635, 277]...
+[07:25:58] [TEXT ] frame  76 | ' in'
+[07:25:58] [TTS  ] frame  76 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  76 |  42.5ms
+[07:25:58] [STT  ] frame  77 | encode   5.4ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  77 | step   1.9ms | tokens [3, 443, 1065]...
+[07:25:58] [TTS  ] frame  77 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  77 |  42.5ms
+[07:25:58] [STT  ] frame  78 | encode   5.5ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  78 | step   1.9ms | tokens [0, 227, 1776]...
+[07:25:58] [TTS  ] frame  78 | decode   2.0ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  78 |  42.6ms
+[07:25:58] [STT  ] frame  79 | encode   5.4ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  79 | step   1.9ms | tokens [850, 761, 277]...
+[07:25:58] [TEXT ] frame  79 | ' South'
+[07:25:58] [TTS  ] frame  79 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  79 |  42.5ms
+[07:25:58] [STT  ] frame  80 | encode   5.4ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  80 | step   2.0ms | tokens [0, 113, 1518]...
+[07:25:58] [TTS  ] frame  80 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  80 |  42.3ms
+[07:25:58] [STT  ] frame  81 | encode   5.4ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  81 | step   1.9ms | tokens [3483, 1135, 672]...
+[07:25:58] [TEXT ] frame  81 | ' Asia'
+[07:25:58] [TTS  ] frame  81 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  81 |  42.4ms
+[07:25:58] [STT  ] frame  82 | encode   5.4ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  82 | step   2.0ms | tokens [283, 1506, 1534]...
+[07:25:58] [TEXT ] frame  82 | ' that'
+[07:25:58] [TTS  ] frame  82 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  82 |  42.3ms
+[07:25:58] [STT  ] frame  83 | encode   5.4ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  83 | step   1.9ms | tokens [3, 145, 582]...
+[07:25:58] [TTS  ] frame  83 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  83 |  42.4ms
+[07:25:58] [STT  ] frame  84 | encode   5.5ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  84 | step   2.0ms | tokens [3, 821, 1389]...
+[07:25:58] [TTS  ] frame  84 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  84 |  42.4ms
+[07:25:58] [STT  ] frame  85 | encode   5.5ms | codes [948, 243, 1178, 1348, 1335, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  85 | step   1.9ms | tokens [0, 1781, 1869]...
+[07:25:58] [TTS  ] frame  85 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  85 |  42.5ms
+[07:25:58] [STT  ] frame  86 | encode   5.5ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  86 | step  12.1ms | tokens [275, 1516, 1311]...
+[07:25:58] [TEXT ] frame  86 | ' is'
+[07:25:58] [TTS  ] frame  86 | decode   2.3ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  86 |  42.9ms
+[07:25:58] [STT  ] frame  87 | encode   5.7ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  87 | step   3.4ms | tokens [0, 594, 1809]...
+[07:25:58] [TTS  ] frame  87 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  87 |  42.7ms
+[07:25:58] [STT  ] frame  88 | encode   5.4ms | codes [948, 243, 1178, 290, 1736, 1572, 666, 1744]
+[07:25:58] [LLM  ] frame  88 | step   1.9ms | tokens [598, 1840, 1298]...
+[07:25:58] [TEXT ] frame  88 | ' known'
+[07:25:58] [TTS  ] frame  88 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:58] [TOTAL] frame  88 |  42.3ms
+[07:25:59] [STT  ] frame  89 | encode   5.5ms | codes [948, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  89 | step   1.9ms | tokens [3, 1062, 936]...
+[07:25:59] [TTS  ] frame  89 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  89 |  42.3ms
+[07:25:59] [STT  ] frame  90 | encode   5.4ms | codes [948, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  90 | step   2.0ms | tokens [0, 1051, 629]...
+[07:25:59] [TTS  ] frame  90 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  90 |  42.3ms
+[07:25:59] [STT  ] frame  91 | encode   5.4ms | codes [948, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  91 | step   1.9ms | tokens [282, 1051, 839]...
+[07:25:59] [TEXT ] frame  91 | ' for'
+[07:25:59] [TTS  ] frame  91 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  91 |  42.4ms
+[07:25:59] [STT  ] frame  92 | encode   5.5ms | codes [948, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  92 | step   1.9ms | tokens [0, 1454, 1523]...
+[07:25:59] [TTS  ] frame  92 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  92 |  42.5ms
+[07:25:59] [STT  ] frame  93 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  93 | step   1.9ms | tokens [383, 888, 196]...
+[07:25:59] [TEXT ] frame  93 | ' its'
+[07:25:59] [TTS  ] frame  93 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  93 |  42.6ms
+[07:25:59] [STT  ] frame  94 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  94 | step   1.9ms | tokens [0, 1606, 517]...
+[07:25:59] [TTS  ] frame  94 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  94 |  42.5ms
+[07:25:59] [STT  ] frame  95 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  95 | step   1.9ms | tokens [5151, 837, 1323]...
+[07:25:59] [TEXT ] frame  95 | ' diverse'
+[07:25:59] [TTS  ] frame  95 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  95 |  42.5ms
+[07:25:59] [STT  ] frame  96 | encode   5.4ms | codes [2029, 243, 1178, 290, 1736, 1572, 976, 1648]
+[07:25:59] [LLM  ] frame  96 | step   1.9ms | tokens [3, 1549, 196]...
+[07:25:59] [TTS  ] frame  96 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  96 |  42.3ms
+[07:25:59] [STT  ] frame  97 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  97 | step   2.0ms | tokens [0, 2043, 107]...
+[07:25:59] [TTS  ] frame  97 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  97 |  42.3ms
+[07:25:59] [STT  ] frame  98 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 666, 1744]
+[07:25:59] [LLM  ] frame  98 | step   1.9ms | tokens [1689, 1071, 1540]...
+[07:25:59] [TEXT ] frame  98 | ' culture'
+[07:25:59] [TTS  ] frame  98 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  98 |  42.4ms
+[07:25:59] [STT  ] frame  99 | encode   5.4ms | codes [2029, 243, 1178, 290, 1736, 1572, 976, 1648]
+[07:25:59] [LLM  ] frame  99 | step   1.9ms | tokens [261, 644, 367]...
+[07:25:59] [TEXT ] frame  99 | ','
+[07:25:59] [TTS  ] frame  99 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame  99 |  42.4ms
+[07:25:59] [STT  ] frame 100 | encode   5.4ms | codes [2029, 243, 1178, 290, 1736, 1572, 976, 1648]
+[07:25:59] [LLM  ] frame 100 | step   2.0ms | tokens [3, 1457, 341]...
+[07:25:59] [TTS  ] frame 100 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 100 |  42.5ms
+[07:25:59] [STT  ] frame 101 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 101 | step   1.9ms | tokens [3, 1295, 1114]...
+[07:25:59] [TTS  ] frame 101 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 101 |  42.5ms
+[07:25:59] [STT  ] frame 102 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 102 | step   2.0ms | tokens [3, 159, 587]...
+[07:25:59] [TTS  ] frame 102 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 102 |  42.5ms
+[07:25:59] [STT  ] frame 103 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 103 | step   2.0ms | tokens [3, 128, 672]...
+[07:25:59] [TTS  ] frame 103 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 103 |  42.7ms
+[07:25:59] [STT  ] frame 104 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 104 | step   1.9ms | tokens [0, 570, 875]...
+[07:25:59] [TTS  ] frame 104 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 104 |  42.4ms
+[07:25:59] [STT  ] frame 105 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 105 | step   1.9ms | tokens [3895, 2047, 1726]...
+[07:25:59] [TEXT ] frame 105 | ' rich'
+[07:25:59] [TTS  ] frame 105 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 105 |  42.4ms
+[07:25:59] [STT  ] frame 106 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 106 | step   1.9ms | tokens [3, 1538, 904]...
+[07:25:59] [TTS  ] frame 106 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 106 |  42.3ms
+[07:25:59] [STT  ] frame 107 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 107 | step   1.9ms | tokens [3, 227, 1776]...
+[07:25:59] [TTS  ] frame 107 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 107 |  42.4ms
+[07:25:59] [STT  ] frame 108 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 108 | step   1.9ms | tokens [0, 774, 1084]...
+[07:25:59] [TTS  ] frame 108 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 108 |  42.5ms
+[07:25:59] [STT  ] frame 109 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 109 | step   1.9ms | tokens [986, 1505, 2005]...
+[07:25:59] [TEXT ] frame 109 | ' history'
+[07:25:59] [TTS  ] frame 109 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 109 |  42.6ms
+[07:25:59] [STT  ] frame 110 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 110 | step   1.9ms | tokens [261, 665, 170]...
+[07:25:59] [TEXT ] frame 110 | ','
+[07:25:59] [TTS  ] frame 110 | decode   1.9ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 110 |  42.6ms
+[07:25:59] [STT  ] frame 111 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:25:59] [LLM  ] frame 111 | step   2.0ms | tokens [3, 572, 388]...
+[07:25:59] [TTS  ] frame 111 | decode   2.0ms | 80ms audio (1920 samples)
+[07:25:59] [TOTAL] frame 111 |  42.4ms
+[07:25:59] [STT  ] frame 112 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 112 | step   2.0ms | tokens [0, 320, 996]...
+[07:26:00] [TTS  ] frame 112 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 112 |  42.3ms
+[07:26:00] [STT  ] frame 113 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 113 | step   1.9ms | tokens [267, 320, 170]...
+[07:26:00] [TEXT ] frame 113 | ' and'
+[07:26:00] [TTS  ] frame 113 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 113 |  42.4ms
+[07:26:00] [STT  ] frame 114 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 114 | step   1.9ms | tokens [0, 1228, 156]...
+[07:26:00] [TTS  ] frame 114 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 114 |  42.3ms
+[07:26:00] [STT  ] frame 115 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 115 | step   1.9ms | tokens [1699, 912, 1908]...
+[07:26:00] [TEXT ] frame 115 | ' unique'
+[07:26:00] [TTS  ] frame 115 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 115 |  42.4ms
+[07:26:00] [STT  ] frame 116 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 116 | step   1.9ms | tokens [3, 1787, 141]...
+[07:26:00] [TTS  ] frame 116 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 116 |  42.5ms
+[07:26:00] [STT  ] frame 117 | encode   5.4ms | codes [2029, 243, 1178, 290, 1736, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 117 | step   1.9ms | tokens [0, 761, 112]...
+[07:26:00] [TTS  ] frame 117 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 117 |  42.5ms
+[07:26:00] [STT  ] frame 118 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 118 | step   2.0ms | tokens [3148, 113, 1577]...
+[07:26:00] [TEXT ] frame 118 | ' architecture'
+[07:26:00] [TTS  ] frame 118 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 118 |  42.6ms
+[07:26:00] [STT  ] frame 119 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 666, 1648]
+[07:26:00] [LLM  ] frame 119 | step   1.9ms | tokens [263, 1879, 260]...
+[07:26:00] [TEXT ] frame 119 | '.'
+[07:26:00] [TTS  ] frame 119 | decode   2.8ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 119 |  43.5ms
+[07:26:00] [STT  ] frame 120 | encode   5.8ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 120 | step   2.6ms | tokens [3, 557, 720]...
+[07:26:00] [TTS  ] frame 120 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 120 |  42.8ms
+[07:26:00] [STT  ] frame 121 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 121 | step   1.9ms | tokens [3, 0, 940]...
+[07:26:00] [TTS  ] frame 121 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 121 |  42.3ms
+[07:26:00] [STT  ] frame 122 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 122 | step   1.9ms | tokens [3, 245, 1312]...
+[07:26:00] [TTS  ] frame 122 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 122 |  42.3ms
+[07:26:00] [STT  ] frame 123 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 123 | step   1.9ms | tokens [3, 734, 78]...
+[07:26:00] [TTS  ] frame 123 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 123 |  42.5ms
+[07:26:00] [STT  ] frame 124 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 124 | step   1.9ms | tokens [3, 513, 425]...
+[07:26:00] [TTS  ] frame 124 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 124 |  42.5ms
+[07:26:00] [STT  ] frame 125 | encode   5.4ms | codes [2029, 1211, 1697, 546, 481, 1030, 825, 1648]
+[07:26:00] [LLM  ] frame 125 | step   1.9ms | tokens [3, 468, 1269]...
+[07:26:00] [TTS  ] frame 125 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 125 |  42.5ms
+[07:26:00] [STT  ] frame 126 | encode   5.5ms | codes [2029, 243, 1178, 290, 1736, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 126 | step   1.9ms | tokens [3, 1389, 726]...
+[07:26:00] [TTS  ] frame 126 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 126 |  42.5ms
+[07:26:00] [STT  ] frame 127 | encode   5.5ms | codes [2029, 1211, 1697, 546, 481, 1030, 825, 1648]
+[07:26:00] [LLM  ] frame 127 | step   2.0ms | tokens [3, 1580, 1272]...
+[07:26:00] [TTS  ] frame 127 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 127 |  42.3ms
+[07:26:00] [STT  ] frame 128 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 128 | step   1.9ms | tokens [3, 1580, 1168]...
+[07:26:00] [TTS  ] frame 128 | decode   2.0ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 128 |  42.3ms
+[07:26:00] [STT  ] frame 129 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 129 | step   1.9ms | tokens [3, 85, 754]...
+[07:26:00] [TTS  ] frame 129 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 129 |  42.3ms
+[07:26:00] [STT  ] frame 130 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 130 | step   1.9ms | tokens [3, 442, 1987]...
+[07:26:00] [TTS  ] frame 130 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 130 |  42.3ms
+[07:26:00] [STT  ] frame 131 | encode   5.4ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 131 | step   1.9ms | tokens [3, 1677, 617]...
+[07:26:00] [TTS  ] frame 131 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 131 |  42.4ms
+[07:26:00] [STT  ] frame 132 | encode   5.5ms | codes [2029, 243, 1178, 1348, 1335, 1030, 976, 1648]
+[07:26:00] [LLM  ] frame 132 | step   2.0ms | tokens [3, 502, 477]...
+[07:26:00] [TTS  ] frame 132 | decode   1.9ms | 80ms audio (1920 samples)
+[07:26:00] [TOTAL] frame 132 |  42.5ms
+[07:26:00] [OUT  ] saved output.wav | 10.64s of audio
+
+============================================================
+  Input:      /workspace/PTT-20260412-WA0014.wav (2.65s)
+  Output:     output.wav (10.64s)
+  Frames:     133
+  Pipeline:   14011ms total
+  STT  avg:   41.3ms/frame
+  LLM  avg:   4.4ms/frame
+  TTS  avg:   5.9ms/frame
+  Text:       Good day, how is it going? India is a country in South Asia that is known for its diverse culture, rich history, and unique architecture.
+============================================================
