@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+/workspace/venv
+
+# Logs & local outputs
+logs/
+*.log
+output.wav
+output.json
+
+
+# Model weights / caches
+*.pt
+*.pth
+*.safetensors
+*.bin
+.cache/
+hf_cache/
+
+# SSL / secrets
+*.pem
+*.key
+.env
+.env.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
