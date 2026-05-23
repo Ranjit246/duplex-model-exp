@@ -21,6 +21,7 @@ set -euo pipefail
 #   LOGGING_STEPS
 #   SAVE_STEPS
 #   USE_ORACLE
+#   LOG_FILE
 
 TRAIN_DATA_GLOB="${TRAIN_DATA_GLOB:-processed_data/spokenwoz_sample/train_text_oracle_a0b1_events-*.parquet}"
 MODEL_DIR="${MODEL_DIR:-init_models/moshiko-one_streams-bfloat16}"
@@ -36,14 +37,19 @@ NUM_WARMUP_STEPS="${NUM_WARMUP_STEPS:-100}"
 LOGGING_STEPS="${LOGGING_STEPS:-10}"
 SAVE_STEPS="${SAVE_STEPS:-500}"
 USE_ORACLE="${USE_ORACLE:-1}"
+LOG_FILE="${LOG_FILE:-logs/training_$(date +%Y%m%d_%H%M%S).log}"
 
 MOSHI_SPEAKERS="${MOSHI_SPEAKERS:-B}"
+
+mkdir -p "$(dirname "$LOG_FILE")"
+echo "Logging to $LOG_FILE"
 
 EXTRA_ARGS=()
 if [ "${USE_ORACLE}" = "1" ]; then
     EXTRA_ARGS+=(--use_oracle)
 fi
 EXTRA_ARGS+=(--moshi_speakers "${MOSHI_SPEAKERS}")
+EXTRA_ARGS+=(--log_file "${LOG_FILE}")
 
 uv run accelerate launch \
     --num_processes "${NUM_PROCESSES}" \

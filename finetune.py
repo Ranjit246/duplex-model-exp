@@ -242,6 +242,12 @@ def setup_argparser(parser: argparse.ArgumentParser):
         help="The name of the project to which the training run belongs.",
     )
     parser.add_argument(
+        "--log_file",
+        type=str,
+        default=None,
+        help="Path to a file where training logs (steps, loss, LR) are written in addition to stdout.",
+    )
+    parser.add_argument(
         "--seed",
         type=int,
         default=None,
@@ -978,10 +984,15 @@ def main():
     args.num_processes = accelerator.num_processes
 
     # Make one log on every process with the configuration for debugging.
+    log_handlers: list[logging.Handler] = [logging.StreamHandler()]
+    if args.log_file and accelerator.is_main_process:
+        os.makedirs(os.path.dirname(args.log_file), exist_ok=True) if os.path.dirname(args.log_file) else None
+        log_handlers.append(logging.FileHandler(args.log_file, mode="a"))
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
         datefmt="%m/%d/%Y %H:%M:%S",
         level=logging.INFO,
+        handlers=log_handlers,
     )
     logger.info(accelerator.state, main_process_only=False)
 
