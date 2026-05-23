@@ -271,23 +271,42 @@ If you change the text tokenizer, also use `--init_text_embeddings` and keep the
 
 ## Training
 
-For a low-memory smoke test, run:
+> **Indic / Hinglish note:** Because B is the agent in this dataset (not A), `--moshi_speakers B` is set by default in both example scripts.
+
+### Single H100 80 GB (recommended)
+
+The Moshi LM optimizer states (~84 GB fp32) exceed the 80 GB GPU memory, so CPU optimizer offload is required. Use the included `zero2-bf16-optim-offload-h100.json` config, which keeps parameters on the GPU (faster forward pass) and offloads only optimizer states to CPU RAM (≥96 GB system RAM required).
+
+```bash
+TRAIN_DATA_GLOB="processed_data/my_dataset/train_text_oracle_a0b1_events-*.parquet" \
+DEEPSPEED_CONFIG="ds_configs/zero2-bf16-optim-offload-h100.json" \
+NUM_PROCESSES=1 \
+GRADIENT_ACCUMULATION_STEPS=8 \
+NUM_EPOCHS=3 \
+bash examples/finetune_accelerate.sh
+```
+
+**GPU memory:** ~32 GB used out of 80 GB. **ETA:** ~20h per epoch at `GRADIENT_ACCUMULATION_STEPS=8`. Increase to 16 to halve optimizer transfer overhead at the cost of a larger effective batch size.
+
+### Multi-GPU (2× or 4× A100/H100)
+
+```bash
+TRAIN_DATA_GLOB="processed_data/my_dataset/train_text_oracle_a0b1_events-*.parquet" \
+NUM_PROCESSES=4 \
+GRADIENT_ACCUMULATION_STEPS=2 \
+NUM_EPOCHS=3 \
+bash examples/finetune_accelerate.sh
+```
+
+The default `zero3-bfp16-warmlr-act_ckpt.json` config shards optimizer states across GPUs — no CPU offload needed when using 4× 80 GB GPUs.
+
+### Smoke test (single GPU, CPU offload)
 
 ```bash
 MAX_TRAIN_STEPS=3 bash examples/finetune_accelerate_cpu_offload.sh
 ```
 
-This smoke example keeps the default finetuning target but uses a more conservative DeepSpeed configuration with CPU offload. It is intentionally slower, but is a better fit for validating that the public workflow runs end to end on a single GPU.
-
-For a fuller training run, use:
-
-```bash
-bash examples/finetune_accelerate.sh
-```
-
-This reference script uses the default KAME finetuning target and a faster DeepSpeed configuration, but it may require substantial GPU memory. In practice, full finetuning may need multi-GPU execution depending on your hardware.
-
-> **Indic / Hinglish note:** Because B is the agent in this dataset (not A), pass `--moshi_speakers B` to the finetune script so the model trains on the correct channel.
+Validates the end-to-end training pipeline with minimal compute.
 
 The current training implementation requires DeepSpeed, so both examples use Accelerate with a DeepSpeed config. On managed clusters you may wrap these commands in your own scheduler submission flow such as `sbatch`, but scheduler-specific scripts are intentionally omitted from this public repository.
 
