@@ -37,10 +37,13 @@ LOGGING_STEPS="${LOGGING_STEPS:-10}"
 SAVE_STEPS="${SAVE_STEPS:-500}"
 USE_ORACLE="${USE_ORACLE:-1}"
 
+MOSHI_SPEAKERS="${MOSHI_SPEAKERS:-B}"
+
 EXTRA_ARGS=()
 if [ "${USE_ORACLE}" = "1" ]; then
     EXTRA_ARGS+=(--use_oracle)
 fi
+EXTRA_ARGS+=(--moshi_speakers "${MOSHI_SPEAKERS}")
 
 uv run accelerate launch \
     --num_processes "${NUM_PROCESSES}" \

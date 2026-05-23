@@ -76,7 +76,12 @@ def tokenize_audio(
 
 
 def worker(process_id: int, dialogue_names: list[str], args: argparse.Namespace):
-    device = torch.device("cuda", process_id)
+    if torch.cuda.is_available():
+        device = torch.device("cuda", process_id)
+    elif process_id == 0 and torch.backends.mps.is_available():
+        device = torch.device("mps")
+    else:
+        device = torch.device("cpu")
     mimi = loaders.get_mimi(
         filename=hf_hub_download(args.audio_tokenizer_repo, args.audio_tokenizer_name),
         device=device,
@@ -86,8 +91,12 @@ def worker(process_id: int, dialogue_names: list[str], args: argparse.Namespace)
     for dialogue_name in pbar:
         pbar.set_postfix_str(dialogue_name)
 
-        # load audio
-        wavs, sr = torchaudio.load(os.path.join(args.audio_dir, f"{dialogue_name}.wav"))
+        # load audio — files may be MP3 content with .wav extension
+        audio_path = os.path.join(args.audio_dir, f"{dialogue_name}.wav")
+        try:
+            wavs, sr = torchaudio.load(audio_path)
+        except RuntimeError:
+            wavs, sr = torchaudio.load(audio_path, format="mp3")
         assert wavs.shape[0] == 2, f"Expected stereo audio, got {wavs.shape[0]} channels."
         resampler = torchaudio.transforms.Resample(sr, mimi.sample_rate).to(device)
         wavs = resampler(wavs.to(device))
@@ -116,6 +125,19 @@ def main(args):
 
     if args.num_workers == 1:
         worker(0, dialogue_names, args)
+
+    elif not torch.cuda.is_available():
+        # Mac / CPU path: spawn N CPU workers (worker_id > 0 → cpu device)
+        print(f"No CUDA found — using {args.num_workers} CPU workers.")
+        dialogue_names_per_worker = np.array_split(dialogue_names, args.num_workers)
+        processes = []
+        for i, names in enumerate(dialogue_names_per_worker):
+            p = mp.Process(target=worker, args=(i + 1, list(names), args))
+            p.start()
+            processes.append(p)
+        for p in processes:
+            p.join()
+        _raise_if_any_worker_failed(processes)
 
     else:
         num_devices = torch.cuda.device_count()

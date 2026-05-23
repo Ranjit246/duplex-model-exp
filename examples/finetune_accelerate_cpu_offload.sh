@@ -40,10 +40,13 @@ SAVE_STEPS="${SAVE_STEPS:-2}"
 USE_ORACLE="${USE_ORACLE:-1}"
 export TRITON_CACHE_DIR="${TRITON_CACHE_DIR:-.cache/triton}"
 
+MOSHI_SPEAKERS="${MOSHI_SPEAKERS:-B}"
+
 EXTRA_ARGS=()
 if [ "${USE_ORACLE}" = "1" ]; then
     EXTRA_ARGS+=(--use_oracle)
 fi
+EXTRA_ARGS+=(--moshi_speakers "${MOSHI_SPEAKERS}")
 
 uv run accelerate launch \
     --num_processes "${NUM_PROCESSES}" \

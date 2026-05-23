@@ -1,4 +1,4 @@
-<h1 align="center">Kame Finetuning Workflow</h1>
+<h1 align="center">Kame Finetuning Workflow — Indic / Hinglish Adaptation</h1>
 
 <p align="center">
   <strong>KAME: TANDEM ARCHITECTURE FOR ENHANCING KNOWLEDGE IN REAL-TIME SPEECH-TO-SPEECH CONVERSATIONAL AI</strong>
@@ -15,10 +15,10 @@
 <p align="center">
   <a href="https://github.com/SakanaAI/kame">KAME</a> ·
   <a href="https://arxiv.org/abs/2510.02327">Paper</a> ·
-  Blog post: coming soon
+  <a href="https://pub.sakana.ai/kame/">Blog post</a>
 </p>
 
-Kame is an oracle-enabled extension of Moshi for full-duplex spoken dialogue. This repository provides the preprocessing, finetuning, checkpoint conversion, and inference workflow for Kame.
+Kame is an oracle-enabled extension of Moshi for full-duplex spoken dialogue. This repository provides the preprocessing, finetuning, checkpoint conversion, and inference workflow for Kame, adapted here for **Hinglish** (Hindi + English) Indian customer service calls.
 
 The public preprocessing entry point is a canonical dataset layout built from stereo audio and word-level transcripts:
 
@@ -28,6 +28,20 @@ The public preprocessing entry point is a canonical dataset layout built from st
 
 This repository also includes a small sample under `data/spokenwoz_sample/{audio,text,oracle_raw}` so you can run the preprocessing steps on a bundled example before using your own data.
 
+## Indic / Hinglish Adaptation Notes
+
+This fork adapts KAME for Hindi–English (Hinglish) customer service data with the following changes:
+
+**Speaker convention:** In this dataset **A = customer, B = agent/assistant** (the reverse of the upstream default where A is Moshi/bot). Pass `--moshi_speakers B` at finetune time so the model trains on the correct channel.
+
+**Audio format:** Source audio files are MP3 content stored with a `.wav` extension (32 kbps, 8 kHz stereo). `tokenize_audio` handles this transparently via a format-fallback in `torchaudio.load`.
+
+**Hinglish oracle prompts:** Oracle predictions are generated in proper Hinglish — English words in Roman script, Hindi/Urdu words in Devanagari script (e.g. `हाँ sir, आपका account check करते हैं`). The conversation context captured by ASR may contain Roman-transliterated Hindi; the prompt instructs the LLM to convert these to Devanagari in its output.
+
+**Local LLM inference:** Oracle generation uses a self-hosted vLLM server instead of OpenAI. Set `--base_url` and `--model` accordingly. For Qwen3-family models with built-in chain-of-thought, omit `--disable_thinking` to keep reasoning enabled (recommended for quality). Ensure `max_model_len` on the vLLM server is at least 32000 when running 32+ parallel workers.
+
+---
+
 ## Installation
 
 Python 3.12+ is required.
@@ -35,7 +49,8 @@ Python 3.12+ is required.
 Install the project dependencies:
 
 ```bash
-uv sync --python 3.12
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env && uv sync --python 3.12
 ```
 
 This repository is intended to be used as a `uv`-managed finetuning workflow
@@ -79,13 +94,13 @@ If oracle predictions are already present, `oracle_raw/*.json` should follow thi
   {
     "timestamp_ms": 1500,
     "conversation_context": "A: hello there",
-    "prediction": "hi how can I help you today",
+    "prediction": "हाँ sir, आपकी कैसे help करूँ",
     "total_word_count": 2,
     "trigger_word": "there",
     "recent_words": "hello there",
     "current_spoken_ratio": 0.75,
     "channel": 1,
-    "hint": "hi how can I help you today"
+    "hint": "हाँ sir, आपकी कैसे help करूँ"
   }
 ]
 ```
@@ -96,21 +111,76 @@ The `hint` field is intentionally empty when `current_spoken_ratio <= 0.5`.
 
 ### 1. Optional: Generate `oracle_raw` From Canonical Text Transcripts
 
-If your dataset does not already include oracle predictions, generate them directly from `text/*.json`:
+If your dataset does not already include oracle predictions, generate them directly from `text/*.json`.
+
+**Using OpenAI or OpenRouter:**
 
 ```bash
-export OPENAI_API_KEY=...
+export OPENAI_API_KEY=...   # or OPENROUTER_API_KEY=...
 
 uv run --extra oracle -m tools.generate_oracle_from_text \
   --text_dir data/my_dataset/text \
-  --output_dir data/my_dataset/oracle_raw
+  --output_dir data/my_dataset/oracle_raw \
+  --target_channel 1 \
+  --B_channel 1 \
+  --time_interval 1.0 \
+  --workers 8 \
+  --resume \
+  --fallback_to_hint_on_error
 ```
 
-By default this command assumes the canonical mapping `A_channel=0` and `B_channel=1`.
+**Using a self-hosted vLLM server (e.g. Qwen3):**
+
+```bash
+uv run --extra oracle -m tools.generate_oracle_from_text \
+  --text_dir data/my_dataset/text \
+  --output_dir data/my_dataset/oracle_raw \
+  --base_url http://<vllm-host>:8001/v1 \
+  --model <model-name> \
+  --target_channel 1 \
+  --B_channel 1 \
+  --time_interval 1.0 \
+  --workers 32 \
+  --resume \
+  --fallback_to_hint_on_error
+```
+
+> **Note:** For Qwen3 models, omit `--disable_thinking` to keep chain-of-thought reasoning enabled. Pass `--disable_thinking` only if your vLLM deployment does not support it. Ensure the server is configured with `max_model_len >= 32000` when using 32+ workers to avoid KV cache exhaustion.
+
+The `--target_channel 1` and `--B_channel 1` flags tell the generator that channel 1 (right) is the agent whose responses are predicted. By default `A_channel=0` and `B_channel=1`.
+
+**Watchdog auto-restart** (`run_oracle.sh`) — if the vLLM server stalls, use the included watchdog script which monitors output file count and restarts the process automatically:
+
+```bash
+bash run_oracle.sh
+```
+
+Edit `ORACLE_DIR`, `TEXT_DIR`, `WORKERS`, and the `CMD` array inside the script to match your setup.
+
+**Quality check** — after generation, verify that no files are pure hint echoes (a sign the LLM server was unreachable and fallback mode triggered):
+
+```python
+import json
+from pathlib import Path
+
+bad = []
+for p in Path("data/my_dataset/oracle_raw").glob("*.json"):
+    data = json.loads(p.read_text())
+    with_hint = [r for r in data if r.get("hint")]
+    if not with_hint:
+        continue
+    matches = sum(1 for r in with_hint if r.get("prediction", "").strip() == r.get("hint", "").strip())
+    if matches / len(with_hint) > 0.8:
+        bad.append(p)
+
+print(f"{len(bad)} bad files")
+for p in bad:
+    p.unlink()
+```
 
 ### 2. Audio Tokenization
 
-Convert all wav files into discrete Mimi tokens:
+Convert all wav files into discrete Mimi tokens. Files that are MP3 content with a `.wav` extension are handled automatically.
 
 ```bash
 uv run -m tools.tokenize_audio \
@@ -120,17 +190,34 @@ uv run -m tools.tokenize_audio \
 
 This creates `data/my_dataset/tokenized_audio/*.npz`. Each npz file contains audio tokens for A and B.
 
+**On a GPU server** with limited VRAM (e.g. 6 GB), use a smaller chunk size to avoid OOM:
+
+```bash
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
+uv run -m tools.tokenize_audio \
+  --audio_dir data/my_dataset/audio \
+  --output_dir data/my_dataset/tokenized_audio \
+  --audio_chunk_size 10 \
+  --num_workers 1 \
+  --resume
+```
+
 ### 3. Text Tokenization
 
-Convert the canonical transcripts into frame-level text streams:
+Convert the canonical transcripts into frame-level text streams. Steps 2 and 3 are independent and can run in parallel.
 
 ```bash
 uv run -m tools.tokenize_text \
   --word_transcript_dir data/my_dataset/text \
-  --output_dir data/my_dataset/tokenized_text
+  --output_dir data/my_dataset/tokenized_text \
+  --allow_missing_speakers \
+  --allow_alignment_warnings
 ```
 
 This creates `data/my_dataset/tokenized_text/*.npz`. Each npz file contains text tokens for A and B.
+
+- `--allow_missing_speakers`: skip dialogues where one speaker is absent rather than crashing.
+- `--allow_alignment_warnings`: warn and continue when a few tokens extend slightly beyond the audio duration (common with ASR timestamps), rather than crashing.
 
 If you use a different tokenizer, also pass `--text_tokenizer_repo`, `--text_tokenizer_name`, and the matching padding IDs.
 
@@ -200,6 +287,8 @@ bash examples/finetune_accelerate.sh
 
 This reference script uses the default KAME finetuning target and a faster DeepSpeed configuration, but it may require substantial GPU memory. In practice, full finetuning may need multi-GPU execution depending on your hardware.
 
+> **Indic / Hinglish note:** Because B is the agent in this dataset (not A), pass `--moshi_speakers B` to the finetune script so the model trains on the correct channel.
+
 The current training implementation requires DeepSpeed, so both examples use Accelerate with a DeepSpeed config. On managed clusters you may wrap these commands in your own scheduler submission flow such as `sbatch`, but scheduler-specific scripts are intentionally omitted from this public repository.
 
 ## Convert and Clean Checkpoints for Inference
@@ -253,7 +342,7 @@ This repository is provided under the [Apache 2.0 License](LICENSE), following t
 ## Attribution
 
 `kame_finetune` is derived from the `moshi-finetune` codebase and adapted for
-the KAME training workflow. 
+the KAME training workflow.
 
 ## Citation
 
