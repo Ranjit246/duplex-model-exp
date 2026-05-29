@@ -1,0 +1,475 @@
+ranjit@dpo-infer-v1:/mnt/train/duplex-model-exp$ TRAIN_DATA_GLOB="/mnt/train/train_tex20:36:28 [698/698$
+ts-001-of-001.parquet" DEEPSPEED_CONFIG="/mnt/train/duplex-model-exp/ds_configs/zero2-bf16-optim-offload
+-h100.json" NUM_PROCESSES=1 GRADIENT_ACCUMULATION_STEPS=8 NUM_EPOCHS=3 bash examples/finetune_accelerate
+.sh                                                                                                     
+Logging to logs/training_20260523_203513.log                                                            
+The following values were not passed to `accelerate launch` and had defaults used instead:              
+        `--mixed_precision` was set to a value of `'no'`                                                
+        `--dynamo_backend` was set to a value of `'no'`                                                 
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`. 
+[2026-05-23 20:35:16,010] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cud
+a (auto detect)                                                                                         
+[2026-05-23 20:35:18,352] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cud
+a (auto detect)                                                                                         
+[2026-05-23 20:35:20,333] [INFO] [comm.py:652:init_distributed] cdb=None                                
+[2026-05-23 20:35:20,333] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed w
+ith backend nccl                                                                                        
+05/23/2026 20:35:20 - INFO - __main__ - Distributed environment: DistributedType.DEEPSPEED  Backend: ncc
+l                                                                                                       
+Num processes: 1                                                                                        
+Process index: 0                                                                                        
+Local process index: 0                                                                                  
+Device: cuda:0                                                                                          
+                                                                                                        
+Mixed precision type: bf16                                                                              
+ds_config: {'fp16': {'enabled': False}, 'bf16': {'enabled': True}, 'optimizer': {'type': 'AdamW', 'param
+s': {'lr': 'auto', 'weight_decay': 'auto', 'betas': [0.9, 0.95], 'eps': 1e-05}}, 'scheduler': {'type': '
+WarmupLR', 'params': {'warmup_min_lr': 'auto', 'warmup_max_lr': 'auto', 'warmup_num_steps': 'auto', 'war
+mup_type': 'linear', 'last_batch_iteration': -1}}, 'zero_optimization': {'stage': 2, 'offload_optimizer'
+: {'device': 'cpu', 'pin_memory': True}, 'overlap_comm': True, 'contiguous_gradients': True, 'reduce_buc
+ket_size': 500000000.0}, 'gradient_accumulation_steps': 'auto', 'gradient_clipping': 'auto', 'train_batc
+h_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'wall_clock_breakdown': False, 'activation_ch
+eckpointing': {'partition_activations': True}, 'steps_per_print': inf}                                  
+                                                                                                        
+05/23/2026 20:35:20 - INFO - __main__ - Loading Moshi model from init_models/moshiko-one_streams-bfloat1
+6                                                                                                       
+05/23/2026 20:36:28 - INFO - __main__ - emb.0.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.1.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.2.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.3.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.4.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.5.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.6.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.7.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.8.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.9.weight: True                                              
+05/23/2026 20:36:28 - INFO - __main__ - emb.10.weight: True                                             
+05/23/2026 20:36:28 - INFO - __main__ - emb.11.weight: True                                             
+05/23/2026 20:36:28 - INFO - __main__ - emb.12.weight: True                                             
+05/23/2026 20:36:28 - INFO - __main__ - emb.13.weight: True                                             
+05/23/2026 20:36:28 - INFO - __main__ - emb.14.weight: True                                             
+05/23/2026 20:36:28 - INFO - __main__ - emb.15.weight: True                                             
+05/23/2026 20:36:28 - INFO - __main__ - text_emb.weight: True                                           
+05/23/2026 20:36:28 - INFO - __main__ - oracle_emb.weight: True                                         
+05/23/2026 20:36:28 - INFO - __main__ - text_linear.weight: True                                        
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.0.self_attn.out_projs.0.weight: True         
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.0.self_attn.in_projs.0.weight: True          
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.0.norm1.alpha: True                          
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.0.norm2.alpha: True                          
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.0.gating.linear_in_weight: True              
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.0.gating.linear_out_weight: True             
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.1.self_attn.out_projs.0.weight: True        
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.1.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.1.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.1.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.1.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.1.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.2.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.2.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.2.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.2.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.2.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.2.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.3.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.3.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.3.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.3.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.3.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.3.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.4.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.4.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.4.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.4.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.4.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.4.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.5.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.5.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.5.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.5.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.5.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.5.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.6.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.6.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.6.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.6.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.6.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.6.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.7.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.7.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.7.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.7.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.7.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.7.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.8.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.8.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.8.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.8.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.8.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.8.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.9.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.9.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.9.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.10.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.10.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.10.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.11.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.11.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.11.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.11.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.11.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.11.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.12.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.12.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.12.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.12.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.12.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.12.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.13.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.13.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.13.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.13.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.13.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.13.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.14.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.14.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.14.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.14.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.14.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.14.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.15.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.15.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.15.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.15.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.15.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.15.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.16.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.16.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.16.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.16.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.16.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.16.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.17.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.17.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.17.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.17.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.17.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.17.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.18.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.18.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.18.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.18.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.18.gating.linear_in_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.18.gating.linear_out_weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.19.self_attn.out_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.19.self_attn.in_projs.0.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.19.norm1.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.19.norm2.alpha: True
+05/23/2026 20:36:28 - INFO - __main__ - transformer.layers.19.gating.linear_in_weight: True
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+05/23/2026 20:36:28 - INFO - __main__ - linears.7.weight: True
+05/23/2026 20:36:28 - INFO - __main__ - Loading train dataset from ['/mnt/train/train_text_oracle_a0b1_e
+vents-001-of-001.parquet'] 
+[2026-05-23 20:36:29,012] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed info: version=0.15.4, git-
+hash=unknown, git-branch=unknown
+[2026-05-23 20:36:29,012] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 1
+[2026-05-23 20:36:33,457] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: Fa
+lse
+ [WARNING]  DeepSpeed Op Builder: Installed CUDA version 12.9 does not match the version torch was compi
+led with 12.1.Detected `DS_SKIP_CUDA_CHECK=1`: Allowing this combination of CUDA, but it may result in u
+nexpected behavior.
+Using /home/ranjit/.cache/torch_extensions/py312_cu121 as PyTorch extensions root...
+Emitting ninja build file /home/ranjit/.cache/torch_extensions/py312_cu121/cpu_adam/build.ninja...
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MA
+X_JOBS=N)
+ninja: no work to do.
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.2713816165924072 seconds 
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Config: alpha=0.000030, betas=(0.900000, 0.950000), weight_decay=0.100000, adam_w=1
+[2026-05-23 20:36:36,847] [INFO] [logging.py:128:log_dist] [Rank 0] Using DeepSpeed Optimizer param name
+ adamw as basic optimizer
+[2026-05-23 20:36:36,847] [INFO] [logging.py:128:log_dist] [Rank 0] Removing param_group that has no 'pa
+rams' in the basic Optimizer
+[2026-05-23 20:36:36,861] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Basic Optimizer = DeepSpee
+dCPUAdam
+[2026-05-23 20:36:36,861] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for opt
+imizer=DeepSpeedCPUAdam type=<class 'deepspeed.ops.adam.cpu_adam.DeepSpeedCPUAdam'>
+[2026-05-23 20:36:36,861] [INFO] [logging.py:128:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2
+ optimizer
+[2026-05-23 20:36:36,861] [INFO] [stage_1_and_2.py:149:__init__] Reduce bucket size 500000000
+[2026-05-23 20:36:36,861] [INFO] [stage_1_and_2.py:150:__init__] Allgather bucket size 500000000
+[2026-05-23 20:36:36,861] [INFO] [stage_1_and_2.py:151:__init__] CPU Offload: True
+[2026-05-23 20:36:36,861] [INFO] [stage_1_and_2.py:152:__init__] Round robin gradient partitioning: Fals
+e
+[2026-05-23 20:37:13,224] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2026-05-23 20:37:13,225] [INFO] [utils.py:782:see_memory_usage] MA 14.81 GB         Max_MA 14.81 GB    
+     CA 14.81 GB         Max_CA 15 GB 
+[2026-05-23 20:37:13,225] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.83 GB, p
+ercent = 19.9%
+[2026-05-23 20:37:27,993] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2026-05-23 20:37:27,993] [INFO] [utils.py:782:see_memory_usage] MA 14.81 GB         Max_MA 14.81 GB    
+     CA 14.81 GB         Max_CA 15 GB 
+[2026-05-23 20:37:27,993] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 82.35 GB, p
+ercent = 35.8%
+[2026-05-23 20:37:27,994] [INFO] [stage_1_and_2.py:544:__init__] optimizer state initialized
+[2026-05-23 20:37:28,065] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2026-05-23 20:37:28,065] [INFO] [utils.py:782:see_memory_usage] MA 14.81 GB         Max_MA 14.81 GB    
+     CA 14.81 GB         Max_CA 15 GB 
+[2026-05-23 20:37:28,065] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 82.35 GB, p
+ercent = 35.8%
+[2026-05-23 20:37:28,072] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpee
+dZeroOptimizer
+[2026-05-23 20:37:28,072] [WARNING] [lr_schedules.py:683:get_lr] Attempting to get learning rate from sc
+heduler before it has started
+[2026-05-23 20:37:28,072] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed using configured LR schedu
+ler = WarmupLR
+[2026-05-23 20:37:28,072] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.
+runtime.lr_schedules.WarmupLR object at 0x7aec5473c710>
+[2026-05-23 20:37:28,072] [INFO] [logging.py:128:log_dist] [Rank 0] step=0, skipped=0, lr=[0, 0], mom=[[
+0.9, 0.95], [0.9, 0.95]]
+[2026-05-23 20:37:28,073] [INFO] [config.py:999:print] DeepSpeedEngine configuration:
+[2026-05-23 20:37:28,073] [INFO] [config.py:1003:print]   activation_checkpointing_config  {
+    "partition_activations": true, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2026-05-23 20:37:28,073] [INFO] [config.py:1003:print]   aio_config ................... {'block_size': 
+1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True, 'use_gds':
+ False}
+[2026-05-23 20:37:28,073] [INFO] [config.py:1003:print]   amp_enabled .................. False
+[2026-05-23 20:37:28,073] [INFO] [config.py:1003:print]   amp_params ................... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null,  
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5,  
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   bfloat16_enabled ............. True
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   bfloat16_immediate_grad_update  False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   checkpoint_parallel_write_pipeline  False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   checkpoint_tag_validation_enabled  True
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   checkpoint_tag_validation_fail  False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   comms_config ................. <deepspeed.comm
+.config.DeepSpeedCommsConfig object at 0x7aec54372cc0>
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   communication_data_type ...... None
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   compression_config ........... {'weight_quanti
+zation': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quan
+tize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forwar
+d': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'differ
+ent_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type
+': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'spar
+se_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'differe
+nt_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offse
+t': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': '
+topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'ena
+bled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'en
+abled': False}}
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   curriculum_enabled_legacy .... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   curriculum_params_legacy ..... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   data_efficiency_config ....... {'enabled': Fal
+se, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_
+learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'lay
+er_token_lr_schedule': {'enabled': False}}}}
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   data_efficiency_enabled ...... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   dataloader_drop_last ......... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   disable_allgather ............ False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   dump_state ................... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   dynamic_loss_scale_args ...... None
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_enabled ........... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_gas_boundary_resolution  1
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_layer_name ........ bert.encoder.la
+yer
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_layer_num ......... 0
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_max_iter .......... 100
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_stability ......... 1e-06
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_tol ............... 0.01
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   eigenvalue_verbose ........... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   elasticity_enabled ........... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   fp16_auto_cast ............... None
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   fp16_enabled ................. False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   fp16_master_weights_and_gradients  False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   global_rank .................. 0
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   grad_accum_dtype ............. None
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   gradient_accumulation_steps .. 8
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   gradient_clipping ............ 1.0
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   gradient_predivide_factor .... 1.0
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   graph_harvesting ............. False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   hybrid_engine ................ enabled=False m
+ax_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partit
+ion_size=8
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   initial_dynamic_scale ........ 1
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   load_universal_checkpoint .... False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   loss_scale ................... 1.0
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   memory_breakdown ............. False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   mics_hierarchial_params_gather  False
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   mics_shard_size .............. -1
+[2026-05-23 20:37:28,074] [INFO] [config.py:1003:print]   monitor_config ............... tensorboard=Ten
+sorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=Fal
+se, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experime
+nt_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='de
+epspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   optimizer_legacy_fusion ...... False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   optimizer_name ............... adamw
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   optimizer_params ............. {'lr': 3e-05, '
+weight_decay': 0.1, 'betas': [0.9, 0.95], 'eps': 1e-05}
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   pipeline ..................... {'stages': 'aut
+o', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': 
+True, 'grad_partitioned': True}
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   pld_enabled .................. False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   pld_params ................... False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   prescale_gradients ........... False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   scheduler_name ............... WarmupLR
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   scheduler_params ............. {'warmup_min_lr
+': 0, 'warmup_max_lr': [3e-05, 3e-05], 'warmup_num_steps': 100, 'warmup_type': 'linear', 'last_batch_ite
+ration': -1}
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   seq_parallel_communication_data_type  torch.fl
+oat32
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   sparse_attention ............. None
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   sparse_gradients_enabled ..... False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   steps_per_print .............. inf
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   timers_config ................ enabled=True sy
+nchronized=True
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   train_batch_size ............. 8
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   train_micro_batch_size_per_gpu  1
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   use_data_before_expert_parallel_  False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   use_node_local_storage ....... False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   wall_clock_breakdown ......... False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   weight_quantization_config ... None
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   world_size ................... 1
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   zero_allow_untested_optimizer  False
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   zero_config .................. stage=2 contigu
+ous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True
+ allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True
+ elastic_checkpoint=False offload_param=None offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(devic
+e='cpu', nvme_path=None, buffer_count=4, pin_memory=True, pipeline_read=False, pipeline_write=False, fas
+t_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=Non
+e cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_th
+reshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_we
+ights_on_model_save=False use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save
+=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_
+size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=F
+alse mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_load
+ing_checkpoint=False override_module_apply=True
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   zero_enabled ................. True
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   zero_force_ds_cpu_optimizer .. True
+[2026-05-23 20:37:28,075] [INFO] [config.py:1003:print]   zero_optimization_stage ...... 2
+[2026-05-23 20:37:28,075] [INFO] [config.py:989:print_user_config]   json = {
+    "fp16": {
+        "enabled": false
+    }, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "optimizer": {
+        "type": "AdamW", 
+        "params": {
+            "lr": 3e-05, 
+            "weight_decay": 0.1, 
+            "betas": [0.9, 0.95], 
+            "eps": 1e-05
+        }
+    }, 
+    "scheduler": {
+        "type": "WarmupLR", 
+        "params": {
+            "warmup_min_lr": 0, 
+            "warmup_max_lr": [3e-05, 3e-05], 
+            "warmup_num_steps": 100, 
+            "warmup_type": "linear", 
+            "last_batch_iteration": -1
+        }
+    }, 
+    "zero_optimization": { 
+        "stage": 2, 
+        "offload_optimizer": {
+            "device": "cpu", 
+            "pin_memory": true
+        }, 
+        "overlap_comm": true, 
+        "contiguous_gradients": true, 
+        "reduce_bucket_size": 5.000000e+08
+    }, 
+    "gradient_accumulation_steps": 8, 
+    "gradient_clipping": 1.0, 
+    "train_batch_size": 8,  
+    "train_micro_batch_size_per_gpu": 1, 
+    "wall_clock_breakdown": false, 
+    "activation_checkpointing": {
+        "partition_activations": true
+    }, 
+    "steps_per_print": inf 
+}
+05/23/2026 20:37:28 - INFO - __main__ - ***** Running training *****
+05/23/2026 20:37:28 - INFO - __main__ -   Num examples = 86671
+05/23/2026 20:37:28 - INFO - __main__ -   Num Epochs = 3
+05/23/2026 20:37:28 - INFO - __main__ -   Instantaneous batch size per device = 1
+05/23/2026 20:37:28 - INFO - __main__ -   Gradient Accumulation steps = 8
+05/23/2026 20:37:28 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+05/23/2026 20:37:28 - INFO - __main__ -   Total optimization steps = 32502
+  0%|                                                             | 10/32502 [01:59<91:27:42, 10.13s/it]05/23/2026 20:39:27 - INFO - __main__ - Epoch: 0, Steps: 10, LRs: {'tempformer': '2.700e-06', 'depformer': '2.700e-06'}, Loss: 14.97619 (text: 8.38136, audio: 6.59483)
+  0%|                                                             | 20/32502 [03:37<88:19:49,  9.79s/it]05/23/2026 20:41:05 - INFO - __main__ - Epoch: 0, Steps: 20, LRs: {'tempformer': '5.700e-06', 'depformer': '5.700e-06'}, Loss: 16.60476 (text: 10.08647, audio: 6.51829)
+  0%|                                                             | 30/32502 [05:15<88:14:01,  9.78s/it]05/23/2026 20:42:43 - INFO - __main__ - Epoch: 0, Steps: 30, LRs: {'tempformer': '8.700e-06', 'depformer': '8.700e-06'}, Loss: 5.78565 (text: 2.07543, audio: 3.71022)
+  0%|                                                             | 36/32502 [06:14<88:05:48,  9.77s/it

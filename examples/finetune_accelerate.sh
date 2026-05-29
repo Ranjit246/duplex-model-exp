@@ -44,6 +44,21 @@ MOSHI_SPEAKERS="${MOSHI_SPEAKERS:-B}"
 mkdir -p "$(dirname "$LOG_FILE")"
 echo "Logging to $LOG_FILE"
 
+# Single-process runs: skip the GCP gIB net plugin entirely. The VM's gIB shim
+# enforces specific NCCL_* env vars and silently aborts init when they don't
+# match. Stripping /usr/local/gib/lib64 from LD_LIBRARY_PATH makes NCCL not see
+# the plugin at all, so we can use the bundled NCCL with TCP sockets.
+if [ "${NUM_PROCESSES}" = "1" ]; then
+    export LD_LIBRARY_PATH="$(echo "${LD_LIBRARY_PATH:-}" | tr ':' '\n' | grep -v '/usr/local/gib' | paste -sd: -)"
+    unset NCCL_NET NCCL_TUNER_CONFIG_PATH
+    export NCCL_NET=Socket
+fi
+
+# System CUDA (12.9) differs from torch's build CUDA (12.1). DeepSpeed refuses
+# to JIT-compile the CPU-Adam extension across that mismatch by default; the
+# minor-version delta is benign, so skip the strict check.
+export DS_SKIP_CUDA_CHECK=1
+
 EXTRA_ARGS=()
 if [ "${USE_ORACLE}" = "1" ]; then
     EXTRA_ARGS+=(--use_oracle)

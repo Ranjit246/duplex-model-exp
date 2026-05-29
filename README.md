@@ -278,8 +278,8 @@ If you change the text tokenizer, also use `--init_text_embeddings` and keep the
 The Moshi LM optimizer states (~84 GB fp32) exceed the 80 GB GPU memory, so CPU optimizer offload is required. Use the included `zero2-bf16-optim-offload-h100.json` config, which keeps parameters on the GPU (faster forward pass) and offloads only optimizer states to CPU RAM (≥96 GB system RAM required).
 
 ```bash
-TRAIN_DATA_GLOB="processed_data/my_dataset/train_text_oracle_a0b1_events-*.parquet" \
-DEEPSPEED_CONFIG="ds_configs/zero2-bf16-optim-offload-h100.json" \
+TRAIN_DATA_GLOB="/mnt/train/train_text_oracle_a0b1_events-001-of-001.parquet" \
+DEEPSPEED_CONFIG="/mnt/train/duplex-model-exp/ds_configs/zero2-bf16-optim-offload-h100.json" \
 NUM_PROCESSES=1 \
 GRADIENT_ACCUMULATION_STEPS=8 \
 NUM_EPOCHS=3 \
@@ -309,6 +309,57 @@ MAX_TRAIN_STEPS=3 bash examples/finetune_accelerate_cpu_offload.sh
 Validates the end-to-end training pipeline with minimal compute.
 
 The current training implementation requires DeepSpeed, so both examples use Accelerate with a DeepSpeed config. On managed clusters you may wrap these commands in your own scheduler submission flow such as `sbatch`, but scheduler-specific scripts are intentionally omitted from this public repository.
+
+### Resuming from a checkpoint
+
+`finetune.py` supports resuming from any saved step via `--resume_from_checkpoint`:
+
+```bash
+uv run -m finetune ... --resume_from_checkpoint output/moshiko-finetuned/step_<N>
+```
+
+Requirements and behavior:
+
+- The checkpoint directory name must be `step_<N>` — the step number is parsed from the basename.
+- A `config.json` from the original run must sit next to the checkpoint (at `output/moshiko-finetuned/config.json`); prior args are restored from it. Only `output_dir`, `max_train_steps`, and `resume_from_checkpoint` may differ between the original and resume commands.
+- The wandb run id is preserved, so the resumed run continues in the same wandb timeline.
+- A directory is only fully resumable if it contains all of `latest`, `random_states_0.pkl`, `zero_to_fp32.py`, and a complete `pytorch_model/` subdir — a process killed mid-save will leave an incomplete `step_<N>/`, which `accelerator.load_state` will reject.
+
+## Checkpoint Upload Watcher (optional)
+
+`tools/watch_upload_checkpoints.py` (launched via `run_ckpt_watcher.sh`) is an optional background daemon that uploads completed DeepSpeed checkpoints to a Hugging Face model repo and frees local disk as it goes. Each `step_<N>/` becomes a same-named subfolder on the hub. The most recent uploaded step is always retained locally so a training resume can read it without re-downloading from the hub; older uploaded steps are deleted automatically once a newer one finishes uploading.
+
+Files larger than HF's 50 GB per-file LFS limit (notably the bf16 optimizer state, ~94 GB for the Moshi LM on a single H100) are streamed into `/tmp` as `<name>.part_00`, `.part_01`, ... at `CHUNK_BYTES` each, and uploaded one chunk at a time (each chunk is deleted locally as soon as its upload commits). A `reassemble_checkpoint.sh` script is uploaded alongside so downloaders can glue the parts back together.
+
+**Launch:**
+
+```bash
+HF_TOKEN=hf_xxx REPO_ID=<user>/<repo> \
+  nohup bash run_ckpt_watcher.sh > logs/ckpt_watcher.log 2>&1 &
+tail -f logs/ckpt_watcher.log
+```
+
+**Env knobs** (all optional, with defaults):
+
+| var | default | meaning |
+| --- | --- | --- |
+| `HF_TOKEN` | — | HF write token (required) |
+| `REPO_ID` | `Ranjit/moshiko-kame-hinglish-ft-exp` | target model repo |
+| `CKPT_ROOT` | `output/moshiko-finetuned` | local dir to watch |
+| `POLL_SECONDS` | `60` | scan interval |
+| `STABLE_SECONDS` | `300` | a step folder is uploaded once its on-disk size has been unchanged this long |
+| `CHUNK_BYTES` | `45 GiB` | max bytes per chunk for >50 GB files |
+| `CHUNK_TMP_ROOT` | `/tmp/ckpt_chunks` | where to stage chunks (must be on a filesystem with ≥ `CHUNK_BYTES` free) |
+
+**Downloading a chunked checkpoint:**
+
+```bash
+uv run huggingface-cli download <user>/<repo> \
+  --include "step_<N>/*" --local-dir output/moshiko-finetuned
+bash output/moshiko-finetuned/reassemble_checkpoint.sh output/moshiko-finetuned/step_<N>
+```
+
+After reassembly the directory is a normal `step_<N>/` and can be passed to `--resume_from_checkpoint`.
 
 ## Convert and Clean Checkpoints for Inference
 

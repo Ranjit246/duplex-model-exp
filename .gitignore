@@ -34,4 +34,4 @@ slurm-*.out
 slurm-*.err
 
 /outputs/
-/logs/
+output
