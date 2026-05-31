@@ -35,3 +35,5 @@ slurm-*.err
 
 /outputs/
 output
+
+train_text_oracle_a0b1_events-001-of-001.parquet

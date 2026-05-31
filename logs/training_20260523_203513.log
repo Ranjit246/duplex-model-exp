@@ -673,3 +673,1255 @@ ds_config: {'fp16': {'enabled': False}, 'bf16': {'enabled': True}, 'optimizer': 
 05/24/2026 02:15:36 - INFO - __main__ - Epoch: 0, Steps: 2000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.98698 (text: 1.30430, audio: 1.68268)
 05/24/2026 02:15:36 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_2000
 05/24/2026 02:15:36 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/30/2026 19:15:58 - INFO - __main__ - Distributed environment: DistributedType.DEEPSPEED  Backend: nccl
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda:0
+
+Mixed precision type: bf16
+ds_config: {'fp16': {'enabled': False}, 'bf16': {'enabled': True}, 'optimizer': {'type': 'AdamW', 'params': {'lr': 'auto', 'weight_decay': 'auto', 'betas': [0.9, 0.95], 'eps': 1e-05}}, 'scheduler': {'type': 'WarmupLR', 'params': {'warmup_min_lr': 'auto', 'warmup_max_lr': 'auto', 'warmup_num_steps': 'auto', 'warmup_type': 'linear', 'last_batch_iteration': -1}}, 'zero_optimization': {'stage': 2, 'offload_optimizer': {'device': 'cpu', 'pin_memory': True}, 'overlap_comm': True, 'contiguous_gradients': True, 'reduce_bucket_size': 500000000.0}, 'gradient_accumulation_steps': 'auto', 'gradient_clipping': 'auto', 'train_batch_size': 'auto', 'train_micro_batch_size_per_gpu': 'auto', 'wall_clock_breakdown': False, 'activation_checkpointing': {'partition_activations': True}, 'steps_per_print': inf}
+
+05/30/2026 19:15:58 - INFO - __main__ - Loading Moshi model from init_models/moshiko-one_streams-bfloat16
+05/30/2026 19:17:06 - INFO - __main__ - emb.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.8.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.9.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.10.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.11.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.12.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.13.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.14.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - emb.15.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - text_emb.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - oracle_emb.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - text_linear.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.0.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.0.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.0.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.0.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.0.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.0.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.1.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.1.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.1.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.1.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.1.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.1.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.2.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.2.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.2.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.2.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.2.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.2.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.3.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.3.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.3.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.3.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.3.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.3.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.4.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.4.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.4.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.4.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.4.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.4.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.5.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.5.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.5.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.5.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.5.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.5.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.6.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.6.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.6.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.6.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.6.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.6.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.7.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.7.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.7.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.7.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.7.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.7.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.8.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.8.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.8.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.8.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.8.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.8.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.9.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.9.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.9.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.9.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.9.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.9.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.10.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.10.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.10.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.10.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.10.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.10.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.11.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.11.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.11.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.11.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.11.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.11.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.12.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.12.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.12.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.12.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.12.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.12.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.13.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.13.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.13.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.13.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.13.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.13.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.14.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.14.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.14.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.14.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.14.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.14.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.15.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.15.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.15.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.15.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.15.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.15.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.16.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.16.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.16.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.16.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.16.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.16.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.17.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.17.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.17.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.17.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.17.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.17.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.18.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.18.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.18.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.18.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.18.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.18.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.19.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.19.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.19.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.19.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.19.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.19.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.20.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.20.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.20.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.20.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.20.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.20.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.21.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.21.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.21.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.21.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.21.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.21.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.22.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.22.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.22.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.22.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.22.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.22.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.23.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.23.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.23.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.23.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.23.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.23.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.24.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.24.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.24.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.24.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.24.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.24.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.25.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.25.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.25.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.25.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.25.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.25.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.26.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.26.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.26.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.26.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.26.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.26.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.27.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.27.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.27.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.27.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.27.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.27.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.28.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.28.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.28.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.28.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.28.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.28.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.29.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.29.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.29.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.29.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.29.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.29.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.30.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.30.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.30.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.30.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.30.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.30.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.31.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.31.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.31.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.31.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.31.gating.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - transformer.layers.31.gating.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - out_norm.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_in.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_emb.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_emb.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_emb.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_emb.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_emb.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_emb.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_emb.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer_text_emb.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.out_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.self_attn.in_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.0.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.0.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.1.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.1.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.2.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.2.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.3.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.3.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.4.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.4.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.5.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.5.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.6.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.6.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.7.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.0.gating.7.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.out_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.self_attn.in_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.0.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.0.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.1.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.1.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.2.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.2.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.3.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.3.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.4.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.4.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.5.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.5.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.6.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.6.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.7.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.1.gating.7.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.out_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.self_attn.in_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.0.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.0.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.1.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.1.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.2.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.2.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.3.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.3.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.4.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.4.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.5.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.5.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.6.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.6.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.7.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.2.gating.7.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.out_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.self_attn.in_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.0.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.0.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.1.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.1.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.2.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.2.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.3.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.3.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.4.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.4.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.5.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.5.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.6.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.6.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.7.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.3.gating.7.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.out_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.self_attn.in_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.0.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.0.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.1.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.1.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.2.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.2.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.3.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.3.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.4.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.4.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.5.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.5.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.6.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.6.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.7.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.4.gating.7.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.out_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.self_attn.in_projs.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.norm1.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.norm2.alpha: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.0.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.0.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.1.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.1.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.2.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.2.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.3.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.3.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.4.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.4.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.5.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.5.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.6.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.6.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.7.linear_in_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - depformer.layers.5.gating.7.linear_out_weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.0.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.1.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.2.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.3.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.4.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.5.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.6.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - linears.7.weight: True
+05/30/2026 19:17:06 - INFO - __main__ - Loading train dataset from ['/mnt/LLM-1-TRAIN-SFT-OUT/EXP/duplex-model-exp/train_text_oracle_a0b1_events-001-of-001.parquet']
+05/30/2026 19:19:43 - INFO - accelerate.accelerator - Loading states from output/moshiko-finetuned/step_1500
+05/30/2026 19:19:43 - INFO - accelerate.accelerator - Loading DeepSpeed Model and Optimizer
+05/30/2026 19:22:19 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer loaded from input dir output/moshiko-finetuned/step_1500/pytorch_model
+05/30/2026 19:22:19 - INFO - accelerate.checkpointing - All model weights loaded successfully
+05/30/2026 19:22:19 - INFO - accelerate.checkpointing - All optimizer states loaded successfully
+05/30/2026 19:22:19 - INFO - accelerate.checkpointing - All scheduler states loaded successfully
+05/30/2026 19:22:19 - INFO - accelerate.checkpointing - All dataloader sampler states loaded successfully
+05/30/2026 19:22:19 - INFO - accelerate.checkpointing - All random states loaded successfully
+05/30/2026 19:22:19 - INFO - accelerate.accelerator - Loading in 0 custom states
+05/30/2026 19:22:19 - INFO - __main__ - ***** Running training *****
+05/30/2026 19:22:19 - INFO - __main__ -   Num examples = 86671
+05/30/2026 19:22:19 - INFO - __main__ -   Num Epochs = 3
+05/30/2026 19:22:19 - INFO - __main__ -   Instantaneous batch size per device = 1
+05/30/2026 19:22:19 - INFO - __main__ -   Gradient Accumulation steps = 8
+05/30/2026 19:22:19 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+05/30/2026 19:22:19 - INFO - __main__ -   Total optimization steps = 32502
+05/30/2026 19:22:19 - INFO - __main__ -   Resume from step 1500
+05/30/2026 19:24:21 - INFO - __main__ - Epoch: 0, Steps: 1510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68917 (text: 1.11084, audio: 1.57833)
+05/30/2026 19:25:59 - INFO - __main__ - Epoch: 0, Steps: 1520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.10577 (text: 0.84861, audio: 1.25717)
+05/30/2026 19:27:38 - INFO - __main__ - Epoch: 0, Steps: 1530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.64184 (text: 2.32738, audio: 2.31447)
+05/30/2026 19:29:17 - INFO - __main__ - Epoch: 0, Steps: 1540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.23092 (text: 0.77736, audio: 1.45356)
+05/30/2026 19:30:56 - INFO - __main__ - Epoch: 0, Steps: 1550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.33400 (text: 0.76198, audio: 1.57202)
+05/30/2026 19:32:37 - INFO - __main__ - Epoch: 0, Steps: 1560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.25007 (text: 1.24455, audio: 1.00552)
+05/30/2026 19:34:20 - INFO - __main__ - Epoch: 0, Steps: 1570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.54489 (text: 0.50184, audio: 1.04304)
+05/30/2026 19:36:05 - INFO - __main__ - Epoch: 0, Steps: 1580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.15045 (text: 1.80566, audio: 0.34480)
+05/30/2026 19:37:48 - INFO - __main__ - Epoch: 0, Steps: 1590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.83745 (text: 1.42103, audio: 2.41643)
+05/30/2026 19:39:29 - INFO - __main__ - Epoch: 0, Steps: 1600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.93446 (text: 2.13569, audio: 2.79877)
+05/30/2026 19:41:08 - INFO - __main__ - Epoch: 0, Steps: 1610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.52771 (text: 0.74449, audio: 1.78322)
+05/30/2026 19:42:47 - INFO - __main__ - Epoch: 0, Steps: 1620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.71946 (text: 1.02695, audio: 1.69251)
+05/30/2026 19:44:26 - INFO - __main__ - Epoch: 0, Steps: 1630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.79101 (text: 1.49660, audio: 2.29441)
+05/30/2026 19:46:07 - INFO - __main__ - Epoch: 0, Steps: 1640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.93686 (text: 2.43853, audio: 1.49833)
+05/30/2026 19:47:52 - INFO - __main__ - Epoch: 0, Steps: 1650, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.09055 (text: 2.06911, audio: 2.02144)
+05/30/2026 19:49:36 - INFO - __main__ - Epoch: 0, Steps: 1660, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.52238 (text: 1.84448, audio: 1.67790)
+05/30/2026 19:51:22 - INFO - __main__ - Epoch: 0, Steps: 1670, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.58913 (text: 0.85311, audio: 1.73603)
+05/30/2026 19:53:04 - INFO - __main__ - Epoch: 0, Steps: 1680, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.23264 (text: 1.19003, audio: 2.04261)
+05/30/2026 19:54:42 - INFO - __main__ - Epoch: 0, Steps: 1690, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.65920 (text: 0.91132, audio: 1.74788)
+05/30/2026 19:56:22 - INFO - __main__ - Epoch: 0, Steps: 1700, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.77860 (text: 1.11988, audio: 1.65873)
+05/30/2026 19:58:00 - INFO - __main__ - Epoch: 0, Steps: 1710, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.16851 (text: 0.59449, audio: 1.57403)
+05/30/2026 19:59:41 - INFO - __main__ - Epoch: 0, Steps: 1720, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.59591 (text: 1.42828, audio: 2.16763)
+05/30/2026 20:01:25 - INFO - __main__ - Epoch: 0, Steps: 1730, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.10936 (text: 1.53722, audio: 1.57213)
+05/30/2026 20:03:09 - INFO - __main__ - Epoch: 0, Steps: 1740, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.96678 (text: 0.03577, audio: 1.93100)
+05/30/2026 20:04:52 - INFO - __main__ - Epoch: 0, Steps: 1750, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.49306 (text: 0.99591, audio: 1.49715)
+05/30/2026 20:06:33 - INFO - __main__ - Epoch: 0, Steps: 1760, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.76831 (text: 0.79099, audio: 0.97732)
+05/30/2026 20:08:13 - INFO - __main__ - Epoch: 0, Steps: 1770, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.58756 (text: 1.45792, audio: 2.12964)
+05/30/2026 20:09:51 - INFO - __main__ - Epoch: 0, Steps: 1780, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.41314 (text: 1.78647, audio: 2.62668)
+05/30/2026 20:11:30 - INFO - __main__ - Epoch: 0, Steps: 1790, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.53649 (text: 1.72141, audio: 1.81507)
+05/30/2026 20:13:10 - INFO - __main__ - Epoch: 0, Steps: 1800, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.19468 (text: 0.90354, audio: 2.29114)
+05/30/2026 20:14:55 - INFO - __main__ - Epoch: 0, Steps: 1810, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.60377 (text: 0.08123, audio: 1.52254)
+05/30/2026 20:16:38 - INFO - __main__ - Epoch: 0, Steps: 1820, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.90673 (text: 1.14402, audio: 1.76271)
+05/30/2026 20:18:21 - INFO - __main__ - Epoch: 0, Steps: 1830, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.64646 (text: 1.52582, audio: 2.12064)
+05/30/2026 20:20:03 - INFO - __main__ - Epoch: 0, Steps: 1840, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.83770 (text: 0.88465, audio: 1.95305)
+05/30/2026 20:21:42 - INFO - __main__ - Epoch: 0, Steps: 1850, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.35900 (text: 1.91361, audio: 2.44539)
+05/30/2026 20:23:21 - INFO - __main__ - Epoch: 0, Steps: 1860, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.90052 (text: 1.06579, audio: 1.83474)
+05/30/2026 20:25:00 - INFO - __main__ - Epoch: 0, Steps: 1870, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.47536 (text: 1.93741, audio: 1.53796)
+05/30/2026 20:26:39 - INFO - __main__ - Epoch: 0, Steps: 1880, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.22160 (text: 2.36013, audio: 2.86148)
+05/30/2026 20:28:24 - INFO - __main__ - Epoch: 0, Steps: 1890, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.97815 (text: 0.86476, audio: 2.11339)
+05/30/2026 20:30:08 - INFO - __main__ - Epoch: 0, Steps: 1900, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.86162 (text: 0.80944, audio: 1.05218)
+05/30/2026 20:31:51 - INFO - __main__ - Epoch: 0, Steps: 1910, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.15090 (text: 1.78248, audio: 2.36841)
+05/30/2026 20:33:32 - INFO - __main__ - Epoch: 0, Steps: 1920, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.87313 (text: 1.05275, audio: 1.82038)
+05/30/2026 20:35:12 - INFO - __main__ - Epoch: 0, Steps: 1930, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.48353 (text: 2.42303, audio: 2.06051)
+05/30/2026 20:36:51 - INFO - __main__ - Epoch: 0, Steps: 1940, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34297 (text: 1.23100, audio: 1.11197)
+05/30/2026 20:38:30 - INFO - __main__ - Epoch: 0, Steps: 1950, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.52275 (text: 1.02811, audio: 1.49464)
+05/30/2026 20:40:09 - INFO - __main__ - Epoch: 0, Steps: 1960, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.37150 (text: 1.08767, audio: 1.28383)
+05/30/2026 20:41:54 - INFO - __main__ - Epoch: 0, Steps: 1970, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.95368 (text: 1.50604, audio: 2.44764)
+05/30/2026 20:43:39 - INFO - __main__ - Epoch: 0, Steps: 1980, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.73439 (text: 1.24267, audio: 1.49172)
+05/30/2026 20:45:23 - INFO - __main__ - Epoch: 0, Steps: 1990, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.56232 (text: 1.91776, audio: 1.64456)
+05/30/2026 20:47:03 - INFO - __main__ - Epoch: 0, Steps: 2000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68350 (text: 0.95282, audio: 1.73068)
+05/30/2026 20:47:04 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_2000
+05/30/2026 20:47:04 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/30/2026 20:51:22 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_2000/pytorch_model
+05/30/2026 20:51:22 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_2000/sampler.bin
+05/30/2026 20:51:22 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_2000/random_states_0.pkl
+05/30/2026 20:53:14 - INFO - __main__ - Epoch: 0, Steps: 2010, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.01202 (text: 1.33462, audio: 1.67740)
+05/30/2026 20:54:57 - INFO - __main__ - Epoch: 0, Steps: 2020, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.61267 (text: 0.70573, audio: 1.90695)
+05/30/2026 20:56:41 - INFO - __main__ - Epoch: 0, Steps: 2030, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.27977 (text: 1.13071, audio: 2.14906)
+05/30/2026 20:58:25 - INFO - __main__ - Epoch: 0, Steps: 2040, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.93448 (text: 1.17309, audio: 1.76139)
+05/30/2026 21:00:07 - INFO - __main__ - Epoch: 0, Steps: 2050, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.93155 (text: 0.88929, audio: 1.04226)
+05/30/2026 21:01:48 - INFO - __main__ - Epoch: 0, Steps: 2060, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.14469 (text: 1.05722, audio: 1.08746)
+05/30/2026 21:03:28 - INFO - __main__ - Epoch: 0, Steps: 2070, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68032 (text: 0.93832, audio: 1.74200)
+05/30/2026 21:05:07 - INFO - __main__ - Epoch: 0, Steps: 2080, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.52289 (text: 1.69206, audio: 2.83084)
+05/30/2026 21:06:46 - INFO - __main__ - Epoch: 0, Steps: 2090, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.07714 (text: 0.51978, audio: 1.55736)
+05/30/2026 21:08:25 - INFO - __main__ - Epoch: 0, Steps: 2100, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.19090 (text: 0.88476, audio: 1.30614)
+05/30/2026 21:10:09 - INFO - __main__ - Epoch: 0, Steps: 2110, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.51285 (text: 2.70654, audio: 1.80631)
+05/30/2026 21:11:53 - INFO - __main__ - Epoch: 0, Steps: 2120, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.65309 (text: 2.13415, audio: 2.51894)
+05/30/2026 21:13:39 - INFO - __main__ - Epoch: 0, Steps: 2130, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.14042 (text: 0.70132, audio: 1.43910)
+05/30/2026 21:15:20 - INFO - __main__ - Epoch: 0, Steps: 2140, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.50362 (text: 1.41594, audio: 2.08769)
+05/30/2026 21:16:59 - INFO - __main__ - Epoch: 0, Steps: 2150, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.59413 (text: 0.36228, audio: 1.23185)
+05/30/2026 21:18:38 - INFO - __main__ - Epoch: 0, Steps: 2160, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.98627 (text: 1.07610, audio: 2.91017)
+05/30/2026 21:20:18 - INFO - __main__ - Epoch: 0, Steps: 2170, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.04788 (text: 1.14047, audio: 1.90742)
+05/30/2026 21:21:57 - INFO - __main__ - Epoch: 0, Steps: 2180, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.23738 (text: 0.78123, audio: 1.45615)
+05/30/2026 21:23:36 - INFO - __main__ - Epoch: 0, Steps: 2190, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34502 (text: 0.73771, audio: 1.60731)
+05/30/2026 21:25:16 - INFO - __main__ - Epoch: 0, Steps: 2200, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.15424 (text: 0.62163, audio: 0.53261)
+05/30/2026 21:26:55 - INFO - __main__ - Epoch: 0, Steps: 2210, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.22205 (text: 0.01443, audio: 0.20762)
+05/30/2026 21:28:36 - INFO - __main__ - Epoch: 0, Steps: 2220, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.64715 (text: 1.77545, audio: 1.87171)
+05/30/2026 21:30:15 - INFO - __main__ - Epoch: 0, Steps: 2230, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.86163 (text: 1.37203, audio: 1.48960)
+05/30/2026 21:31:54 - INFO - __main__ - Epoch: 0, Steps: 2240, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.05065 (text: 1.34306, audio: 0.70759)
+05/30/2026 21:33:34 - INFO - __main__ - Epoch: 0, Steps: 2250, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68721 (text: 1.26380, audio: 1.42341)
+05/30/2026 21:35:13 - INFO - __main__ - Epoch: 0, Steps: 2260, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.90513 (text: 0.59627, audio: 1.30885)
+05/30/2026 21:36:52 - INFO - __main__ - Epoch: 0, Steps: 2270, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.41492 (text: 1.04754, audio: 1.36738)
+05/30/2026 21:38:31 - INFO - __main__ - Epoch: 0, Steps: 2280, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.33251 (text: 0.32404, audio: 2.00846)
+05/30/2026 21:40:10 - INFO - __main__ - Epoch: 0, Steps: 2290, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.63885 (text: 0.87062, audio: 1.76823)
+05/30/2026 21:41:49 - INFO - __main__ - Epoch: 0, Steps: 2300, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.03486 (text: 2.93196, audio: 2.10290)
+05/30/2026 21:43:28 - INFO - __main__ - Epoch: 0, Steps: 2310, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.16792 (text: 0.73938, audio: 1.42853)
+05/30/2026 21:45:07 - INFO - __main__ - Epoch: 0, Steps: 2320, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.21616 (text: 1.50212, audio: 1.71403)
+05/30/2026 21:46:46 - INFO - __main__ - Epoch: 0, Steps: 2330, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.49361 (text: 0.58059, audio: 1.91302)
+05/30/2026 21:48:30 - INFO - __main__ - Epoch: 0, Steps: 2340, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.67100 (text: 1.27411, audio: 1.39689)
+05/30/2026 21:50:14 - INFO - __main__ - Epoch: 0, Steps: 2350, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.29066 (text: 1.23051, audio: 2.06015)
+05/30/2026 21:51:57 - INFO - __main__ - Epoch: 0, Steps: 2360, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.08853 (text: 0.55878, audio: 1.52975)
+05/30/2026 21:53:39 - INFO - __main__ - Epoch: 0, Steps: 2370, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.97276 (text: 1.04084, audio: 1.93191)
+05/30/2026 21:55:20 - INFO - __main__ - Epoch: 0, Steps: 2380, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.48089 (text: 1.29053, audio: 1.19037)
+05/30/2026 21:56:58 - INFO - __main__ - Epoch: 0, Steps: 2390, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.10371 (text: 0.72289, audio: 1.38082)
+05/30/2026 21:58:37 - INFO - __main__ - Epoch: 0, Steps: 2400, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.16824 (text: 1.19747, audio: 1.97077)
+05/30/2026 22:00:16 - INFO - __main__ - Epoch: 0, Steps: 2410, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.18562 (text: 0.68068, audio: 1.50495)
+05/30/2026 22:02:00 - INFO - __main__ - Epoch: 0, Steps: 2420, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.76344 (text: 0.37342, audio: 0.39002)
+05/30/2026 22:03:44 - INFO - __main__ - Epoch: 0, Steps: 2430, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.35323 (text: 0.82586, audio: 1.52737)
+05/30/2026 22:05:27 - INFO - __main__ - Epoch: 0, Steps: 2440, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.42264 (text: 1.02074, audio: 1.40190)
+05/30/2026 22:07:09 - INFO - __main__ - Epoch: 0, Steps: 2450, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.64372 (text: 1.39737, audio: 1.24635)
+05/30/2026 22:08:50 - INFO - __main__ - Epoch: 0, Steps: 2460, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.78179 (text: 0.88917, audio: 0.89262)
+05/30/2026 22:10:29 - INFO - __main__ - Epoch: 0, Steps: 2470, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47793 (text: 0.86586, audio: 1.61207)
+05/30/2026 22:12:08 - INFO - __main__ - Epoch: 0, Steps: 2480, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.82404 (text: 0.26593, audio: 0.55811)
+05/30/2026 22:13:47 - INFO - __main__ - Epoch: 0, Steps: 2490, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.31112 (text: 1.89800, audio: 2.41312)
+05/30/2026 22:15:30 - INFO - __main__ - Epoch: 0, Steps: 2500, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.80515 (text: 1.21227, audio: 1.59288)
+05/30/2026 22:15:30 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_2500
+05/30/2026 22:15:30 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/30/2026 22:21:01 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_2500/pytorch_model
+05/30/2026 22:21:01 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_2500/sampler.bin
+05/30/2026 22:21:01 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_2500/random_states_0.pkl
+05/30/2026 22:22:43 - INFO - __main__ - Epoch: 0, Steps: 2510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.65634 (text: 1.58432, audio: 2.07202)
+05/30/2026 22:24:22 - INFO - __main__ - Epoch: 0, Steps: 2520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.00675 (text: 1.46598, audio: 1.54077)
+05/30/2026 22:26:01 - INFO - __main__ - Epoch: 0, Steps: 2530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.17870 (text: 1.80798, audio: 2.37072)
+05/30/2026 22:27:40 - INFO - __main__ - Epoch: 0, Steps: 2540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.70138 (text: 1.05496, audio: 1.64641)
+05/30/2026 22:29:21 - INFO - __main__ - Epoch: 0, Steps: 2550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.71305 (text: 0.93661, audio: 1.77644)
+05/30/2026 22:31:05 - INFO - __main__ - Epoch: 0, Steps: 2560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.41001 (text: 0.50727, audio: 0.90274)
+05/30/2026 22:32:49 - INFO - __main__ - Epoch: 0, Steps: 2570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.20111 (text: 1.00669, audio: 1.19442)
+05/30/2026 22:34:31 - INFO - __main__ - Epoch: 0, Steps: 2580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.37102 (text: 1.63718, audio: 1.73384)
+05/30/2026 22:36:13 - INFO - __main__ - Epoch: 0, Steps: 2590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.83775 (text: 0.21535, audio: 1.62240)
+05/30/2026 22:37:53 - INFO - __main__ - Epoch: 0, Steps: 2600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.76711 (text: 0.76207, audio: 2.00504)
+05/30/2026 22:39:32 - INFO - __main__ - Epoch: 0, Steps: 2610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.30274 (text: 1.29089, audio: 2.01184)
+05/30/2026 22:41:11 - INFO - __main__ - Epoch: 0, Steps: 2620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.61446 (text: 3.05326, audio: 2.56119)
+05/30/2026 22:42:51 - INFO - __main__ - Epoch: 0, Steps: 2630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.80553 (text: 0.63698, audio: 2.16854)
+05/30/2026 22:44:35 - INFO - __main__ - Epoch: 0, Steps: 2640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 6.80294 (text: 4.36353, audio: 2.43941)
+05/30/2026 22:46:19 - INFO - __main__ - Epoch: 0, Steps: 2650, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.89669 (text: 0.55816, audio: 1.33853)
+05/30/2026 22:48:01 - INFO - __main__ - Epoch: 0, Steps: 2660, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.80861 (text: 2.42051, audio: 1.38811)
+05/30/2026 22:49:41 - INFO - __main__ - Epoch: 0, Steps: 2670, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.80518 (text: 0.85669, audio: 0.94848)
+05/30/2026 22:51:20 - INFO - __main__ - Epoch: 0, Steps: 2680, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.48392 (text: 0.82818, audio: 1.65574)
+05/30/2026 22:53:00 - INFO - __main__ - Epoch: 0, Steps: 2690, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.76930 (text: 0.66800, audio: 1.10130)
+05/30/2026 22:54:39 - INFO - __main__ - Epoch: 0, Steps: 2700, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.26428 (text: 1.58260, audio: 0.68168)
+05/30/2026 22:56:18 - INFO - __main__ - Epoch: 0, Steps: 2710, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.06026 (text: 1.10827, audio: 1.95199)
+05/30/2026 22:57:58 - INFO - __main__ - Epoch: 0, Steps: 2720, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.09104 (text: 0.43412, audio: 1.65692)
+05/30/2026 22:59:37 - INFO - __main__ - Epoch: 0, Steps: 2730, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.13919 (text: 1.59707, audio: 1.54212)
+05/30/2026 23:01:17 - INFO - __main__ - Epoch: 0, Steps: 2740, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.05655 (text: 1.15813, audio: 1.89842)
+05/30/2026 23:02:58 - INFO - __main__ - Epoch: 0, Steps: 2750, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.38637 (text: 3.44809, audio: 1.93828)
+05/30/2026 23:04:37 - INFO - __main__ - Epoch: 0, Steps: 2760, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.50069 (text: 1.17787, audio: 2.32282)
+05/30/2026 23:06:16 - INFO - __main__ - Epoch: 0, Steps: 2770, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.38200 (text: 1.03072, audio: 1.35128)
+05/30/2026 23:07:55 - INFO - __main__ - Epoch: 0, Steps: 2780, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.56136 (text: 0.83379, audio: 1.72757)
+05/30/2026 23:09:34 - INFO - __main__ - Epoch: 0, Steps: 2790, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.08447 (text: 1.86335, audio: 1.22112)
+05/30/2026 23:11:14 - INFO - __main__ - Epoch: 0, Steps: 2800, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.17724 (text: 0.83589, audio: 1.34135)
+05/30/2026 23:12:53 - INFO - __main__ - Epoch: 0, Steps: 2810, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.98836 (text: 0.12161, audio: 1.86675)
+05/30/2026 23:14:33 - INFO - __main__ - Epoch: 0, Steps: 2820, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.29377 (text: 0.84023, audio: 1.45354)
+05/30/2026 23:16:11 - INFO - __main__ - Epoch: 0, Steps: 2830, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.33342 (text: 1.94762, audio: 2.38580)
+05/30/2026 23:17:50 - INFO - __main__ - Epoch: 0, Steps: 2840, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.58377 (text: 1.94475, audio: 3.63902)
+05/30/2026 23:19:29 - INFO - __main__ - Epoch: 0, Steps: 2850, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.32989 (text: 0.00721, audio: 0.32268)
+05/30/2026 23:21:08 - INFO - __main__ - Epoch: 0, Steps: 2860, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34775 (text: 0.78136, audio: 1.56639)
+05/30/2026 23:22:53 - INFO - __main__ - Epoch: 0, Steps: 2870, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.69617 (text: 0.03370, audio: 0.66247)
+05/30/2026 23:24:37 - INFO - __main__ - Epoch: 0, Steps: 2880, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.00259 (text: 2.19034, audio: 1.81225)
+05/30/2026 23:26:20 - INFO - __main__ - Epoch: 0, Steps: 2890, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.15984 (text: 1.79407, audio: 2.36577)
+05/30/2026 23:28:01 - INFO - __main__ - Epoch: 0, Steps: 2900, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.54142 (text: 0.96392, audio: 1.57750)
+05/30/2026 23:29:41 - INFO - __main__ - Epoch: 0, Steps: 2910, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.64057 (text: 1.69992, audio: 1.94065)
+05/30/2026 23:31:20 - INFO - __main__ - Epoch: 0, Steps: 2920, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.33843 (text: 2.11478, audio: 2.22365)
+05/30/2026 23:32:59 - INFO - __main__ - Epoch: 0, Steps: 2930, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.75711 (text: 1.80341, audio: 0.95370)
+05/30/2026 23:34:38 - INFO - __main__ - Epoch: 0, Steps: 2940, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.94658 (text: 1.27306, audio: 1.67351)
+05/30/2026 23:36:22 - INFO - __main__ - Epoch: 0, Steps: 2950, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.79515 (text: 0.66283, audio: 1.13232)
+05/30/2026 23:38:06 - INFO - __main__ - Epoch: 0, Steps: 2960, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.94995 (text: 1.09536, audio: 0.85459)
+05/30/2026 23:39:50 - INFO - __main__ - Epoch: 0, Steps: 2970, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.59212 (text: 0.32211, audio: 1.27000)
+05/30/2026 23:41:31 - INFO - __main__ - Epoch: 0, Steps: 2980, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.51255 (text: 0.50432, audio: 1.00823)
+05/30/2026 23:43:11 - INFO - __main__ - Epoch: 0, Steps: 2990, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.04262 (text: 1.37850, audio: 1.66412)
+05/30/2026 23:44:50 - INFO - __main__ - Epoch: 0, Steps: 3000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.49851 (text: 1.27101, audio: 2.22750)
+05/30/2026 23:44:50 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_3000
+05/30/2026 23:44:50 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/30/2026 23:49:43 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_3000/pytorch_model
+05/30/2026 23:49:43 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_3000/sampler.bin
+05/30/2026 23:49:43 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_3000/random_states_0.pkl
+05/30/2026 23:51:47 - INFO - __main__ - Epoch: 0, Steps: 3010, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.46291 (text: 1.40575, audio: 2.05717)
+05/30/2026 23:53:31 - INFO - __main__ - Epoch: 0, Steps: 3020, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36056 (text: 1.00643, audio: 1.35414)
+05/30/2026 23:55:14 - INFO - __main__ - Epoch: 0, Steps: 3030, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.87236 (text: 0.66333, audio: 1.20902)
+05/30/2026 23:56:55 - INFO - __main__ - Epoch: 0, Steps: 3040, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.88601 (text: 0.61123, audio: 2.27478)
+05/30/2026 23:58:35 - INFO - __main__ - Epoch: 0, Steps: 3050, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.05621 (text: 0.69955, audio: 0.35666)
+05/31/2026 00:00:14 - INFO - __main__ - Epoch: 0, Steps: 3060, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.57221 (text: 0.46762, audio: 2.10459)
+05/31/2026 00:01:53 - INFO - __main__ - Epoch: 0, Steps: 3070, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.08515 (text: 1.38196, audio: 2.70319)
+05/31/2026 00:03:32 - INFO - __main__ - Epoch: 0, Steps: 3080, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.15239 (text: 0.12790, audio: 2.02449)
+05/31/2026 00:05:16 - INFO - __main__ - Epoch: 0, Steps: 3090, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.15912 (text: 0.79028, audio: 1.36884)
+05/31/2026 00:07:00 - INFO - __main__ - Epoch: 0, Steps: 3100, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.35538 (text: 0.65074, audio: 0.70464)
+05/31/2026 00:08:44 - INFO - __main__ - Epoch: 0, Steps: 3110, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.06107 (text: 0.82171, audio: 1.23936)
+05/31/2026 00:10:25 - INFO - __main__ - Epoch: 0, Steps: 3120, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.55033 (text: 0.93449, audio: 1.61583)
+05/31/2026 00:12:04 - INFO - __main__ - Epoch: 0, Steps: 3130, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.20703 (text: 1.27230, audio: 1.93473)
+05/31/2026 00:13:43 - INFO - __main__ - Epoch: 0, Steps: 3140, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.09430 (text: 0.06978, audio: 0.02451)
+05/31/2026 00:15:23 - INFO - __main__ - Epoch: 0, Steps: 3150, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34255 (text: 0.87260, audio: 1.46996)
+05/31/2026 00:17:02 - INFO - __main__ - Epoch: 0, Steps: 3160, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.30269 (text: 0.67628, audio: 0.62641)
+05/31/2026 00:18:41 - INFO - __main__ - Epoch: 0, Steps: 3170, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.31483 (text: 1.08415, audio: 2.23067)
+05/31/2026 00:20:21 - INFO - __main__ - Epoch: 0, Steps: 3180, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.02988 (text: 1.61151, audio: 1.41836)
+05/31/2026 00:22:00 - INFO - __main__ - Epoch: 0, Steps: 3190, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.48239 (text: 0.84740, audio: 1.63499)
+05/31/2026 00:23:41 - INFO - __main__ - Epoch: 0, Steps: 3200, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.03754 (text: 1.69339, audio: 2.34415)
+05/31/2026 00:25:21 - INFO - __main__ - Epoch: 0, Steps: 3210, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.48670 (text: 1.56733, audio: 1.91937)
+05/31/2026 00:27:00 - INFO - __main__ - Epoch: 0, Steps: 3220, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.31351 (text: 0.96153, audio: 1.35198)
+05/31/2026 00:28:39 - INFO - __main__ - Epoch: 0, Steps: 3230, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.42621 (text: 0.17262, audio: 0.25359)
+05/31/2026 00:30:18 - INFO - __main__ - Epoch: 0, Steps: 3240, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.33457 (text: 0.81274, audio: 1.52184)
+05/31/2026 00:31:58 - INFO - __main__ - Epoch: 0, Steps: 3250, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.69567 (text: 1.10573, audio: 1.58994)
+05/31/2026 00:33:37 - INFO - __main__ - Epoch: 0, Steps: 3260, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.67629 (text: 2.06655, audio: 2.60974)
+05/31/2026 00:35:16 - INFO - __main__ - Epoch: 0, Steps: 3270, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.20061 (text: 0.69836, audio: 1.50225)
+05/31/2026 00:36:55 - INFO - __main__ - Epoch: 0, Steps: 3280, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.18981 (text: 1.11537, audio: 2.07444)
+05/31/2026 00:38:34 - INFO - __main__ - Epoch: 0, Steps: 3290, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.21903 (text: 1.56426, audio: 1.65477)
+05/31/2026 00:40:13 - INFO - __main__ - Epoch: 0, Steps: 3300, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.04545 (text: 0.58455, audio: 1.46090)
+05/31/2026 00:41:52 - INFO - __main__ - Epoch: 0, Steps: 3310, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.31990 (text: 1.31548, audio: 1.00442)
+05/31/2026 00:43:31 - INFO - __main__ - Epoch: 0, Steps: 3320, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.64159 (text: 2.17533, audio: 1.46625)
+05/31/2026 00:45:16 - INFO - __main__ - Epoch: 0, Steps: 3330, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.67850 (text: 2.22631, audio: 1.45218)
+05/31/2026 00:47:00 - INFO - __main__ - Epoch: 0, Steps: 3340, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.24516 (text: 0.74154, audio: 1.50362)
+05/31/2026 00:48:43 - INFO - __main__ - Epoch: 0, Steps: 3350, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.35087 (text: 1.10485, audio: 1.24601)
+05/31/2026 00:50:24 - INFO - __main__ - Epoch: 0, Steps: 3360, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.74511 (text: 1.54623, audio: 2.19889)
+05/31/2026 00:52:04 - INFO - __main__ - Epoch: 0, Steps: 3370, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.77922 (text: 0.92117, audio: 1.85805)
+05/31/2026 00:53:43 - INFO - __main__ - Epoch: 0, Steps: 3380, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.39955 (text: 1.14394, audio: 2.25561)
+05/31/2026 00:55:22 - INFO - __main__ - Epoch: 0, Steps: 3390, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.30108 (text: 1.07196, audio: 1.22912)
+05/31/2026 00:57:01 - INFO - __main__ - Epoch: 0, Steps: 3400, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.04516 (text: 0.98467, audio: 1.06049)
+05/31/2026 00:58:45 - INFO - __main__ - Epoch: 0, Steps: 3410, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.21946 (text: 1.59160, audio: 1.62785)
+05/31/2026 01:00:29 - INFO - __main__ - Epoch: 0, Steps: 3420, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.52518 (text: 0.37586, audio: 0.14932)
+05/31/2026 01:02:11 - INFO - __main__ - Epoch: 0, Steps: 3430, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.55058 (text: 0.91144, audio: 1.63914)
+05/31/2026 01:03:53 - INFO - __main__ - Epoch: 0, Steps: 3440, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.43608 (text: 0.12108, audio: 0.31501)
+05/31/2026 01:05:33 - INFO - __main__ - Epoch: 0, Steps: 3450, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.16611 (text: 0.22530, audio: 0.94081)
+05/31/2026 01:07:12 - INFO - __main__ - Epoch: 0, Steps: 3460, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.33035 (text: 1.59437, audio: 1.73598)
+05/31/2026 01:08:51 - INFO - __main__ - Epoch: 0, Steps: 3470, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.11892 (text: 0.95569, audio: 1.16324)
+05/31/2026 01:10:30 - INFO - __main__ - Epoch: 0, Steps: 3480, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.88305 (text: 0.88954, audio: 0.99351)
+05/31/2026 01:12:14 - INFO - __main__ - Epoch: 0, Steps: 3490, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.57297 (text: 1.45414, audio: 2.11883)
+05/31/2026 01:13:58 - INFO - __main__ - Epoch: 0, Steps: 3500, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.41154 (text: 2.64984, audio: 1.76170)
+05/31/2026 01:13:58 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_3500
+05/31/2026 01:13:58 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 01:18:29 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_3500/pytorch_model
+05/31/2026 01:18:29 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_3500/sampler.bin
+05/31/2026 01:18:29 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_3500/random_states_0.pkl
+05/31/2026 01:20:15 - INFO - __main__ - Epoch: 0, Steps: 3510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.64920 (text: 0.81432, audio: 1.83488)
+05/31/2026 01:21:54 - INFO - __main__ - Epoch: 0, Steps: 3520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.13288 (text: 1.28791, audio: 1.84498)
+05/31/2026 01:23:33 - INFO - __main__ - Epoch: 0, Steps: 3530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.45219 (text: 1.07945, audio: 1.37274)
+05/31/2026 01:25:13 - INFO - __main__ - Epoch: 0, Steps: 3540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.20754 (text: 0.62930, audio: 0.57824)
+05/31/2026 01:26:57 - INFO - __main__ - Epoch: 0, Steps: 3550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.38058 (text: 1.96000, audio: 1.42058)
+05/31/2026 01:28:42 - INFO - __main__ - Epoch: 0, Steps: 3560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.08123 (text: 1.27933, audio: 1.80190)
+05/31/2026 01:30:27 - INFO - __main__ - Epoch: 0, Steps: 3570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.61038 (text: 0.61118, audio: 0.99920)
+05/31/2026 01:32:09 - INFO - __main__ - Epoch: 0, Steps: 3580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.19952 (text: 1.52572, audio: 0.67381)
+05/31/2026 01:33:49 - INFO - __main__ - Epoch: 0, Steps: 3590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.00297 (text: 1.75929, audio: 2.24368)
+05/31/2026 01:35:28 - INFO - __main__ - Epoch: 0, Steps: 3600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.39099 (text: 0.35262, audio: 2.03837)
+05/31/2026 01:37:08 - INFO - __main__ - Epoch: 0, Steps: 3610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.18919 (text: 1.50513, audio: 1.68406)
+05/31/2026 01:38:47 - INFO - __main__ - Epoch: 0, Steps: 3620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.29923 (text: 0.92348, audio: 1.37575)
+05/31/2026 01:40:31 - INFO - __main__ - Epoch: 0, Steps: 3630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.69934 (text: 1.63137, audio: 2.06798)
+05/31/2026 01:42:15 - INFO - __main__ - Epoch: 0, Steps: 3640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.70687 (text: 2.16473, audio: 2.54214)
+05/31/2026 01:44:01 - INFO - __main__ - Epoch: 0, Steps: 3650, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.62116 (text: 0.26117, audio: 0.35999)
+05/31/2026 01:45:41 - INFO - __main__ - Epoch: 0, Steps: 3660, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.59264 (text: 0.82524, audio: 0.76739)
+05/31/2026 01:47:20 - INFO - __main__ - Epoch: 0, Steps: 3670, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47210 (text: 0.58876, audio: 1.88334)
+05/31/2026 01:49:00 - INFO - __main__ - Epoch: 0, Steps: 3680, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.74767 (text: 0.32940, audio: 0.41827)
+05/31/2026 01:50:39 - INFO - __main__ - Epoch: 0, Steps: 3690, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.04276 (text: 2.02099, audio: 3.02177)
+05/31/2026 01:52:18 - INFO - __main__ - Epoch: 0, Steps: 3700, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.57763 (text: 1.66174, audio: 1.91588)
+05/31/2026 01:53:57 - INFO - __main__ - Epoch: 0, Steps: 3710, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.83529 (text: 1.58710, audio: 1.24819)
+05/31/2026 01:55:37 - INFO - __main__ - Epoch: 0, Steps: 3720, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.97290 (text: 1.10140, audio: 0.87150)
+05/31/2026 01:57:16 - INFO - __main__ - Epoch: 0, Steps: 3730, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.55408 (text: 1.03253, audio: 1.52154)
+05/31/2026 01:58:56 - INFO - __main__ - Epoch: 0, Steps: 3740, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.14354 (text: 0.67656, audio: 1.46698)
+05/31/2026 02:00:36 - INFO - __main__ - Epoch: 0, Steps: 3750, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.10922 (text: 0.21133, audio: 1.89789)
+05/31/2026 02:02:16 - INFO - __main__ - Epoch: 0, Steps: 3760, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.94537 (text: 1.17017, audio: 1.77520)
+05/31/2026 02:03:55 - INFO - __main__ - Epoch: 0, Steps: 3770, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.12645 (text: 1.00471, audio: 1.12174)
+05/31/2026 02:05:34 - INFO - __main__ - Epoch: 0, Steps: 3780, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.59110 (text: 0.59264, audio: 0.99846)
+05/31/2026 02:07:13 - INFO - __main__ - Epoch: 0, Steps: 3790, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.22534 (text: 0.42147, audio: 1.80387)
+05/31/2026 02:08:52 - INFO - __main__ - Epoch: 0, Steps: 3800, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.82214 (text: 0.99649, audio: 1.82564)
+05/31/2026 02:10:31 - INFO - __main__ - Epoch: 0, Steps: 3810, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.13289 (text: 1.14173, audio: 1.99116)
+05/31/2026 02:12:11 - INFO - __main__ - Epoch: 0, Steps: 3820, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.41947 (text: 1.94609, audio: 1.47338)
+05/31/2026 02:13:50 - INFO - __main__ - Epoch: 0, Steps: 3830, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36503 (text: 1.00098, audio: 1.36406)
+05/31/2026 02:15:28 - INFO - __main__ - Epoch: 0, Steps: 3840, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.20933 (text: 1.20250, audio: 2.00684)
+05/31/2026 02:17:07 - INFO - __main__ - Epoch: 0, Steps: 3850, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.80054 (text: 0.83318, audio: 1.96736)
+05/31/2026 02:18:46 - INFO - __main__ - Epoch: 0, Steps: 3860, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.47705 (text: 1.65927, audio: 1.81778)
+05/31/2026 02:20:29 - INFO - __main__ - Epoch: 0, Steps: 3870, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.83532 (text: 0.76799, audio: 2.06733)
+05/31/2026 02:22:14 - INFO - __main__ - Epoch: 0, Steps: 3880, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.98484 (text: 0.56869, audio: 1.41615)
+05/31/2026 02:24:00 - INFO - __main__ - Epoch: 0, Steps: 3890, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.24593 (text: 1.09799, audio: 1.14793)
+05/31/2026 02:25:42 - INFO - __main__ - Epoch: 0, Steps: 3900, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.90719 (text: 0.58113, audio: 1.32606)
+05/31/2026 02:27:22 - INFO - __main__ - Epoch: 0, Steps: 3910, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.21827 (text: 1.23823, audio: 1.98004)
+05/31/2026 02:29:01 - INFO - __main__ - Epoch: 0, Steps: 3920, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.86824 (text: 0.75501, audio: 2.11323)
+05/31/2026 02:30:40 - INFO - __main__ - Epoch: 0, Steps: 3930, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.81499 (text: 0.67160, audio: 1.14339)
+05/31/2026 02:32:19 - INFO - __main__ - Epoch: 0, Steps: 3940, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.81864 (text: 0.54421, audio: 0.27442)
+05/31/2026 02:34:02 - INFO - __main__ - Epoch: 0, Steps: 3950, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.17039 (text: 1.23082, audio: 0.93957)
+05/31/2026 02:35:46 - INFO - __main__ - Epoch: 0, Steps: 3960, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.77039 (text: 1.67165, audio: 2.09874)
+05/31/2026 02:37:30 - INFO - __main__ - Epoch: 0, Steps: 3970, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.25170 (text: 0.81206, audio: 0.43963)
+05/31/2026 02:39:12 - INFO - __main__ - Epoch: 0, Steps: 3980, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.11592 (text: 0.80162, audio: 1.31430)
+05/31/2026 02:40:53 - INFO - __main__ - Epoch: 0, Steps: 3990, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.88984 (text: 1.12796, audio: 1.76188)
+05/31/2026 02:42:31 - INFO - __main__ - Epoch: 0, Steps: 4000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.32296 (text: 0.68881, audio: 1.63415)
+05/31/2026 02:42:31 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_4000
+05/31/2026 02:42:31 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 02:47:09 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_4000/pytorch_model
+05/31/2026 02:47:09 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_4000/sampler.bin
+05/31/2026 02:47:09 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_4000/random_states_0.pkl
+05/31/2026 02:48:53 - INFO - __main__ - Epoch: 0, Steps: 4010, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.16253 (text: 0.87722, audio: 1.28532)
+05/31/2026 02:50:37 - INFO - __main__ - Epoch: 0, Steps: 4020, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.05681 (text: 0.60324, audio: 1.45357)
+05/31/2026 02:52:23 - INFO - __main__ - Epoch: 0, Steps: 4030, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.13612 (text: 1.07710, audio: 1.05903)
+05/31/2026 02:54:04 - INFO - __main__ - Epoch: 0, Steps: 4040, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.41781 (text: 2.31266, audio: 1.10515)
+05/31/2026 02:55:44 - INFO - __main__ - Epoch: 0, Steps: 4050, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.13536 (text: 0.58100, audio: 1.55436)
+05/31/2026 02:57:23 - INFO - __main__ - Epoch: 0, Steps: 4060, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.93613 (text: 0.57066, audio: 1.36546)
+05/31/2026 02:59:03 - INFO - __main__ - Epoch: 0, Steps: 4070, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.99080 (text: 0.91048, audio: 2.08032)
+05/31/2026 03:00:42 - INFO - __main__ - Epoch: 0, Steps: 4080, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68704 (text: 0.90471, audio: 1.78233)
+05/31/2026 03:02:23 - INFO - __main__ - Epoch: 0, Steps: 4090, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34643 (text: 0.95722, audio: 1.38921)
+05/31/2026 03:04:07 - INFO - __main__ - Epoch: 0, Steps: 4100, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.78446 (text: 1.74243, audio: 2.04203)
+05/31/2026 03:05:51 - INFO - __main__ - Epoch: 0, Steps: 4110, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.47520 (text: 1.82571, audio: 1.64949)
+05/31/2026 03:07:34 - INFO - __main__ - Epoch: 0, Steps: 4120, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.55286 (text: 0.06453, audio: 1.48833)
+05/31/2026 03:09:13 - INFO - __main__ - Epoch: 0, Steps: 4130, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.92808 (text: 0.65211, audio: 1.27598)
+05/31/2026 03:10:52 - INFO - __main__ - Epoch: 0, Steps: 4140, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.90990 (text: 1.25496, audio: 1.65493)
+05/31/2026 03:12:31 - INFO - __main__ - Epoch: 0, Steps: 4150, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.81339 (text: 0.98691, audio: 1.82648)
+05/31/2026 03:14:11 - INFO - __main__ - Epoch: 0, Steps: 4160, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.11369 (text: 1.64804, audio: 1.46565)
+05/31/2026 03:15:50 - INFO - __main__ - Epoch: 0, Steps: 4170, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.80381 (text: 0.58407, audio: 1.21973)
+05/31/2026 03:17:29 - INFO - __main__ - Epoch: 0, Steps: 4180, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.92019 (text: 0.92093, audio: 0.99926)
+05/31/2026 03:19:09 - INFO - __main__ - Epoch: 0, Steps: 4190, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.30583 (text: 0.85005, audio: 1.45578)
+05/31/2026 03:20:48 - INFO - __main__ - Epoch: 0, Steps: 4200, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.72773 (text: 1.74719, audio: 0.98054)
+05/31/2026 03:22:28 - INFO - __main__ - Epoch: 0, Steps: 4210, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.26948 (text: 1.92506, audio: 1.34442)
+05/31/2026 03:24:08 - INFO - __main__ - Epoch: 0, Steps: 4220, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.26221 (text: 0.54805, audio: 1.71416)
+05/31/2026 03:25:48 - INFO - __main__ - Epoch: 0, Steps: 4230, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.23611 (text: 0.77591, audio: 1.46020)
+05/31/2026 03:27:28 - INFO - __main__ - Epoch: 0, Steps: 4240, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.64217 (text: 1.82747, audio: 2.81470)
+05/31/2026 03:29:07 - INFO - __main__ - Epoch: 0, Steps: 4250, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.66760 (text: 0.07047, audio: 2.59713)
+05/31/2026 03:30:47 - INFO - __main__ - Epoch: 0, Steps: 4260, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.82073 (text: 1.65236, audio: 1.16837)
+05/31/2026 03:32:26 - INFO - __main__ - Epoch: 0, Steps: 4270, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.45597 (text: 1.84908, audio: 1.60689)
+05/31/2026 03:34:05 - INFO - __main__ - Epoch: 0, Steps: 4280, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.98573 (text: 0.77670, audio: 1.20903)
+05/31/2026 03:35:44 - INFO - __main__ - Epoch: 0, Steps: 4290, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.87323 (text: 0.70547, audio: 1.16776)
+05/31/2026 03:37:24 - INFO - __main__ - Epoch: 0, Steps: 4300, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.00549 (text: 1.22732, audio: 1.77817)
+05/31/2026 03:39:03 - INFO - __main__ - Epoch: 0, Steps: 4310, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.20098 (text: 1.59417, audio: 1.60681)
+05/31/2026 03:40:42 - INFO - __main__ - Epoch: 0, Steps: 4320, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.31433 (text: 0.86077, audio: 1.45356)
+05/31/2026 03:42:21 - INFO - __main__ - Epoch: 0, Steps: 4330, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.18546 (text: 0.99596, audio: 2.18950)
+05/31/2026 03:44:01 - INFO - __main__ - Epoch: 0, Steps: 4340, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.50563 (text: 1.73098, audio: 1.77465)
+05/31/2026 03:45:45 - INFO - __main__ - Epoch: 0, Steps: 4350, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.26902 (text: 2.05786, audio: 2.21116)
+05/31/2026 03:47:29 - INFO - __main__ - Epoch: 0, Steps: 4360, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.24234 (text: 1.59761, audio: 1.64473)
+05/31/2026 03:49:12 - INFO - __main__ - Epoch: 0, Steps: 4370, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.92768 (text: 1.40047, audio: 1.52721)
+05/31/2026 03:50:54 - INFO - __main__ - Epoch: 0, Steps: 4380, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.49126 (text: 1.52100, audio: 1.97026)
+05/31/2026 03:52:33 - INFO - __main__ - Epoch: 0, Steps: 4390, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.93381 (text: 1.27741, audio: 1.65639)
+05/31/2026 03:54:13 - INFO - __main__ - Epoch: 0, Steps: 4400, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34535 (text: 0.86056, audio: 1.48479)
+05/31/2026 03:55:52 - INFO - __main__ - Epoch: 0, Steps: 4410, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.18257 (text: 2.14012, audio: 1.04246)
+05/31/2026 03:57:31 - INFO - __main__ - Epoch: 0, Steps: 4420, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.87931 (text: 1.32101, audio: 1.55830)
+05/31/2026 03:59:16 - INFO - __main__ - Epoch: 0, Steps: 4430, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.23027 (text: 0.82418, audio: 1.40609)
+05/31/2026 04:01:00 - INFO - __main__ - Epoch: 0, Steps: 4440, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.56976 (text: 1.17235, audio: 1.39741)
+05/31/2026 04:02:43 - INFO - __main__ - Epoch: 0, Steps: 4450, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.02570 (text: 1.30907, audio: 1.71663)
+05/31/2026 04:04:25 - INFO - __main__ - Epoch: 0, Steps: 4460, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.37078 (text: 0.89723, audio: 1.47355)
+05/31/2026 04:06:05 - INFO - __main__ - Epoch: 0, Steps: 4470, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.31502 (text: 1.31088, audio: 2.00414)
+05/31/2026 04:07:44 - INFO - __main__ - Epoch: 0, Steps: 4480, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.38845 (text: 0.51118, audio: 0.87727)
+05/31/2026 04:09:23 - INFO - __main__ - Epoch: 0, Steps: 4490, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.56229 (text: 1.85378, audio: 1.70852)
+05/31/2026 04:11:02 - INFO - __main__ - Epoch: 0, Steps: 4500, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.37539 (text: 0.78623, audio: 1.58916)
+05/31/2026 04:11:02 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_4500
+05/31/2026 04:11:02 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 04:17:21 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_4500/pytorch_model
+05/31/2026 04:17:21 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_4500/sampler.bin
+05/31/2026 04:17:21 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_4500/random_states_0.pkl
+05/31/2026 04:19:19 - INFO - __main__ - Epoch: 0, Steps: 4510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.12912 (text: 0.66611, audio: 1.46301)
+05/31/2026 04:20:59 - INFO - __main__ - Epoch: 0, Steps: 4520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.89348 (text: 2.26932, audio: 1.62416)
+05/31/2026 04:22:38 - INFO - __main__ - Epoch: 0, Steps: 4530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.75047 (text: 1.70410, audio: 2.04637)
+05/31/2026 04:24:17 - INFO - __main__ - Epoch: 0, Steps: 4540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.99892 (text: 0.85230, audio: 1.14662)
+05/31/2026 04:25:57 - INFO - __main__ - Epoch: 0, Steps: 4550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.41956 (text: 1.08197, audio: 1.33759)
+05/31/2026 04:27:41 - INFO - __main__ - Epoch: 0, Steps: 4560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.82644 (text: 0.48042, audio: 1.34602)
+05/31/2026 04:29:25 - INFO - __main__ - Epoch: 0, Steps: 4570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.68633 (text: 2.14077, audio: 1.54555)
+05/31/2026 04:31:10 - INFO - __main__ - Epoch: 0, Steps: 4580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.22231 (text: 1.25219, audio: 1.97012)
+05/31/2026 04:32:51 - INFO - __main__ - Epoch: 0, Steps: 4590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.04129 (text: 0.89453, audio: 1.14676)
+05/31/2026 04:34:32 - INFO - __main__ - Epoch: 0, Steps: 4600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.18018 (text: 2.00041, audio: 2.17977)
+05/31/2026 04:36:12 - INFO - __main__ - Epoch: 0, Steps: 4610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.89783 (text: 0.81362, audio: 1.08421)
+05/31/2026 04:37:51 - INFO - __main__ - Epoch: 0, Steps: 4620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.65503 (text: 0.49673, audio: 1.15831)
+05/31/2026 04:39:32 - INFO - __main__ - Epoch: 0, Steps: 4630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.29676 (text: 1.57440, audio: 1.72236)
+05/31/2026 04:41:16 - INFO - __main__ - Epoch: 0, Steps: 4640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.18806 (text: 1.11741, audio: 1.07065)
+05/31/2026 04:42:59 - INFO - __main__ - Epoch: 0, Steps: 4650, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.26842 (text: 0.89085, audio: 1.37757)
+05/31/2026 04:44:42 - INFO - __main__ - Epoch: 0, Steps: 4660, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.41623 (text: 1.11004, audio: 1.30619)
+05/31/2026 04:46:21 - INFO - __main__ - Epoch: 0, Steps: 4670, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.98257 (text: 0.67749, audio: 1.30508)
+05/31/2026 04:48:01 - INFO - __main__ - Epoch: 0, Steps: 4680, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.46072 (text: 2.04977, audio: 2.41095)
+05/31/2026 04:49:40 - INFO - __main__ - Epoch: 0, Steps: 4690, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.09505 (text: 1.06015, audio: 2.03489)
+05/31/2026 04:51:20 - INFO - __main__ - Epoch: 0, Steps: 4700, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.20915 (text: 0.14514, audio: 2.06401)
+05/31/2026 04:52:59 - INFO - __main__ - Epoch: 0, Steps: 4710, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.64142 (text: 0.60916, audio: 2.03226)
+05/31/2026 04:54:38 - INFO - __main__ - Epoch: 0, Steps: 4720, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.46055 (text: 1.08508, audio: 1.37547)
+05/31/2026 04:56:18 - INFO - __main__ - Epoch: 0, Steps: 4730, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.13838 (text: 1.12241, audio: 2.01596)
+05/31/2026 04:57:58 - INFO - __main__ - Epoch: 0, Steps: 4740, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.89338 (text: 1.01498, audio: 1.87841)
+05/31/2026 04:59:38 - INFO - __main__ - Epoch: 0, Steps: 4750, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.26024 (text: 0.66531, audio: 1.59493)
+05/31/2026 05:01:17 - INFO - __main__ - Epoch: 0, Steps: 4760, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47302 (text: 0.90035, audio: 1.57267)
+05/31/2026 05:02:56 - INFO - __main__ - Epoch: 0, Steps: 4770, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.40828 (text: 0.92837, audio: 1.47992)
+05/31/2026 05:04:36 - INFO - __main__ - Epoch: 0, Steps: 4780, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.18880 (text: 0.48656, audio: 1.70224)
+05/31/2026 05:06:16 - INFO - __main__ - Epoch: 0, Steps: 4790, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.12800 (text: 0.68918, audio: 1.43882)
+05/31/2026 05:07:55 - INFO - __main__ - Epoch: 0, Steps: 4800, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.75400 (text: 1.21798, audio: 1.53602)
+05/31/2026 05:09:34 - INFO - __main__ - Epoch: 0, Steps: 4810, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.09799 (text: 1.15334, audio: 0.94465)
+05/31/2026 05:11:14 - INFO - __main__ - Epoch: 0, Steps: 4820, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.39231 (text: 0.86789, audio: 1.52442)
+05/31/2026 05:12:52 - INFO - __main__ - Epoch: 0, Steps: 4830, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.19865 (text: 0.72348, audio: 1.47516)
+05/31/2026 05:14:31 - INFO - __main__ - Epoch: 0, Steps: 4840, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36183 (text: 0.90607, audio: 1.45575)
+05/31/2026 05:16:10 - INFO - __main__ - Epoch: 0, Steps: 4850, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47948 (text: 0.78983, audio: 1.68965)
+05/31/2026 05:17:54 - INFO - __main__ - Epoch: 0, Steps: 4860, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.85765 (text: 0.90491, audio: 0.95274)
+05/31/2026 05:19:39 - INFO - __main__ - Epoch: 0, Steps: 4870, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.71943 (text: 0.34523, audio: 1.37420)
+05/31/2026 05:21:25 - INFO - __main__ - Epoch: 0, Steps: 4880, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.31651 (text: 1.10767, audio: 2.20884)
+05/31/2026 05:23:06 - INFO - __main__ - Epoch: 0, Steps: 4890, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.77602 (text: 2.50239, audio: 1.27363)
+05/31/2026 05:24:47 - INFO - __main__ - Epoch: 0, Steps: 4900, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.09518 (text: 0.69644, audio: 1.39875)
+05/31/2026 05:26:26 - INFO - __main__ - Epoch: 0, Steps: 4910, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.30728 (text: 1.70799, audio: 1.59929)
+05/31/2026 05:28:05 - INFO - __main__ - Epoch: 0, Steps: 4920, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.44787 (text: 0.77470, audio: 1.67317)
+05/31/2026 05:29:44 - INFO - __main__ - Epoch: 0, Steps: 4930, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.98779 (text: 0.88060, audio: 2.10719)
+05/31/2026 05:31:28 - INFO - __main__ - Epoch: 0, Steps: 4940, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.24123 (text: 0.78319, audio: 1.45804)
+05/31/2026 05:33:11 - INFO - __main__ - Epoch: 0, Steps: 4950, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.95864 (text: 1.33740, audio: 0.62124)
+05/31/2026 05:34:55 - INFO - __main__ - Epoch: 0, Steps: 4960, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.63012 (text: 2.60767, audio: 2.02246)
+05/31/2026 05:36:36 - INFO - __main__ - Epoch: 0, Steps: 4970, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.32770 (text: 1.69202, audio: 1.63568)
+05/31/2026 05:38:16 - INFO - __main__ - Epoch: 0, Steps: 4980, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.90901 (text: 1.09226, audio: 1.81675)
+05/31/2026 05:39:55 - INFO - __main__ - Epoch: 0, Steps: 4990, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.02212 (text: 0.66892, audio: 0.35320)
+05/31/2026 05:41:34 - INFO - __main__ - Epoch: 0, Steps: 5000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68200 (text: 0.69613, audio: 1.98587)
+05/31/2026 05:41:34 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_5000
+05/31/2026 05:41:34 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 05:47:17 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_5000/pytorch_model
+05/31/2026 05:47:17 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_5000/sampler.bin
+05/31/2026 05:47:17 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_5000/random_states_0.pkl
+05/31/2026 05:49:01 - INFO - __main__ - Epoch: 0, Steps: 5010, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.01739 (text: 0.71808, audio: 1.29931)
+05/31/2026 05:50:45 - INFO - __main__ - Epoch: 0, Steps: 5020, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.71878 (text: 0.62826, audio: 1.09052)
+05/31/2026 05:52:26 - INFO - __main__ - Epoch: 0, Steps: 5030, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.67425 (text: 0.88959, audio: 1.78466)
+05/31/2026 05:54:07 - INFO - __main__ - Epoch: 0, Steps: 5040, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.64929 (text: 0.60143, audio: 1.04786)
+05/31/2026 05:55:46 - INFO - __main__ - Epoch: 0, Steps: 5050, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.60583 (text: 1.64335, audio: 1.96248)
+05/31/2026 05:57:26 - INFO - __main__ - Epoch: 0, Steps: 5060, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.64485 (text: 0.75109, audio: 0.89376)
+05/31/2026 05:59:05 - INFO - __main__ - Epoch: 0, Steps: 5070, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.58831 (text: 0.91440, audio: 1.67391)
+05/31/2026 06:00:49 - INFO - __main__ - Epoch: 0, Steps: 5080, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.00192 (text: 0.86918, audio: 1.13275)
+05/31/2026 06:02:33 - INFO - __main__ - Epoch: 0, Steps: 5090, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.59121 (text: 1.06708, audio: 2.52414)
+05/31/2026 06:04:16 - INFO - __main__ - Epoch: 0, Steps: 5100, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.58219 (text: 1.98294, audio: 1.59925)
+05/31/2026 06:05:56 - INFO - __main__ - Epoch: 0, Steps: 5110, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.76477 (text: 0.65934, audio: 1.10543)
+05/31/2026 06:07:36 - INFO - __main__ - Epoch: 0, Steps: 5120, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.27036 (text: 2.31609, audio: 0.95427)
+05/31/2026 06:09:15 - INFO - __main__ - Epoch: 0, Steps: 5130, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.57518 (text: 0.85265, audio: 0.72253)
+05/31/2026 06:10:55 - INFO - __main__ - Epoch: 0, Steps: 5140, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.54151 (text: 0.89476, audio: 1.64675)
+05/31/2026 06:12:34 - INFO - __main__ - Epoch: 0, Steps: 5150, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.66739 (text: 0.14724, audio: 2.52015)
+05/31/2026 06:14:14 - INFO - __main__ - Epoch: 0, Steps: 5160, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.27909 (text: 0.69683, audio: 0.58225)
+05/31/2026 06:15:53 - INFO - __main__ - Epoch: 0, Steps: 5170, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.96219 (text: 0.64289, audio: 1.31930)
+05/31/2026 06:17:34 - INFO - __main__ - Epoch: 0, Steps: 5180, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.94069 (text: 1.30351, audio: 2.63717)
+05/31/2026 06:19:14 - INFO - __main__ - Epoch: 0, Steps: 5190, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.75929 (text: 0.81130, audio: 1.94800)
+05/31/2026 06:20:54 - INFO - __main__ - Epoch: 0, Steps: 5200, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.43042 (text: 0.95744, audio: 1.47298)
+05/31/2026 06:22:33 - INFO - __main__ - Epoch: 0, Steps: 5210, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.53715 (text: 2.02482, audio: 1.51233)
+05/31/2026 06:24:12 - INFO - __main__ - Epoch: 0, Steps: 5220, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.26238 (text: 0.09423, audio: 0.16815)
+05/31/2026 06:25:52 - INFO - __main__ - Epoch: 0, Steps: 5230, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.31243 (text: 1.26878, audio: 3.04365)
+05/31/2026 06:27:31 - INFO - __main__ - Epoch: 0, Steps: 5240, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68638 (text: 1.33023, audio: 1.35614)
+05/31/2026 06:29:11 - INFO - __main__ - Epoch: 0, Steps: 5250, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.99393 (text: 1.91617, audio: 2.07776)
+05/31/2026 06:30:50 - INFO - __main__ - Epoch: 0, Steps: 5260, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.91878 (text: 0.80730, audio: 1.11148)
+05/31/2026 06:32:29 - INFO - __main__ - Epoch: 0, Steps: 5270, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.29659 (text: 0.94718, audio: 1.34942)
+05/31/2026 06:34:08 - INFO - __main__ - Epoch: 0, Steps: 5280, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.96917 (text: 1.45441, audio: 1.51476)
+05/31/2026 06:35:49 - INFO - __main__ - Epoch: 0, Steps: 5290, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.94432 (text: 0.31243, audio: 0.63189)
+05/31/2026 06:37:34 - INFO - __main__ - Epoch: 0, Steps: 5300, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.72063 (text: 1.96824, audio: 2.75239)
+05/31/2026 06:39:18 - INFO - __main__ - Epoch: 0, Steps: 5310, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.14079 (text: 1.93885, audio: 2.20194)
+05/31/2026 06:41:01 - INFO - __main__ - Epoch: 0, Steps: 5320, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.53244 (text: 0.66195, audio: 0.87050)
+05/31/2026 06:42:43 - INFO - __main__ - Epoch: 0, Steps: 5330, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.95312 (text: 1.52580, audio: 1.42731)
+05/31/2026 06:44:22 - INFO - __main__ - Epoch: 0, Steps: 5340, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.13564 (text: 0.98729, audio: 1.14834)
+05/31/2026 06:46:02 - INFO - __main__ - Epoch: 0, Steps: 5350, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.28999 (text: 0.09998, audio: 2.19001)
+05/31/2026 06:47:41 - INFO - __main__ - Epoch: 0, Steps: 5360, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.64913 (text: 2.03194, audio: 0.61719)
+05/31/2026 06:49:22 - INFO - __main__ - Epoch: 0, Steps: 5370, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.93444 (text: 1.50901, audio: 2.42543)
+05/31/2026 06:51:06 - INFO - __main__ - Epoch: 0, Steps: 5380, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.41150 (text: 1.46536, audio: 1.94613)
+05/31/2026 06:52:50 - INFO - __main__ - Epoch: 0, Steps: 5390, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.31333 (text: 0.70548, audio: 1.60785)
+05/31/2026 06:54:32 - INFO - __main__ - Epoch: 0, Steps: 5400, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.91295 (text: 0.56213, audio: 0.35082)
+05/31/2026 06:56:13 - INFO - __main__ - Epoch: 0, Steps: 5410, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.20882 (text: 0.77061, audio: 1.43821)
+05/31/2026 06:57:53 - INFO - __main__ - Epoch: 0, Steps: 5420, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.14826 (text: 1.49188, audio: 1.65638)
+05/31/2026 06:59:32 - INFO - __main__ - Epoch: 0, Steps: 5430, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.41572 (text: 1.06118, audio: 1.35454)
+05/31/2026 07:01:11 - INFO - __main__ - Epoch: 0, Steps: 5440, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.75022 (text: 1.47540, audio: 2.27482)
+05/31/2026 07:02:51 - INFO - __main__ - Epoch: 0, Steps: 5450, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.98980 (text: 2.49252, audio: 0.49729)
+05/31/2026 07:04:36 - INFO - __main__ - Epoch: 0, Steps: 5460, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.94613 (text: 1.46491, audio: 2.48122)
+05/31/2026 07:06:20 - INFO - __main__ - Epoch: 0, Steps: 5470, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.87302 (text: 0.84301, audio: 1.03001)
+05/31/2026 07:08:02 - INFO - __main__ - Epoch: 0, Steps: 5480, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.30308 (text: 1.55105, audio: 1.75203)
+05/31/2026 07:09:43 - INFO - __main__ - Epoch: 0, Steps: 5490, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.65726 (text: 0.81840, audio: 0.83886)
+05/31/2026 07:11:23 - INFO - __main__ - Epoch: 0, Steps: 5500, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.87318 (text: 0.71411, audio: 1.15906)
+05/31/2026 07:11:23 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_5500
+05/31/2026 07:11:23 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 07:15:37 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_5500/pytorch_model
+05/31/2026 07:15:37 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_5500/sampler.bin
+05/31/2026 07:15:37 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_5500/random_states_0.pkl
+05/31/2026 07:17:30 - INFO - __main__ - Epoch: 0, Steps: 5510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.21186 (text: 0.98189, audio: 1.22997)
+05/31/2026 07:19:15 - INFO - __main__ - Epoch: 0, Steps: 5520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.38493 (text: 0.89103, audio: 1.49390)
+05/31/2026 07:21:01 - INFO - __main__ - Epoch: 0, Steps: 5530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.39841 (text: 0.99594, audio: 1.40248)
+05/31/2026 07:22:43 - INFO - __main__ - Epoch: 0, Steps: 5540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.72980 (text: 0.53293, audio: 1.19686)
+05/31/2026 07:24:24 - INFO - __main__ - Epoch: 0, Steps: 5550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.44994 (text: 0.93704, audio: 1.51290)
+05/31/2026 07:26:04 - INFO - __main__ - Epoch: 0, Steps: 5560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.93292 (text: 0.12291, audio: 1.81002)
+05/31/2026 07:27:43 - INFO - __main__ - Epoch: 0, Steps: 5570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.64302 (text: 1.08357, audio: 1.55945)
+05/31/2026 07:29:22 - INFO - __main__ - Epoch: 0, Steps: 5580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.29277 (text: 0.07902, audio: 2.21375)
+05/31/2026 07:31:03 - INFO - __main__ - Epoch: 0, Steps: 5590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.97449 (text: 1.37072, audio: 1.60377)
+05/31/2026 07:32:47 - INFO - __main__ - Epoch: 0, Steps: 5600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.17948 (text: 1.35157, audio: 1.82791)
+05/31/2026 07:34:32 - INFO - __main__ - Epoch: 0, Steps: 5610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.11948 (text: 0.76318, audio: 1.35630)
+05/31/2026 07:36:14 - INFO - __main__ - Epoch: 0, Steps: 5620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.00494 (text: 0.62513, audio: 1.37981)
+05/31/2026 07:37:53 - INFO - __main__ - Epoch: 0, Steps: 5630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.68321 (text: 0.89592, audio: 0.78729)
+05/31/2026 07:39:33 - INFO - __main__ - Epoch: 0, Steps: 5640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.04305 (text: 1.77105, audio: 2.27200)
+05/31/2026 07:41:12 - INFO - __main__ - Epoch: 0, Steps: 5650, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.17741 (text: 0.79399, audio: 1.38342)
+05/31/2026 07:42:51 - INFO - __main__ - Epoch: 0, Steps: 5660, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.94038 (text: 0.30742, audio: 1.63296)
+05/31/2026 07:44:31 - INFO - __main__ - Epoch: 0, Steps: 5670, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.57264 (text: 0.58383, audio: 0.98882)
+05/31/2026 07:46:10 - INFO - __main__ - Epoch: 0, Steps: 5680, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.88407 (text: 1.58347, audio: 2.30059)
+05/31/2026 07:47:49 - INFO - __main__ - Epoch: 0, Steps: 5690, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.94793 (text: 1.84726, audio: 2.10066)
+05/31/2026 07:49:30 - INFO - __main__ - Epoch: 0, Steps: 5700, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.61852 (text: 1.38775, audio: 1.23077)
+05/31/2026 07:51:10 - INFO - __main__ - Epoch: 0, Steps: 5710, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.65181 (text: 2.00719, audio: 1.64462)
+05/31/2026 07:52:49 - INFO - __main__ - Epoch: 0, Steps: 5720, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.57567 (text: 0.96836, audio: 1.60730)
+05/31/2026 07:54:28 - INFO - __main__ - Epoch: 0, Steps: 5730, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.44133 (text: 0.58168, audio: 1.85964)
+05/31/2026 07:56:08 - INFO - __main__ - Epoch: 0, Steps: 5740, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.83543 (text: 1.55137, audio: 1.28405)
+05/31/2026 07:57:47 - INFO - __main__ - Epoch: 0, Steps: 5750, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.84755 (text: 1.66674, audio: 2.18081)
+05/31/2026 07:59:27 - INFO - __main__ - Epoch: 0, Steps: 5760, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.63997 (text: 0.64503, audio: 0.99494)
+05/31/2026 08:01:06 - INFO - __main__ - Epoch: 0, Steps: 5770, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.07367 (text: 1.11367, audio: 1.96001)
+05/31/2026 08:02:45 - INFO - __main__ - Epoch: 0, Steps: 5780, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.93746 (text: 1.96110, audio: 2.97636)
+05/31/2026 08:04:24 - INFO - __main__ - Epoch: 0, Steps: 5790, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.70379 (text: 1.80655, audio: 1.89724)
+05/31/2026 08:06:03 - INFO - __main__ - Epoch: 0, Steps: 5800, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.07167 (text: 0.67879, audio: 1.39289)
+05/31/2026 08:07:45 - INFO - __main__ - Epoch: 0, Steps: 5810, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.86828 (text: 1.02233, audio: 1.84596)
+05/31/2026 08:09:29 - INFO - __main__ - Epoch: 0, Steps: 5820, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47995 (text: 1.07213, audio: 1.40782)
+05/31/2026 08:11:13 - INFO - __main__ - Epoch: 0, Steps: 5830, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.88497 (text: 2.71912, audio: 2.16585)
+05/31/2026 08:12:55 - INFO - __main__ - Epoch: 0, Steps: 5840, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.48257 (text: 3.18294, audio: 2.29963)
+05/31/2026 08:14:36 - INFO - __main__ - Epoch: 0, Steps: 5850, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.45095 (text: 1.75903, audio: 1.69192)
+05/31/2026 08:16:15 - INFO - __main__ - Epoch: 0, Steps: 5860, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.51427 (text: 0.38082, audio: 1.13345)
+05/31/2026 08:17:55 - INFO - __main__ - Epoch: 0, Steps: 5870, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.93873 (text: 0.95417, audio: 1.98456)
+05/31/2026 08:19:34 - INFO - __main__ - Epoch: 0, Steps: 5880, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.54773 (text: 0.96284, audio: 1.58490)
+05/31/2026 08:21:15 - INFO - __main__ - Epoch: 0, Steps: 5890, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.92378 (text: 1.98856, audio: 0.93522)
+05/31/2026 08:23:01 - INFO - __main__ - Epoch: 0, Steps: 5900, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.73464 (text: 0.67650, audio: 1.05813)
+05/31/2026 08:24:44 - INFO - __main__ - Epoch: 0, Steps: 5910, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.25647 (text: 0.66677, audio: 1.58971)
+05/31/2026 08:26:28 - INFO - __main__ - Epoch: 0, Steps: 5920, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.57384 (text: 1.73343, audio: 1.84041)
+05/31/2026 08:28:10 - INFO - __main__ - Epoch: 0, Steps: 5930, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.66671 (text: 0.31369, audio: 0.35302)
+05/31/2026 08:29:49 - INFO - __main__ - Epoch: 0, Steps: 5940, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.45679 (text: 1.29978, audio: 0.15701)
+05/31/2026 08:31:29 - INFO - __main__ - Epoch: 0, Steps: 5950, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.96717 (text: 0.54261, audio: 0.42456)
+05/31/2026 08:33:08 - INFO - __main__ - Epoch: 0, Steps: 5960, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.39338 (text: 2.34569, audio: 2.04769)
+05/31/2026 08:34:49 - INFO - __main__ - Epoch: 0, Steps: 5970, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.43837 (text: 0.68098, audio: 0.75739)
+05/31/2026 08:36:33 - INFO - __main__ - Epoch: 0, Steps: 5980, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.93392 (text: 1.17154, audio: 0.76238)
+05/31/2026 08:38:16 - INFO - __main__ - Epoch: 0, Steps: 5990, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.08194 (text: 1.60546, audio: 1.47648)
+05/31/2026 08:40:00 - INFO - __main__ - Epoch: 0, Steps: 6000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.79066 (text: 0.36568, audio: 1.42499)
+05/31/2026 08:40:00 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_6000
+05/31/2026 08:40:00 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 08:44:17 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_6000/pytorch_model
+05/31/2026 08:44:17 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_6000/sampler.bin
+05/31/2026 08:44:17 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_6000/random_states_0.pkl
+05/31/2026 08:46:24 - INFO - __main__ - Epoch: 0, Steps: 6010, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.53702 (text: 0.94682, audio: 1.59020)
+05/31/2026 08:48:11 - INFO - __main__ - Epoch: 0, Steps: 6020, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.70762 (text: 1.29694, audio: 2.41068)
+05/31/2026 08:49:55 - INFO - __main__ - Epoch: 0, Steps: 6030, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.89165 (text: 0.34530, audio: 1.54635)
+05/31/2026 08:51:39 - INFO - __main__ - Epoch: 0, Steps: 6040, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.77173 (text: 0.47959, audio: 1.29214)
+05/31/2026 08:53:21 - INFO - __main__ - Epoch: 0, Steps: 6050, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34621 (text: 0.41507, audio: 1.93114)
+05/31/2026 08:55:02 - INFO - __main__ - Epoch: 0, Steps: 6060, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.14617 (text: 0.82270, audio: 1.32347)
+05/31/2026 08:56:41 - INFO - __main__ - Epoch: 0, Steps: 6070, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.01463 (text: 1.38287, audio: 1.63176)
+05/31/2026 08:58:20 - INFO - __main__ - Epoch: 0, Steps: 6080, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36053 (text: 0.89850, audio: 1.46203)
+05/31/2026 08:59:58 - INFO - __main__ - Epoch: 0, Steps: 6090, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.19006 (text: 0.74788, audio: 1.44219)
+05/31/2026 09:01:37 - INFO - __main__ - Epoch: 0, Steps: 6100, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.43726 (text: 0.39799, audio: 1.03927)
+05/31/2026 09:03:18 - INFO - __main__ - Epoch: 0, Steps: 6110, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.66413 (text: 1.50647, audio: 1.15766)
+05/31/2026 09:05:01 - INFO - __main__ - Epoch: 0, Steps: 6120, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.94464 (text: 1.98254, audio: 1.96210)
+05/31/2026 09:06:43 - INFO - __main__ - Epoch: 0, Steps: 6130, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.77574 (text: 1.04464, audio: 1.73111)
+05/31/2026 09:08:25 - INFO - __main__ - Epoch: 0, Steps: 6140, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.72354 (text: 0.47389, audio: 1.24965)
+05/31/2026 09:10:03 - INFO - __main__ - Epoch: 0, Steps: 6150, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.25028 (text: 1.24597, audio: 2.00431)
+05/31/2026 09:11:41 - INFO - __main__ - Epoch: 0, Steps: 6160, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.59752 (text: 2.48367, audio: 2.11386)
+05/31/2026 09:13:20 - INFO - __main__ - Epoch: 0, Steps: 6170, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.74644 (text: 0.44185, audio: 0.30459)
+05/31/2026 09:14:58 - INFO - __main__ - Epoch: 0, Steps: 6180, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.00915 (text: 1.18634, audio: 0.82281)
+05/31/2026 09:16:37 - INFO - __main__ - Epoch: 0, Steps: 6190, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.73232 (text: 1.82264, audio: 1.90968)
+05/31/2026 09:18:15 - INFO - __main__ - Epoch: 0, Steps: 6200, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.88278 (text: 2.10279, audio: 1.78000)
+05/31/2026 09:19:53 - INFO - __main__ - Epoch: 0, Steps: 6210, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.42118 (text: 1.50799, audio: 0.91319)
+05/31/2026 09:21:33 - INFO - __main__ - Epoch: 0, Steps: 6220, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.32654 (text: 1.02157, audio: 1.30496)
+05/31/2026 09:23:12 - INFO - __main__ - Epoch: 0, Steps: 6230, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.04750 (text: 1.22020, audio: 1.82731)
+05/31/2026 09:24:50 - INFO - __main__ - Epoch: 0, Steps: 6240, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.85247 (text: 1.06898, audio: 1.78349)
+05/31/2026 09:26:29 - INFO - __main__ - Epoch: 0, Steps: 6250, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.35022 (text: 0.90342, audio: 1.44680)
+05/31/2026 09:28:07 - INFO - __main__ - Epoch: 0, Steps: 6260, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.41337 (text: 0.51424, audio: 1.89914)
+05/31/2026 09:29:45 - INFO - __main__ - Epoch: 0, Steps: 6270, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.07754 (text: 0.52319, audio: 1.55435)
+05/31/2026 09:31:24 - INFO - __main__ - Epoch: 0, Steps: 6280, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.55822 (text: 0.72586, audio: 0.83236)
+05/31/2026 09:33:02 - INFO - __main__ - Epoch: 0, Steps: 6290, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.79894 (text: 1.24589, audio: 1.55305)
+05/31/2026 09:34:41 - INFO - __main__ - Epoch: 0, Steps: 6300, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.00084 (text: 0.80214, audio: 1.19870)
+05/31/2026 09:36:19 - INFO - __main__ - Epoch: 0, Steps: 6310, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.11856 (text: 0.11257, audio: 2.00600)
+05/31/2026 09:37:57 - INFO - __main__ - Epoch: 0, Steps: 6320, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.85800 (text: 0.92320, audio: 1.93479)
+05/31/2026 09:39:35 - INFO - __main__ - Epoch: 0, Steps: 6330, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.42353 (text: 0.01880, audio: 0.40473)
+05/31/2026 09:41:18 - INFO - __main__ - Epoch: 0, Steps: 6340, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.06020 (text: 1.52423, audio: 1.53598)
+05/31/2026 09:43:01 - INFO - __main__ - Epoch: 0, Steps: 6350, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.75204 (text: 1.10403, audio: 1.64801)
+05/31/2026 09:44:47 - INFO - __main__ - Epoch: 0, Steps: 6360, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.38810 (text: 1.37952, audio: 2.00858)
+05/31/2026 09:46:28 - INFO - __main__ - Epoch: 0, Steps: 6370, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.01622 (text: 1.23557, audio: 1.78064)
+05/31/2026 09:48:07 - INFO - __main__ - Epoch: 0, Steps: 6380, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.37452 (text: 0.95152, audio: 1.42300)
+05/31/2026 09:49:45 - INFO - __main__ - Epoch: 0, Steps: 6390, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.86303 (text: 1.33471, audio: 2.52832)
+05/31/2026 09:51:24 - INFO - __main__ - Epoch: 0, Steps: 6400, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36259 (text: 1.09137, audio: 1.27123)
+05/31/2026 09:53:02 - INFO - __main__ - Epoch: 0, Steps: 6410, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.30915 (text: 0.82731, audio: 1.48184)
+05/31/2026 09:54:44 - INFO - __main__ - Epoch: 0, Steps: 6420, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.77730 (text: 0.78024, audio: 1.99706)
+05/31/2026 09:56:27 - INFO - __main__ - Epoch: 0, Steps: 6430, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.79740 (text: 1.23218, audio: 1.56522)
+05/31/2026 09:58:10 - INFO - __main__ - Epoch: 0, Steps: 6440, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.68246 (text: 0.98214, audio: 1.70032)
+05/31/2026 09:59:51 - INFO - __main__ - Epoch: 0, Steps: 6450, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.11654 (text: 1.37606, audio: 1.74048)
+05/31/2026 10:01:31 - INFO - __main__ - Epoch: 0, Steps: 6460, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.28375 (text: 0.59381, audio: 0.68994)
+05/31/2026 10:03:09 - INFO - __main__ - Epoch: 0, Steps: 6470, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.53931 (text: 1.35809, audio: 0.18122)
+05/31/2026 10:04:47 - INFO - __main__ - Epoch: 0, Steps: 6480, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.52555 (text: 0.91146, audio: 1.61409)
+05/31/2026 10:06:25 - INFO - __main__ - Epoch: 0, Steps: 6490, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.83893 (text: 1.25870, audio: 1.58023)
+05/31/2026 10:08:06 - INFO - __main__ - Epoch: 0, Steps: 6500, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.39527 (text: 0.80600, audio: 1.58927)
+05/31/2026 10:08:06 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_6500
+05/31/2026 10:08:06 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 10:13:44 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_6500/pytorch_model
+05/31/2026 10:13:44 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_6500/sampler.bin
+05/31/2026 10:13:44 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_6500/random_states_0.pkl
+05/31/2026 10:15:26 - INFO - __main__ - Epoch: 0, Steps: 6510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.62689 (text: 0.52546, audio: 2.10143)
+05/31/2026 10:17:04 - INFO - __main__ - Epoch: 0, Steps: 6520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 6.06665 (text: 3.62737, audio: 2.43928)
+05/31/2026 10:18:43 - INFO - __main__ - Epoch: 0, Steps: 6530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.32505 (text: 1.06955, audio: 2.25551)
+05/31/2026 10:20:21 - INFO - __main__ - Epoch: 0, Steps: 6540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.09384 (text: 1.62211, audio: 0.47173)
+05/31/2026 10:22:00 - INFO - __main__ - Epoch: 0, Steps: 6550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.18075 (text: 0.73460, audio: 1.44614)
+05/31/2026 10:23:44 - INFO - __main__ - Epoch: 0, Steps: 6560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.49101 (text: 1.32229, audio: 2.16873)
+05/31/2026 10:25:27 - INFO - __main__ - Epoch: 0, Steps: 6570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.18398 (text: 1.16620, audio: 2.01778)
+05/31/2026 10:27:09 - INFO - __main__ - Epoch: 0, Steps: 6580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.11605 (text: 0.72731, audio: 1.38873)
+05/31/2026 10:28:49 - INFO - __main__ - Epoch: 0, Steps: 6590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.51806 (text: 0.87956, audio: 1.63850)
+05/31/2026 10:30:30 - INFO - __main__ - Epoch: 0, Steps: 6600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.90588 (text: 0.87001, audio: 1.03587)
+05/31/2026 10:32:08 - INFO - __main__ - Epoch: 0, Steps: 6610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.71689 (text: 0.58191, audio: 2.13498)
+05/31/2026 10:33:47 - INFO - __main__ - Epoch: 0, Steps: 6620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.01549 (text: 0.80337, audio: 2.21212)
+05/31/2026 10:35:26 - INFO - __main__ - Epoch: 0, Steps: 6630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.71806 (text: 0.37140, audio: 1.34666)
+05/31/2026 10:37:11 - INFO - __main__ - Epoch: 0, Steps: 6640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.84756 (text: 0.66147, audio: 0.18609)
+05/31/2026 10:38:55 - INFO - __main__ - Epoch: 0, Steps: 6650, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.52679 (text: 0.05499, audio: 1.47180)
+05/31/2026 10:40:38 - INFO - __main__ - Epoch: 0, Steps: 6660, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.81432 (text: 1.42882, audio: 1.38550)
+05/31/2026 10:42:17 - INFO - __main__ - Epoch: 0, Steps: 6670, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.97215 (text: 1.05856, audio: 1.91359)
+05/31/2026 10:43:57 - INFO - __main__ - Epoch: 0, Steps: 6680, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.20496 (text: 0.96052, audio: 1.24444)
+05/31/2026 10:45:36 - INFO - __main__ - Epoch: 0, Steps: 6690, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.85807 (text: 1.44729, audio: 2.41078)
+05/31/2026 10:47:15 - INFO - __main__ - Epoch: 0, Steps: 6700, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.99824 (text: 0.60212, audio: 1.39612)
+05/31/2026 10:48:55 - INFO - __main__ - Epoch: 0, Steps: 6710, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.22984 (text: 1.21721, audio: 1.01262)
+05/31/2026 10:50:34 - INFO - __main__ - Epoch: 0, Steps: 6720, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36205 (text: 1.36782, audio: 0.99423)
+05/31/2026 10:52:13 - INFO - __main__ - Epoch: 0, Steps: 6730, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.63850 (text: 0.55479, audio: 1.08371)
+05/31/2026 10:53:54 - INFO - __main__ - Epoch: 0, Steps: 6740, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.82252 (text: 1.63552, audio: 1.18700)
+05/31/2026 10:55:34 - INFO - __main__ - Epoch: 0, Steps: 6750, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.02068 (text: 0.76973, audio: 1.25095)
+05/31/2026 10:57:13 - INFO - __main__ - Epoch: 0, Steps: 6760, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.56194 (text: 0.83833, audio: 1.72362)
+05/31/2026 10:58:52 - INFO - __main__ - Epoch: 0, Steps: 6770, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.98080 (text: 1.00852, audio: 1.97228)
+05/31/2026 11:00:32 - INFO - __main__ - Epoch: 0, Steps: 6780, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.16778 (text: 1.53432, audio: 1.63346)
+05/31/2026 11:02:11 - INFO - __main__ - Epoch: 0, Steps: 6790, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.84521 (text: 0.82685, audio: 1.01837)
+05/31/2026 11:03:50 - INFO - __main__ - Epoch: 0, Steps: 6800, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.63197 (text: 2.05225, audio: 1.57972)
+05/31/2026 11:05:29 - INFO - __main__ - Epoch: 0, Steps: 6810, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.51164 (text: 0.77537, audio: 0.73627)
+05/31/2026 11:07:08 - INFO - __main__ - Epoch: 0, Steps: 6820, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.11529 (text: 0.79089, audio: 1.32440)
+05/31/2026 11:08:47 - INFO - __main__ - Epoch: 0, Steps: 6830, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36463 (text: 0.82005, audio: 1.54457)
+05/31/2026 11:10:26 - INFO - __main__ - Epoch: 0, Steps: 6840, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.32430 (text: 0.90002, audio: 1.42428)
+05/31/2026 11:12:06 - INFO - __main__ - Epoch: 0, Steps: 6850, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.51666 (text: 1.12770, audio: 1.38896)
+05/31/2026 11:13:51 - INFO - __main__ - Epoch: 0, Steps: 6860, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.27846 (text: 0.60982, audio: 1.66863)
+05/31/2026 11:15:35 - INFO - __main__ - Epoch: 0, Steps: 6870, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.66067 (text: 1.14196, audio: 1.51871)
+05/31/2026 11:17:17 - INFO - __main__ - Epoch: 0, Steps: 6880, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.58275 (text: 0.93842, audio: 1.64434)
+05/31/2026 11:18:59 - INFO - __main__ - Epoch: 0, Steps: 6890, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.66711 (text: 0.60022, audio: 1.06689)
+05/31/2026 11:20:38 - INFO - __main__ - Epoch: 0, Steps: 6900, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.25649 (text: 0.92187, audio: 1.33462)
+05/31/2026 11:22:17 - INFO - __main__ - Epoch: 0, Steps: 6910, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.30699 (text: 0.08974, audio: 1.21724)
+05/31/2026 11:23:56 - INFO - __main__ - Epoch: 0, Steps: 6920, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.51447 (text: 0.36121, audio: 1.15325)
+05/31/2026 11:25:35 - INFO - __main__ - Epoch: 0, Steps: 6930, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.52050 (text: 3.34516, audio: 2.17533)
+05/31/2026 11:27:20 - INFO - __main__ - Epoch: 0, Steps: 6940, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.42217 (text: 1.10088, audio: 2.32129)
+05/31/2026 11:29:04 - INFO - __main__ - Epoch: 0, Steps: 6950, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.04811 (text: 1.54412, audio: 2.50399)
+05/31/2026 11:30:46 - INFO - __main__ - Epoch: 0, Steps: 6960, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.69825 (text: 1.51478, audio: 1.18347)
+05/31/2026 11:32:28 - INFO - __main__ - Epoch: 0, Steps: 6970, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.22554 (text: 2.42168, audio: 1.80386)
+05/31/2026 11:34:08 - INFO - __main__ - Epoch: 0, Steps: 6980, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.97480 (text: 1.03547, audio: 0.93934)
+05/31/2026 11:35:46 - INFO - __main__ - Epoch: 0, Steps: 6990, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.21659 (text: 1.12100, audio: 2.09559)
+05/31/2026 11:37:25 - INFO - __main__ - Epoch: 0, Steps: 7000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.69573 (text: 1.57095, audio: 2.12478)
+05/31/2026 11:37:25 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_7000
+05/31/2026 11:37:25 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 11:44:10 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_7000/pytorch_model
+05/31/2026 11:44:10 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_7000/sampler.bin
+05/31/2026 11:44:10 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_7000/random_states_0.pkl
+05/31/2026 11:45:55 - INFO - __main__ - Epoch: 0, Steps: 7010, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.54331 (text: 1.39043, audio: 2.15288)
+05/31/2026 11:47:36 - INFO - __main__ - Epoch: 0, Steps: 7020, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.88490 (text: 1.06309, audio: 1.82181)
+05/31/2026 11:49:17 - INFO - __main__ - Epoch: 0, Steps: 7030, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.04509 (text: 1.50304, audio: 2.54206)
+05/31/2026 11:50:56 - INFO - __main__ - Epoch: 0, Steps: 7040, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.93940 (text: 0.73655, audio: 1.20285)
+05/31/2026 11:52:35 - INFO - __main__ - Epoch: 0, Steps: 7050, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.25153 (text: 0.98063, audio: 1.27090)
+05/31/2026 11:54:14 - INFO - __main__ - Epoch: 0, Steps: 7060, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.19702 (text: 1.16012, audio: 2.03690)
+05/31/2026 11:55:55 - INFO - __main__ - Epoch: 0, Steps: 7070, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.33646 (text: 1.50016, audio: 1.83629)
+05/31/2026 11:57:39 - INFO - __main__ - Epoch: 0, Steps: 7080, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.57169 (text: 0.04426, audio: 0.52743)
+05/31/2026 11:59:22 - INFO - __main__ - Epoch: 0, Steps: 7090, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.30670 (text: 1.46678, audio: 1.83991)
+05/31/2026 12:01:04 - INFO - __main__ - Epoch: 0, Steps: 7100, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.03938 (text: 1.58805, audio: 1.45133)
+05/31/2026 12:02:44 - INFO - __main__ - Epoch: 0, Steps: 7110, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.03882 (text: 1.39491, audio: 1.64391)
+05/31/2026 12:04:23 - INFO - __main__ - Epoch: 0, Steps: 7120, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.83603 (text: 1.16118, audio: 1.67485)
+05/31/2026 12:06:02 - INFO - __main__ - Epoch: 0, Steps: 7130, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.70241 (text: 0.51263, audio: 1.18978)
+05/31/2026 12:07:42 - INFO - __main__ - Epoch: 0, Steps: 7140, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.02226 (text: 0.67955, audio: 2.34271)
+05/31/2026 12:09:21 - INFO - __main__ - Epoch: 0, Steps: 7150, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.66983 (text: 0.05489, audio: 0.61494)
+05/31/2026 12:11:00 - INFO - __main__ - Epoch: 0, Steps: 7160, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.75074 (text: 0.93429, audio: 1.81645)
+05/31/2026 12:12:39 - INFO - __main__ - Epoch: 0, Steps: 7170, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.03971 (text: 0.71943, audio: 1.32028)
+05/31/2026 12:14:19 - INFO - __main__ - Epoch: 0, Steps: 7180, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.27455 (text: 0.92786, audio: 1.34669)
+05/31/2026 12:15:59 - INFO - __main__ - Epoch: 0, Steps: 7190, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.83276 (text: 0.52683, audio: 1.30593)
+05/31/2026 12:17:39 - INFO - __main__ - Epoch: 0, Steps: 7200, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.72712 (text: 2.44705, audio: 1.28008)
+05/31/2026 12:19:18 - INFO - __main__ - Epoch: 0, Steps: 7210, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.35400 (text: 0.58916, audio: 1.76483)
+05/31/2026 12:20:57 - INFO - __main__ - Epoch: 0, Steps: 7220, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.81426 (text: 1.10416, audio: 1.71010)
+05/31/2026 12:22:37 - INFO - __main__ - Epoch: 0, Steps: 7230, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.25926 (text: 0.11683, audio: 0.14243)
+05/31/2026 12:24:16 - INFO - __main__ - Epoch: 0, Steps: 7240, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.35479 (text: 1.42018, audio: 1.93461)
+05/31/2026 12:25:55 - INFO - __main__ - Epoch: 0, Steps: 7250, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.04875 (text: 1.08553, audio: 1.96322)
+05/31/2026 12:27:34 - INFO - __main__ - Epoch: 0, Steps: 7260, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.04045 (text: 2.76924, audio: 2.27121)
+05/31/2026 12:29:13 - INFO - __main__ - Epoch: 0, Steps: 7270, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.33862 (text: 0.41972, audio: 0.91890)
+05/31/2026 12:30:52 - INFO - __main__ - Epoch: 0, Steps: 7280, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.79754 (text: 1.14934, audio: 1.64820)
+05/31/2026 12:32:31 - INFO - __main__ - Epoch: 0, Steps: 7290, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.50538 (text: 1.12336, audio: 1.38203)
+05/31/2026 12:34:13 - INFO - __main__ - Epoch: 0, Steps: 7300, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.93677 (text: 1.05274, audio: 1.88403)
+05/31/2026 12:35:57 - INFO - __main__ - Epoch: 0, Steps: 7310, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.64911 (text: 0.63275, audio: 2.01636)
+05/31/2026 12:37:44 - INFO - __main__ - Epoch: 0, Steps: 7320, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.78123 (text: 0.98073, audio: 1.80050)
+05/31/2026 12:39:26 - INFO - __main__ - Epoch: 0, Steps: 7330, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.60278 (text: 0.93582, audio: 1.66696)
+05/31/2026 12:41:07 - INFO - __main__ - Epoch: 0, Steps: 7340, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.75230 (text: 0.43380, audio: 1.31850)
+05/31/2026 12:42:45 - INFO - __main__ - Epoch: 0, Steps: 7350, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.61921 (text: 0.89222, audio: 1.72699)
+05/31/2026 12:44:24 - INFO - __main__ - Epoch: 0, Steps: 7360, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.61802 (text: 0.46752, audio: 1.15050)
+05/31/2026 12:46:03 - INFO - __main__ - Epoch: 0, Steps: 7370, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.71223 (text: 1.08270, audio: 1.62953)
+05/31/2026 12:47:45 - INFO - __main__ - Epoch: 0, Steps: 7380, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.72970 (text: 0.65550, audio: 1.07420)
+05/31/2026 12:49:29 - INFO - __main__ - Epoch: 0, Steps: 7390, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47329 (text: 0.88189, audio: 1.59140)
+05/31/2026 12:51:12 - INFO - __main__ - Epoch: 0, Steps: 7400, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.12224 (text: 1.00148, audio: 1.12076)
+05/31/2026 12:52:54 - INFO - __main__ - Epoch: 0, Steps: 7410, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.22153 (text: 2.29268, audio: 1.92885)
+05/31/2026 12:54:35 - INFO - __main__ - Epoch: 0, Steps: 7420, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.08401 (text: 2.23679, audio: 1.84722)
+05/31/2026 12:56:14 - INFO - __main__ - Epoch: 0, Steps: 7430, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.31162 (text: 1.14500, audio: 1.16662)
+05/31/2026 12:57:53 - INFO - __main__ - Epoch: 0, Steps: 7440, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.39952 (text: 0.70229, audio: 1.69723)
+05/31/2026 12:59:32 - INFO - __main__ - Epoch: 0, Steps: 7450, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.65903 (text: 0.54239, audio: 1.11664)
+05/31/2026 13:01:13 - INFO - __main__ - Epoch: 0, Steps: 7460, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.28526 (text: 0.85704, audio: 1.42822)
+05/31/2026 13:02:57 - INFO - __main__ - Epoch: 0, Steps: 7470, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.08406 (text: 0.63880, audio: 1.44525)
+05/31/2026 13:04:41 - INFO - __main__ - Epoch: 0, Steps: 7480, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.73865 (text: 0.65724, audio: 1.08141)
+05/31/2026 13:06:23 - INFO - __main__ - Epoch: 0, Steps: 7490, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.61070 (text: 1.09215, audio: 1.51854)
+05/31/2026 13:08:04 - INFO - __main__ - Epoch: 0, Steps: 7500, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.48956 (text: 1.93130, audio: 1.55826)
+05/31/2026 13:08:04 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_7500
+05/31/2026 13:08:04 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 13:12:20 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_7500/pytorch_model
+05/31/2026 13:12:20 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_7500/sampler.bin
+05/31/2026 13:12:20 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_7500/random_states_0.pkl
+05/31/2026 13:14:11 - INFO - __main__ - Epoch: 0, Steps: 7510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.58922 (text: 1.31510, audio: 1.27413)
+05/31/2026 13:15:56 - INFO - __main__ - Epoch: 0, Steps: 7520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.25703 (text: 0.30599, audio: 1.95104)
+05/31/2026 13:17:40 - INFO - __main__ - Epoch: 0, Steps: 7530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.20710 (text: 1.19383, audio: 2.01327)
+05/31/2026 13:19:26 - INFO - __main__ - Epoch: 0, Steps: 7540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.96302 (text: 0.62349, audio: 1.33953)
+05/31/2026 13:21:07 - INFO - __main__ - Epoch: 0, Steps: 7550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.07965 (text: 0.38284, audio: 1.69681)
+05/31/2026 13:22:48 - INFO - __main__ - Epoch: 0, Steps: 7560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.08356 (text: 0.80397, audio: 1.27959)
+05/31/2026 13:24:27 - INFO - __main__ - Epoch: 0, Steps: 7570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.92047 (text: 0.90455, audio: 1.01593)
+05/31/2026 13:26:06 - INFO - __main__ - Epoch: 0, Steps: 7580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.10101 (text: 1.20851, audio: 1.89250)
+05/31/2026 13:27:45 - INFO - __main__ - Epoch: 0, Steps: 7590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.99833 (text: 0.52536, audio: 1.47296)
+05/31/2026 13:29:27 - INFO - __main__ - Epoch: 0, Steps: 7600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.74451 (text: 1.23312, audio: 1.51139)
+05/31/2026 13:31:11 - INFO - __main__ - Epoch: 0, Steps: 7610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.24550 (text: 1.47954, audio: 0.76596)
+05/31/2026 13:32:55 - INFO - __main__ - Epoch: 0, Steps: 7620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34412 (text: 0.99241, audio: 1.35171)
+05/31/2026 13:34:37 - INFO - __main__ - Epoch: 0, Steps: 7630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.17951 (text: 2.28177, audio: 1.89773)
+05/31/2026 13:36:16 - INFO - __main__ - Epoch: 0, Steps: 7640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.51506 (text: 1.01281, audio: 1.50225)
+05/31/2026 13:37:56 - INFO - __main__ - Epoch: 0, Steps: 7650, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.62504 (text: 0.43155, audio: 2.19349)
+05/31/2026 13:39:35 - INFO - __main__ - Epoch: 0, Steps: 7660, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.53734 (text: 0.90797, audio: 1.62937)
+05/31/2026 13:41:14 - INFO - __main__ - Epoch: 0, Steps: 7670, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.61494 (text: 2.18285, audio: 1.43209)
+05/31/2026 13:42:54 - INFO - __main__ - Epoch: 0, Steps: 7680, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.41651 (text: 0.18310, audio: 0.23341)
+05/31/2026 13:44:33 - INFO - __main__ - Epoch: 0, Steps: 7690, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.17435 (text: 0.77974, audio: 1.39462)
+05/31/2026 13:46:13 - INFO - __main__ - Epoch: 0, Steps: 7700, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.87531 (text: 0.44830, audio: 1.42701)
+05/31/2026 13:47:53 - INFO - __main__ - Epoch: 0, Steps: 7710, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.92179 (text: 0.51272, audio: 1.40906)
+05/31/2026 13:49:34 - INFO - __main__ - Epoch: 0, Steps: 7720, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.86026 (text: 0.94732, audio: 1.91294)
+05/31/2026 13:51:13 - INFO - __main__ - Epoch: 0, Steps: 7730, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.34125 (text: 0.69086, audio: 1.65039)
+05/31/2026 13:52:52 - INFO - __main__ - Epoch: 0, Steps: 7740, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.54431 (text: 1.43233, audio: 2.11198)
+05/31/2026 13:54:31 - INFO - __main__ - Epoch: 0, Steps: 7750, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.54367 (text: 0.67030, audio: 0.87337)
+05/31/2026 13:56:11 - INFO - __main__ - Epoch: 0, Steps: 7760, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.20881 (text: 0.00628, audio: 0.20254)
+05/31/2026 13:57:50 - INFO - __main__ - Epoch: 0, Steps: 7770, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.92042 (text: 0.07705, audio: 1.84337)
+05/31/2026 13:59:30 - INFO - __main__ - Epoch: 0, Steps: 7780, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.92774 (text: 0.02785, audio: 0.89989)
+05/31/2026 14:01:09 - INFO - __main__ - Epoch: 0, Steps: 7790, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.01907 (text: 0.54702, audio: 1.47205)
+05/31/2026 14:02:49 - INFO - __main__ - Epoch: 0, Steps: 7800, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.63654 (text: 1.36082, audio: 1.27572)
+05/31/2026 14:04:28 - INFO - __main__ - Epoch: 0, Steps: 7810, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.11066 (text: 0.69443, audio: 1.41623)
+05/31/2026 14:06:07 - INFO - __main__ - Epoch: 0, Steps: 7820, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.50001 (text: 1.49954, audio: 2.00047)
+05/31/2026 14:07:45 - INFO - __main__ - Epoch: 0, Steps: 7830, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.77650 (text: 1.13476, audio: 1.64174)
+05/31/2026 14:09:26 - INFO - __main__ - Epoch: 0, Steps: 7840, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.76694 (text: 0.52281, audio: 1.24413)
+05/31/2026 14:11:10 - INFO - __main__ - Epoch: 0, Steps: 7850, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.93334 (text: 1.24781, audio: 1.68553)
+05/31/2026 14:12:54 - INFO - __main__ - Epoch: 0, Steps: 7860, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.18819 (text: 0.82062, audio: 1.36757)
+05/31/2026 14:14:37 - INFO - __main__ - Epoch: 0, Steps: 7870, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.01091 (text: 0.83888, audio: 1.17203)
+05/31/2026 14:16:18 - INFO - __main__ - Epoch: 0, Steps: 7880, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.98670 (text: 1.20917, audio: 1.77753)
+05/31/2026 14:17:58 - INFO - __main__ - Epoch: 0, Steps: 7890, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.84549 (text: 1.12383, audio: 1.72166)
+05/31/2026 14:19:37 - INFO - __main__ - Epoch: 0, Steps: 7900, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.99282 (text: 2.34023, audio: 1.65259)
+05/31/2026 14:21:16 - INFO - __main__ - Epoch: 0, Steps: 7910, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.13849 (text: 0.94580, audio: 2.19269)
+05/31/2026 14:22:56 - INFO - __main__ - Epoch: 0, Steps: 7920, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.11902 (text: 2.09135, audio: 2.02767)
+05/31/2026 14:24:41 - INFO - __main__ - Epoch: 0, Steps: 7930, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 5.18503 (text: 3.57356, audio: 1.61147)
+05/31/2026 14:26:25 - INFO - __main__ - Epoch: 0, Steps: 7940, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.80918 (text: 1.13183, audio: 1.67735)
+05/31/2026 14:28:08 - INFO - __main__ - Epoch: 0, Steps: 7950, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.84327 (text: 1.81051, audio: 2.03275)
+05/31/2026 14:29:49 - INFO - __main__ - Epoch: 0, Steps: 7960, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.85170 (text: 1.06757, audio: 1.78413)
+05/31/2026 14:31:28 - INFO - __main__ - Epoch: 0, Steps: 7970, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.15744 (text: 0.58926, audio: 1.56818)
+05/31/2026 14:33:07 - INFO - __main__ - Epoch: 0, Steps: 7980, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.92102 (text: 0.62316, audio: 0.29786)
+05/31/2026 14:34:46 - INFO - __main__ - Epoch: 0, Steps: 7990, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.56907 (text: 0.42000, audio: 1.14907)
+05/31/2026 14:36:26 - INFO - __main__ - Epoch: 0, Steps: 8000, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.45779 (text: 0.84809, audio: 1.60969)
+05/31/2026 14:36:26 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_8000
+05/31/2026 14:36:26 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 14:42:37 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_8000/pytorch_model
+05/31/2026 14:42:37 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_8000/sampler.bin
+05/31/2026 14:42:37 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_8000/random_states_0.pkl
+05/31/2026 14:44:20 - INFO - __main__ - Epoch: 0, Steps: 8010, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.86443 (text: 0.61599, audio: 1.24844)
+05/31/2026 14:46:00 - INFO - __main__ - Epoch: 0, Steps: 8020, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.24409 (text: 0.77030, audio: 1.47379)
+05/31/2026 14:47:38 - INFO - __main__ - Epoch: 0, Steps: 8030, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.76597 (text: 3.02695, audio: 1.73902)
+05/31/2026 14:49:16 - INFO - __main__ - Epoch: 0, Steps: 8040, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.05384 (text: 2.55939, audio: 1.49445)
+05/31/2026 14:50:55 - INFO - __main__ - Epoch: 0, Steps: 8050, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.80819 (text: 1.66837, audio: 2.13982)
+05/31/2026 14:52:38 - INFO - __main__ - Epoch: 0, Steps: 8060, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.15215 (text: 0.70217, audio: 1.44998)
+05/31/2026 14:54:21 - INFO - __main__ - Epoch: 0, Steps: 8070, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.56347 (text: 1.02744, audio: 1.53603)
+05/31/2026 14:56:06 - INFO - __main__ - Epoch: 0, Steps: 8080, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.13643 (text: 0.87329, audio: 0.26314)
+05/31/2026 14:57:47 - INFO - __main__ - Epoch: 0, Steps: 8090, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.97294 (text: 0.34784, audio: 0.62510)
+05/31/2026 14:59:28 - INFO - __main__ - Epoch: 0, Steps: 8100, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.97265 (text: 1.09303, audio: 1.87962)
+05/31/2026 15:01:07 - INFO - __main__ - Epoch: 0, Steps: 8110, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 4.26496 (text: 2.09474, audio: 2.17022)
+05/31/2026 15:02:45 - INFO - __main__ - Epoch: 0, Steps: 8120, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.87946 (text: 0.98457, audio: 1.89489)
+05/31/2026 15:04:24 - INFO - __main__ - Epoch: 0, Steps: 8130, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47769 (text: 1.07526, audio: 1.40243)
+05/31/2026 15:06:06 - INFO - __main__ - Epoch: 0, Steps: 8140, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.52008 (text: 0.25673, audio: 0.26334)
+05/31/2026 15:07:50 - INFO - __main__ - Epoch: 0, Steps: 8150, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.06580 (text: 0.77717, audio: 0.28863)
+05/31/2026 15:09:34 - INFO - __main__ - Epoch: 0, Steps: 8160, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.47143 (text: 0.89048, audio: 1.58095)
+05/31/2026 15:11:15 - INFO - __main__ - Epoch: 0, Steps: 8170, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.74010 (text: 0.83338, audio: 1.90673)
+05/31/2026 15:12:54 - INFO - __main__ - Epoch: 0, Steps: 8180, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.05852 (text: 0.28331, audio: 1.77521)
+05/31/2026 15:14:33 - INFO - __main__ - Epoch: 0, Steps: 8190, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.64989 (text: 0.97662, audio: 1.67327)
+05/31/2026 15:16:12 - INFO - __main__ - Epoch: 0, Steps: 8200, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.36165 (text: 0.61451, audio: 1.74714)
+05/31/2026 15:17:51 - INFO - __main__ - Epoch: 0, Steps: 8210, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.84923 (text: 1.06559, audio: 1.78364)
+05/31/2026 15:19:30 - INFO - __main__ - Epoch: 0, Steps: 8220, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.89504 (text: 0.79015, audio: 2.10489)
+05/31/2026 15:21:09 - INFO - __main__ - Epoch: 0, Steps: 8230, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.58022 (text: 1.01685, audio: 1.56338)
+05/31/2026 15:22:48 - INFO - __main__ - Epoch: 0, Steps: 8240, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.84912 (text: 0.03164, audio: 0.81748)
+05/31/2026 15:24:27 - INFO - __main__ - Epoch: 0, Steps: 8250, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.63323 (text: 0.93881, audio: 0.69442)
+05/31/2026 15:26:07 - INFO - __main__ - Epoch: 0, Steps: 8260, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.60623 (text: 1.20020, audio: 1.40603)
+05/31/2026 15:27:46 - INFO - __main__ - Epoch: 0, Steps: 8270, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.86557 (text: 0.88646, audio: 1.97911)
+05/31/2026 15:29:25 - INFO - __main__ - Epoch: 0, Steps: 8280, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.56703 (text: 0.84861, audio: 0.71841)
+05/31/2026 15:31:04 - INFO - __main__ - Epoch: 0, Steps: 8290, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.85093 (text: 1.04749, audio: 1.80344)
+05/31/2026 15:32:43 - INFO - __main__ - Epoch: 0, Steps: 8300, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.82167 (text: 1.70549, audio: 2.11618)
+05/31/2026 15:34:22 - INFO - __main__ - Epoch: 0, Steps: 8310, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.61107 (text: 1.92412, audio: 1.68695)
+05/31/2026 15:36:01 - INFO - __main__ - Epoch: 0, Steps: 8320, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.51210 (text: 1.06949, audio: 1.44261)
+05/31/2026 15:37:41 - INFO - __main__ - Epoch: 0, Steps: 8330, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.06228 (text: 0.90296, audio: 2.15932)
+05/31/2026 15:39:21 - INFO - __main__ - Epoch: 0, Steps: 8340, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.93653 (text: 0.42254, audio: 1.51399)
+05/31/2026 15:41:00 - INFO - __main__ - Epoch: 0, Steps: 8350, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.20712 (text: 1.12668, audio: 2.08044)
+05/31/2026 15:42:38 - INFO - __main__ - Epoch: 0, Steps: 8360, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.94286 (text: 2.15180, audio: 1.79106)
+05/31/2026 15:44:17 - INFO - __main__ - Epoch: 0, Steps: 8370, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.82311 (text: 1.06633, audio: 1.75677)
+05/31/2026 15:45:55 - INFO - __main__ - Epoch: 0, Steps: 8380, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.20066 (text: 0.79785, audio: 1.40281)
+05/31/2026 15:47:38 - INFO - __main__ - Epoch: 0, Steps: 8390, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.98127 (text: 0.56999, audio: 1.41128)
+05/31/2026 15:49:21 - INFO - __main__ - Epoch: 0, Steps: 8400, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.06392 (text: 1.39544, audio: 1.66849)
+05/31/2026 15:51:05 - INFO - __main__ - Epoch: 0, Steps: 8410, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.99376 (text: 0.95221, audio: 1.04155)
+05/31/2026 15:52:47 - INFO - __main__ - Epoch: 0, Steps: 8420, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.89553 (text: 0.53882, audio: 1.35671)
+05/31/2026 15:54:29 - INFO - __main__ - Epoch: 0, Steps: 8430, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.42315 (text: 1.30413, audio: 2.11902)
+05/31/2026 15:56:08 - INFO - __main__ - Epoch: 0, Steps: 8440, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.08100 (text: 0.02089, audio: 0.06011)
+05/31/2026 15:57:48 - INFO - __main__ - Epoch: 0, Steps: 8450, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.99486 (text: 0.97254, audio: 2.02232)
+05/31/2026 15:59:27 - INFO - __main__ - Epoch: 0, Steps: 8460, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 1.47611 (text: 1.02191, audio: 0.45420)
+05/31/2026 16:01:09 - INFO - __main__ - Epoch: 0, Steps: 8470, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.91289 (text: 0.71899, audio: 2.19390)
+05/31/2026 16:02:53 - INFO - __main__ - Epoch: 0, Steps: 8480, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.09597 (text: 0.75862, audio: 1.33735)
+05/31/2026 16:04:37 - INFO - __main__ - Epoch: 0, Steps: 8490, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.20156 (text: 1.07319, audio: 1.12837)
+05/31/2026 16:06:18 - INFO - __main__ - Epoch: 0, Steps: 8500, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.28019 (text: 0.89553, audio: 1.38466)
+05/31/2026 16:06:18 - INFO - accelerate.accelerator - Saving current state to output/moshiko-finetuned/step_8500
+05/31/2026 16:06:18 - INFO - accelerate.accelerator - Saving DeepSpeed Model and Optimizer
+05/31/2026 16:10:31 - INFO - accelerate.accelerator - DeepSpeed Model and Optimizer saved to output dir output/moshiko-finetuned/step_8500/pytorch_model
+05/31/2026 16:10:31 - INFO - accelerate.checkpointing - Sampler state for dataloader 0 saved in output/moshiko-finetuned/step_8500/sampler.bin
+05/31/2026 16:10:31 - INFO - accelerate.checkpointing - Random states saved in output/moshiko-finetuned/step_8500/random_states_0.pkl
+05/31/2026 16:12:23 - INFO - __main__ - Epoch: 0, Steps: 8510, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.31172 (text: 0.79482, audio: 1.51690)
+05/31/2026 16:14:11 - INFO - __main__ - Epoch: 0, Steps: 8520, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.50742 (text: 1.42032, audio: 2.08710)
+05/31/2026 16:15:55 - INFO - __main__ - Epoch: 0, Steps: 8530, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.09895 (text: 0.74792, audio: 1.35103)
+05/31/2026 16:17:39 - INFO - __main__ - Epoch: 0, Steps: 8540, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.73682 (text: 0.96918, audio: 1.76764)
+05/31/2026 16:19:21 - INFO - __main__ - Epoch: 0, Steps: 8550, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.75525 (text: 0.85033, audio: 1.90492)
+05/31/2026 16:21:03 - INFO - __main__ - Epoch: 0, Steps: 8560, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.90545 (text: 1.36420, audio: 2.54125)
+05/31/2026 16:22:43 - INFO - __main__ - Epoch: 0, Steps: 8570, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 3.34434 (text: 1.87982, audio: 1.46452)
+05/31/2026 16:24:22 - INFO - __main__ - Epoch: 0, Steps: 8580, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 0.50818 (text: 0.20420, audio: 0.30397)
+05/31/2026 16:26:01 - INFO - __main__ - Epoch: 0, Steps: 8590, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.61059 (text: 1.17788, audio: 1.43270)
+05/31/2026 16:27:40 - INFO - __main__ - Epoch: 0, Steps: 8600, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.42156 (text: 0.65480, audio: 1.76676)
+05/31/2026 16:29:21 - INFO - __main__ - Epoch: 0, Steps: 8610, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.69498 (text: 1.05305, audio: 1.64193)
+05/31/2026 16:31:05 - INFO - __main__ - Epoch: 0, Steps: 8620, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.63488 (text: 1.41105, audio: 1.22383)
+05/31/2026 16:32:49 - INFO - __main__ - Epoch: 0, Steps: 8630, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.10628 (text: 0.66055, audio: 1.44574)
+05/31/2026 16:34:31 - INFO - __main__ - Epoch: 0, Steps: 8640, LRs: {'tempformer': '3.000e-05', 'depformer': '3.000e-05'}, Loss: 2.28799 (text: 0.96678, audio: 1.32121)

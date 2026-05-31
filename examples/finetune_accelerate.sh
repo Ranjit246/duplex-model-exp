@@ -22,6 +22,9 @@ set -euo pipefail
 #   SAVE_STEPS
 #   USE_ORACLE
 #   LOG_FILE
+#   RESUME_FROM_CHECKPOINT  # path to a step_<N> dir to resume from (default: none).
+#                           # On resume, every arg except OUTPUT_DIR/MAX_TRAIN_STEPS
+#                           # must match the original run's config.json (incl. LOG_FILE).
 
 TRAIN_DATA_GLOB="${TRAIN_DATA_GLOB:-processed_data/spokenwoz_sample/train_text_oracle_a0b1_events-*.parquet}"
 MODEL_DIR="${MODEL_DIR:-init_models/moshiko-one_streams-bfloat16}"
@@ -38,6 +41,7 @@ LOGGING_STEPS="${LOGGING_STEPS:-10}"
 SAVE_STEPS="${SAVE_STEPS:-500}"
 USE_ORACLE="${USE_ORACLE:-1}"
 LOG_FILE="${LOG_FILE:-logs/training_$(date +%Y%m%d_%H%M%S).log}"
+RESUME_FROM_CHECKPOINT="${RESUME_FROM_CHECKPOINT:-}"
 
 MOSHI_SPEAKERS="${MOSHI_SPEAKERS:-B}"
 
@@ -65,6 +69,9 @@ if [ "${USE_ORACLE}" = "1" ]; then
 fi
 EXTRA_ARGS+=(--moshi_speakers "${MOSHI_SPEAKERS}")
 EXTRA_ARGS+=(--log_file "${LOG_FILE}")
+if [ -n "${RESUME_FROM_CHECKPOINT}" ]; then
+    EXTRA_ARGS+=(--resume_from_checkpoint "${RESUME_FROM_CHECKPOINT}")
+fi
 
 uv run accelerate launch \
     --num_processes "${NUM_PROCESSES}" \
