@@ -25,12 +25,12 @@ set -euo pipefail
 # Config (override via environment). The *_PATH defaults are this host's paths;
 # config.json is rewritten to match them so the consistency check passes.
 # ---------------------------------------------------------------------------
-TOKEN="${TOKEN:-}"
+TOKEN="${TOKEN:-HF_TOKEN_HERE}"
 REPO="${REPO:-Ranjit/moshiko-kame-hinglish-ft-exp}"
 STEP="${STEP:-1500}"
 
-REPO_DIR="${REPO_DIR:-/mnt/LLM-1-TRAIN-SFT-OUT/EXP/duplex-model-exp}"           # repo root; training runs from here
-DL_DIR="${DL_DIR:-/mnt/LLM-1-TRAIN-SFT-OUT/EXP/moshiko-kame-hinglish-ft-exp}"   # where hub files are downloaded
+REPO_DIR="${REPO_DIR:-duplex-model-exp}"           # repo root; training runs from here
+DL_DIR="${DL_DIR:-moshiko-kame-hinglish-ft-exp}"   # where hub files are downloaded
 OUTPUT_DIR="${OUTPUT_DIR:-output/moshiko-finetuned}"                            # trainer run dir (config.json lives here), relative to REPO_DIR
 TRAIN_DATA="${TRAIN_DATA:-${REPO_DIR}/train_text_oracle_a0b1_events-001-of-001.parquet}"
 DEEPSPEED_CONFIG="${DEEPSPEED_CONFIG:-${REPO_DIR}/ds_configs/zero2-bf16-optim-offload-h100.json}"

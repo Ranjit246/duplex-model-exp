@@ -8,7 +8,7 @@ cd "$(dirname "$0")"
 
 # HF write token. Override at the command line if you prefer not to keep it in the file:
 #   HF_TOKEN=hf_xxx bash run_ckpt_watcher.sh
-export HF_TOKEN="${HF_TOKEN:-}"
+export HF_TOKEN="${HF_TOKEN:-HF_TOKEN_HERE}"
 
 export REPO_ID="${REPO_ID:-Ranjit/moshiko-kame-hinglish-ft-exp}"
 export CKPT_ROOT="${CKPT_ROOT:-output/moshiko-finetuned}"
