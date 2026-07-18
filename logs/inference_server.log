@@ -1,0 +1,989 @@
+[1;34m[Info][0m Plaintext session logging enabled at logs/inference_sessions
+[1;34m[Info][0m retrieving checkpoint
+[1;34m[Info][0m loading mimi
+[1;34m[Info][0m mimi loaded
+[1;34m[Info][0m loading language model
+[1;34m[Info][0m language model loaded
+[1;34m[Info][0m Async ASR processor initialized (provider: deepgram, model: nova-3, language: multi)
+[1;34m[Info][0m warming up the model
+[1;34m[Info][0m retrieving the static content
+[1;34m[Info][0m serving static content from /home/ranjitpatro100/.cache/huggingface/hub/models--kyutai--moshi-artifacts/snapshots/5040b2bc0ede3531913ce11bf591e7c822164a54/dist
+[1;34m[Info][0m Access the Web UI directly at http://0.0.0.0:8001
+[1;34m[Info][0m ASR processing enabled (English) - partials stream to LLM; finals commit to transcript
+======== Running on http://0.0.0.0:8001 ========
+(Press CTRL+C to quit)
+Error handling request
+Traceback (most recent call last):
+  File "/home/ranjitpatro100/duplex-model-exp/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 377, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "aiohttp/_http_parser.pyx", line 563, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message:
+  Invalid method encountered:
+
+    b'\x16\x03\x01'
+      ^
+[1;34m[Info][0m accepted connection
+[1;34m[Info][0m Cleared session log files in logs/inference_sessions
+[1;34m[Info][0m Async ASR streaming started
+[1;34m[Info][0m Deepgram ASR websocket connected (model=nova-3, language=multi)
+[1;34m[Info][0m [ASR Partial +4] can you hear me
+[1;34m[Info][0m text token ' good'
+[1;34m[Info][0m text token ' morning'
+[1;34m[Info][0m LLM stream cancelled
+[1;34m[Info][0m text token ' am'
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मु
+[1;34m[Info][0m [LLM] झे
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m text token ' i'
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] आ
+[1;34m[Info][0m [LLM] वा
+[1;34m[Info][0m text token ' speaking'
+[1;34m[Info][0m [LLM] ज़
+[1;34m[Info][0m [LLM] बहुत
+[1;34m[Info][0m [LLM] अच्छ
+[1;34m[Info][0m [LLM] े
+[1;34m[Info][0m [LLM] से
+[1;34m[Info][0m [LLM] सु
+[1;34m[Info][0m [LLM] ना
+[1;34m[Info][0m [LLM] ई
+[1;34m[Info][0m [LLM] दे
+[1;34m[Info][0m [LLM] रही
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] य
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] बता
+[1;34m[Info][0m [LLM] इ
+[1;34m[Info][0m text token ' with'
+[1;34m[Info][0m [LLM] ए
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] हा
+[1;34m[Info][0m [LLM] य
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकता
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m text token 's'
+[1;34m[Info][0m text token 'ant'
+[1;34m[Info][0m text token 'osh'
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 'kumar'
+[1;34m[Info][0m [ASR Partial +1] yes
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] हा
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मु
+[1;34m[Info][0m [LLM] झे
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] आ
+[1;34m[Info][0m [LLM] वा
+[1;34m[Info][0m [LLM] ज़
+[1;34m[Info][0m [LLM] स्प
+[1;34m[Info][0m [LLM] ष्ट
+[1;34m[Info][0m [LLM] सु
+[1;34m[Info][0m [LLM] ना
+[1;34m[Info][0m [LLM] ई
+[1;34m[Info][0m [LLM] दे
+[1;34m[Info][0m [LLM] रही
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] ैं
+[1;34m[Info][0m [LLM] ट
+[1;34m[Info][0m [LLM] ो
+[1;34m[Info][0m [LLM] श
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] आज
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] मद
+[1;34m[Info][0m [LLM] द
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकता
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 'hi'
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 's'
+[1;34m[Info][0m text token 'ant'
+[1;34m[Info][0m text token 'osh'
+[1;34m[Info][0m text token ' this'
+[1;34m[Info][0m text token ' is'
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 'sia'
+[1;34m[Info][0m text token ' from'
+[1;34m[Info][0m text token ' even'
+[1;34m[Info][0m text token ' healthcare'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' had'
+[1;34m[Info][0m text token ' signed'
+[1;34m[Info][0m text token ' up'
+[1;34m[Info][0m text token ' with'
+[1;34m[Info][0m text token ' us'
+[1;34m[Info][0m text token ' a'
+[1;34m[Info][0m text token ' while'
+[1;34m[Info][0m text token ' ago'
+[1;34m[Info][0m text token ' i'
+[1;34m[Info][0m text token ' believe'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' were'
+[1;34m[Info][0m text token ' looking'
+[1;34m[Info][0m text token ' for'
+[1;34m[Info][0m text token ' health'
+[1;34m[Info][0m text token ' insurance'
+[1;34m[Info][0m text token ' it'
+[1;34m[Info][0m text token ' would'
+[1;34m[Info][0m text token ' be'
+[1;34m[Info][0m text token ' great'
+[1;34m[Info][0m text token ' to'
+[1;34m[Info][0m text token ' know'
+[1;34m[Info][0m text token ' what'
+[1;34m[Info][0m text token ' was'
+[1;34m[Info][0m text token ' it'
+[1;34m[Info][0m text token ' that'
+[1;34m[Info][0m text token ' got'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' interested'
+[1;34m[Info][0m text token ' in'
+[1;34m[Info][0m text token ' even'
+[1;34m[Info][0m text token ' health'
+[1;34m[Info][0m text token ' care'
+[1;34m[Info][0m text token ' and'
+[1;34m[Info][0m text token ' is'
+[1;34m[Info][0m text token ' there'
+[1;34m[Info][0m text token ' anything'
+[1;34m[Info][0m text token ' i'
+[1;34m[Info][0m text token ' can'
+[1;34m[Info][0m text token ' help'
+[1;34m[Info][0m text token ' with'
+[1;34m[Info][0m [ASR Partial +2] i think
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] हा
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] कह
+[1;34m[Info][0m [LLM] ना
+[1;34m[Info][0m [LLM] चाह
+[1;34m[Info][0m [LLM] रहे
+[1;34m[Info][0m [LLM] थे
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [ASR Partial +1] i think i
+[1;34m[Info][0m [ASR Partial +1] i think i have
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] हा
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] आपको
+[1;34m[Info][0m [LLM] सु
+[1;34m[Info][0m [LLM] न
+[1;34m[Info][0m [LLM] पा
+[1;34m[Info][0m [LLM] रही
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] कहा
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] बता
+[1;34m[Info][0m [LLM] इ
+[1;34m[Info][0m [LLM] ए
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आपको
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] चाहिए
+[1;34m[Info][0m [LLM] था
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [ASR Partial +3] made to pay
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 'hello'
+[1;34m[Info][0m [LLM] अ
+[1;34m[Info][0m [LLM] च्छ
+[1;34m[Info][0m [LLM] ा
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] payment
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] दी
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] एक
+[1;34m[Info][0m [LLM] moment
+[1;34m[Info][0m [LLM] check
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] ले
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] कि
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] का
+[1;34m[Info][0m [LLM] transaction
+[1;34m[Info][0m [LLM] clear
+[1;34m[Info][0m [LLM] हो
+[1;34m[Info][0m [LLM] गया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] या
+[1;34m[Info][0m [LLM] नहीं
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [ASR Partial +6] मैं तो pay किया हूं health insurance आपको कुछ
+[1;34m[Info][0m [LLM] न
+[1;34m[Info][0m [LLM] म
+[1;34m[Info][0m [LLM] स्
+[1;34m[Info][0m [LLM] ते
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] त
+[1;34m[Info][0m [LLM] ान
+[1;34m[Info][0m [LLM] े
+[1;34m[Info][0m [LLM] के
+[1;34m[Info][0m [LLM] लिए
+[1;34m[Info][0m [LLM] शु
+[1;34m[Info][0m [LLM] क्र
+[1;34m[Info][0m [LLM] िया
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] payment
+[1;34m[Info][0m [LLM] क
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] और
+[1;34m[Info][0m [LLM] किस
+[1;34m[Info][0m [LLM] mode
+[1;34m[Info][0m [LLM] से
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] थी
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] कि
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] इसे
+[1;34m[Info][0m [LLM] verify
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सक
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [ASR Partial +4] मैं तो pay किया हूं health insurance आपको कुछ पता है उसके बारे
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] payment
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] अभी
+[1;34m[Info][0m [LLM] आपके
+[1;34m[Info][0m [LLM] account
+[1;34m[Info][0m [LLM] को
+[1;34m[Info][0m [LLM] check
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] के
+[1;34m[Info][0m [LLM] आपको
+[1;34m[Info][0m [LLM] पूरी
+[1;34m[Info][0m [LLM] details
+[1;34m[Info][0m [LLM] दे
+[1;34m[Info][0m [LLM] दे
+[1;34m[Info][0m [LLM] ती
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] एक
+[1;34m[Info][0m [LLM] second
+[1;34m[Info][0m [LLM] रु
+[1;34m[Info][0m [LLM] क
+[1;34m[Info][0m [LLM] िए
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] pay
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] पर
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] यह
+[1;34m[Info][0m [LLM] कह
+[1;34m[Info][0m [LLM] रही
+[1;34m[Info][0m [LLM] थी
+[1;34m[Info][0m [LLM] कि
+[1;34m[Info][0m [LLM] details
+[1;34m[Info][0m [LLM] confirm
+[1;34m[Info][0m [LLM] करने
+[1;34m[Info][0m [LLM] के
+[1;34m[Info][0m [LLM] लिए
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] अभी
+[1;34m[Info][0m [LLM] आपके
+[1;34m[Info][0m [LLM] पास
+[1;34m[Info][0m [LLM] time
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m text token ' sure'
+[1;34m[Info][0m text token ' sure'
+[1;34m[Info][0m text token ' i'
+[1;34m[Info][0m text token '''
+[1;34m[Info][0m text token 'll'
+[1;34m[Info][0m text token ' wait'
+[1;34m[Info][0m text token ' here'
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 'sam'
+[1;34m[Info][0m text token 'jay'
+[1;34m[Info][0m [ASR Partial +2] actually
+[1;34m[Info][0m [ASR Partial +3] actually मैं health insurance
+[1;34m[Info][0m LLM stream cancelled
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] प
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] pay
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] इस
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [ASR Partial +1] एक चुना
+[1;34m[Info][0m [LLM] जानकारी
+[1;34m[Info][0m [LLM] मु
+[1;34m[Info][0m [LLM] झे
+[1;34m[Info][0m [LLM] मिल
+[1;34m[Info][0m [LLM] गई
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] अभी
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] का
+[1;34m[Info][0m [LLM] record
+[1;34m[Info][0m [LLM] check
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] ती
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मु
+[1;34m[Info][0m [LLM] झे
+[1;34m[Info][0m [LLM] प
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] select
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] payment
+[1;34m[Info][0m [LLM] complete
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] दी
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] या
+[1;34m[Info][0m [LLM] आपको
+[1;34m[Info][0m [LLM] उस
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [ASR Partial +4] एक चुना हूं अभी तो आप
+[1;34m[Info][0m [LLM] कोई
+[1;34m[Info][0m [LLM] help
+[1;34m[Info][0m [LLM] चाहिए
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [LLM] अ
+[1;34m[Info][0m [LLM] च्छ
+[1;34m[Info][0m [LLM] ा
+[1;34m[Info][0m [LLM] ठ
+[1;34m[Info][0m [LLM] ी
+[1;34m[Info][0m [LLM] क
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] help
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकती
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m [LLM] इस
+[1;34m[Info][0m [LLM] बारे
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [LLM] मत
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ko
+[1;34m[Info][0m [LLM] k
+[1;34m[Info][0m [LLM] ya
+[1;34m[Info][0m [LLM] doubt
+[1;34m[Info][0m [LLM] hai
+[1;34m[Info][0m [ASR Partial +4] एक चुना हूं अभी तो आपको पता है उसके बारे
+[1;34m[Info][0m [LLM] ya
+[1;34m[Info][0m [LLM] k
+[1;34m[Info][0m [LLM] ya
+[1;34m[Info][0m [LLM] p
+[1;34m[Info][0m [LLM] uch
+[1;34m[Info][0m [LLM] na
+[1;34m[Info][0m [LLM] cha
+[1;34m[Info][0m [LLM] hte
+[1;34m[Info][0m [LLM] h
+[1;34m[Info][0m [LLM] ain
+[1;34m[Info][0m [LLM] a
+[1;34m[Info][0m [LLM] ap
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] का
+[1;34m[Info][0m [LLM] choice
+[1;34m[Info][0m [LLM] select
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] plan
+[1;34m[Info][0m [LLM] activate
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] वा
+[1;34m[Info][0m [LLM] दिया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] या
+[1;34m[Info][0m [LLM] फिर
+[1;34m[Info][0m [LLM] आपको
+[1;34m[Info][0m [LLM] coverage
+[1;34m[Info][0m [LLM] के
+[1;34m[Info][0m [LLM] बारे
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] कुछ
+[1;34m[Info][0m [LLM] specific
+[1;34m[Info][0m [LLM] जान
+[1;34m[Info][0m [LLM] ना
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] select
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] यह
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] देख
+[1;34m[Info][0m [LLM] पा
+[1;34m[Info][0m [LLM] रही
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] अब
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] payment
+[1;34m[Info][0m [LLM] complete
+[1;34m[Info][0m [LLM] करने
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] जर
+[1;34m[Info][0m [LLM] ूर
+[1;34m[Info][0m [LLM] त
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] pay
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] दिया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m text token ' sorry'
+[1;34m[Info][0m text token ' couldn'
+[1;34m[Info][0m text token '''
+[1;34m[Info][0m text token 't'
+[1;34m[Info][0m text token ' catch'
+[1;34m[Info][0m text token ' that'
+[1;34m[Info][0m text token ' could'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' repeat'
+[1;34m[Info][0m text token ' got'
+[1;34m[Info][0m text token ' it'
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 's'
+[1;34m[Info][0m text token 'ant'
+[1;34m[Info][0m text token 'osh'
+[1;34m[Info][0m [ASR Partial +3] actually मैं
+[1;34m[Info][0m text token ' since'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] ैं
+[1;34m[Info][0m [LLM] ट
+[1;34m[Info][0m [LLM] ो
+[1;34m[Info][0m [LLM] श
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m text token ' were'
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] प
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m text token ' looking'
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] select
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] बता
+[1;34m[Info][0m [LLM] इ
+[1;34m[Info][0m [LLM] ए
+[1;34m[Info][0m [LLM] उस
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] आपको
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] मद
+[1;34m[Info][0m [LLM] द
+[1;34m[Info][0m [LLM] चाहिए
+[1;34m[Info][0m [LLM] या
+[1;34m[Info][0m [LLM] कोई
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] वाल
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m text token ' into'
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m text token ' this'
+[1;34m[Info][0m text token ' earlier'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' didn'
+[1;34m[Info][0m text token '''
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] sir
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m text token 't'
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] जो
+[1;34m[Info][0m text token ' go'
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] plan
+[1;34m[Info][0m [LLM] select
+[1;34m[Info][0m text token ' ahead'
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] उस
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] details
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] अपने
+[1;34m[Info][0m [LLM] system
+[1;34m[Info][0m [LLM] पर
+[1;34m[Info][0m [LLM] check
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] ले
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m text token ' with'
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] एक
+[1;34m[Info][0m [LLM] second
+[1;34m[Info][0m [LLM] hold
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] ज
+[1;34m[Info][0m [LLM] िए
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m text token ' any'
+[1;34m[Info][0m text token ' plan'
+[1;34m[Info][0m text token ' was'
+[1;34m[Info][0m text token ' there'
+[1;34m[Info][0m text token ' anything'
+[1;34m[Info][0m text token ' that'
+[1;34m[Info][0m text token ' didn'
+[1;34m[Info][0m text token '''
+[1;34m[Info][0m text token 't'
+[1;34m[Info][0m text token ' work'
+[1;34m[Info][0m text token ' for'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' was'
+[1;34m[Info][0m text token ' it'
+[1;34m[Info][0m text token ' the'
+[1;34m[Info][0m text token ' price'
+[1;34m[Info][0m text token ' or'
+[1;34m[Info][0m text token ' some'
+[1;34m[Info][0m text token ' coverage'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' want'
+[1;34m[Info][0m text token ' to'
+[1;34m[Info][0m text token ' know'
+[1;34m[Info][0m text token ' about'
+[1;34m[Info][0m text token ' i'
+[1;34m[Info][0m text token '''
+[1;34m[Info][0m text token 'm'
+[1;34m[Info][0m text token 'm'
+[1;34m[Info][0m [ASR Partial +7] क्या आप मुझे हिंदी में बोल सकते
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] हि
+[1;34m[Info][0m [LLM] ंद
+[1;34m[Info][0m [LLM] ी
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] बात
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकता
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] ैं
+[1;34m[Info][0m [LLM] ट
+[1;34m[Info][0m [LLM] ो
+[1;34m[Info][0m [LLM] ष
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] का
+[1;34m[Info][0m [LLM] plan
+[1;34m[Info][0m [LLM] choose
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] उस
+[1;34m[Info][0m [LLM] की
+[1;34m[Info][0m [LLM] details
+[1;34m[Info][0m [LLM] हम
+[1;34m[Info][0m [LLM] ारे
+[1;34m[Info][0m [LLM] पास
+[1;34m[Info][0m [LLM] check
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] नी
+[1;34m[Info][0m [LLM] होग
+[1;34m[Info][0m [LLM] ी
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] हि
+[1;34m[Info][0m [LLM] ंद
+[1;34m[Info][0m [LLM] ी
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] बात
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकता
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] त
+[1;34m[Info][0m [LLM] ान
+[1;34m[Info][0m [LLM] ा
+[1;34m[Info][0m [LLM] चाह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ंगा
+[1;34m[Info][0m [LLM] कि
+[1;34m[Info][0m [LLM] health
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] जो
+[1;34m[Info][0m [LLM] pay
+[1;34m[Info][0m [LLM] किया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] वो
+[1;34m[Info][0m [LLM] details
+[1;34m[Info][0m [LLM] check
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ें
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] premium
+[1;34m[Info][0m [LLM] pay
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] दिया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m text token ' i'
+[1;34m[Info][0m text token '''
+[1;34m[Info][0m text token 'm'
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 'sia'
+[1;34m[Info][0m text token ' from'
+[1;34m[Info][0m text token ' even'
+[1;34m[Info][0m text token ' healthcare'
+[1;34m[Info][0m text token ' here'
+[1;34m[Info][0m text token ' to'
+[1;34m[Info][0m text token ' help'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' with'
+[1;34m[Info][0m text token ' your'
+[1;34m[Info][0m text token ' health'
+[1;34m[Info][0m text token ' insurance'
+[1;34m[Info][0m text token ' needs'
+[1;34m[Info][0m text token ' may'
+[1;34m[Info][0m text token ' i'
+[1;34m[Info][0m text token ' ask'
+[1;34m[Info][0m text token ' if'
+[1;34m[Info][0m text token ' you'
+[1;34m[Info][0m text token ' want'
+[1;34m[Info][0m text token ' to'
+[1;34m[Info][0m text token ' explore'
+[1;34m[Info][0m text token ' a'
+[1;34m[Info][0m text token ' plan'
+[1;34m[Info][0m text token ' that'
+[1;34m[Info][0m text token ' covers'
+[1;34m[Info][0m text token ' just'
+[1;34m[Info][0m text token ' hospitalization'
+[1;34m[Info][0m text token ' emergencies'
+[1;34m[Info][0m text token ' or'
+[1;34m[Info][0m text token ' also'
+[1;34m[Info][0m text token ' day'
+[1;34m[Info][0m text token ' to'
+[1;34m[Info][0m text token ' day'
+[1;34m[Info][0m text token ' doctor'
+[1;34m[Info][0m text token ' visits'
+[1;34m[Info][0m text token ' and'
+[1;34m[Info][0m text token ' check'
+[1;34m[Info][0m text token 'ups'
+[1;34m[Info][0m text token ' in'
+[1;34m[Info][0m text token ' the'
+[1;34m[Info][0m text token ' future'
+[1;34m[Info][0m [ASR Partial +5] क्या आप हिंदी में
+[1;34m[Info][0m [LLM] हाँ
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] हि
+[1;34m[Info][0m [LLM] ंद
+[1;34m[Info][0m [LLM] ी
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] बात
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकती
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] कहा
+[1;34m[Info][0m [LLM] कि
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] ने
+[1;34m[Info][0m [LLM] insurance
+[1;34m[Info][0m [ASR Partial +4] क्या आप हिंदी में बात कर सकते हैं
+[1;34m[Info][0m [LLM] pay
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] दिया
+[1;34m[Info][0m [LLM] है
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] आप
+[1;34m[Info][0m [LLM] अपने
+[1;34m[Info][0m [LLM] policy
+[1;34m[Info][0m [LLM] details
+[1;34m[Info][0m [LLM] share
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकते
+[1;34m[Info][0m [LLM] हैं
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] कि
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] verify
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सक
+[1;34m[Info][0m [LLM] ूं
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m LLM stream cancelled
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ब
+[1;34m[Info][0m [LLM] िल्
+[1;34m[Info][0m [LLM] कु
+[1;34m[Info][0m [LLM] ल
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] मैं
+[1;34m[Info][0m [LLM] हि
+[1;34m[Info][0m [LLM] ंद
+[1;34m[Info][0m [LLM] ी
+[1;34m[Info][0m [LLM] में
+[1;34m[Info][0m [LLM] बात
+[1;34m[Info][0m [LLM] कर
+[1;34m[Info][0m [LLM] सकती
+[1;34m[Info][0m [LLM] ह
+[1;34m[Info][0m [LLM] ू
+[1;34m[Info][0m [LLM] ँ
+[1;34m[Info][0m [LLM] ।
+[1;34m[Info][0m [LLM] तो
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] ें
+[1;34m[Info][0m [LLM] ठ
+[1;34m[Info][0m [LLM] ो
+[1;34m[Info][0m [LLM] श
+[1;34m[Info][0m [LLM] जी
+[1;34m[Info][0m [LLM] ,
+[1;34m[Info][0m [LLM] बता
+[1;34m[Info][0m [LLM] इ
+[1;34m[Info][0m [LLM] ए
+[1;34m[Info][0m [LLM] अब
+[1;34m[Info][0m [LLM] क्या
+[1;34m[Info][0m [LLM] स
+[1;34m[Info][0m [LLM] हा
+[1;34m[Info][0m [LLM] य
+[1;34m[Info][0m [LLM] ता
+[1;34m[Info][0m [LLM] चाहिए
+[1;34m[Info][0m [LLM] आपको
+[1;34m[Info][0m [LLM] ?
+[1;34m[Info][0m text token ' '
+[1;34m[Info][0m text token 'hello'
+[1;34m[Info][0m connection closed (recv_loop)
+[1;34m[Info][0m ASR streaming cancelled
+[1;34m[Info][0m Async ASR streaming stopped. Stats: {'words_detected': 0, 'final_transcripts': 9, 'buffer_drops': 0, 'reconnections': 0}
+[1;34m[Info][0m done with connection
+Error handling request
+Traceback (most recent call last):
+  File "/home/ranjitpatro100/duplex-model-exp/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 377, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "aiohttp/_http_parser.pyx", line 563, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message:
+  Invalid method encountered:
+
+    b'\x16\x03\x01'
+      ^
+Error handling request
+Traceback (most recent call last):
+  File "/home/ranjitpatro100/duplex-model-exp/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 377, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "aiohttp/_http_parser.pyx", line 563, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message:
+  Invalid method encountered:
+
+    b'MGLNDD_35.184.13.143_8001\n'
+       ^

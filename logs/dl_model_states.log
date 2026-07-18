@@ -1,0 +1,3 @@
+Downloading 'step_12000/pytorch_model/mp_rank_00_model_states.pt' to 'output/moshiko-finetuned/.cache/huggingface/download/step_12000/pytorch_model/mp_rank_00_model_states.pt.957ceed2b74314b28dfe5c8537e509150d65d4e91de192c0db4ac71fa0a80e43.incomplete'
+Download complete. Moving file to output/moshiko-finetuned/step_12000/pytorch_model/mp_rank_00_model_states.pt
+output/moshiko-finetuned/step_12000/pytorch_model/mp_rank_00_model_states.pt

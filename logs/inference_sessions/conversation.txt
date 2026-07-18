@@ -1,0 +1,16 @@
+moshi: good 
+user: can you hear me 
+moshi: morning am i speaking with s ant osh kumar 
+user: yes 
+moshi: hi s ant osh this is sia from even healthcare you had signed up with us a while ago i believe you were looking for health insurance it would be great to know what was it that got you interested in even health care and is there anything i can help with 
+user: i think i have 
+moshi: hello 
+user: मैं तो pay किया हूं health insurance आपको कुछ पता है उसके बारे में 
+moshi: sure sure i ' ll wait here sam jay 
+user: actually health insurance एक चुना हूं अभी तो आपको पता है उसके बारे में 
+moshi: sorry couldn ' t catch that could you repeat got it s ant osh since you were looking into this 
+user: actually we 
+moshi: earlier you didn ' t go ahead with any plan was there anything that didn ' t work for you was it the price or some coverage you want to know about i ' m m 
+user: क्या आप मुझे हिंदी में बोल सकते हैं 
+moshi: i ' m sia from even healthcare here to help you with your health insurance needs may i ask if you want to explore a plan that covers just hospitalization emergencies or also day to day doctor visits and check ups in the future 
+user: क्या आप हिंदी में बात कर सकते हैं 
